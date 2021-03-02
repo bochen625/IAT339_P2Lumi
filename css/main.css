@@ -147,7 +147,7 @@ button.btnStyle, input.btnStyle{
 	color: white;
 	text-align: center;
 	text-decoration:none;
-	padding: 0.75em;	
+	padding: 0.75em;
 	opacity: 50%;
 	cursor: not-allowed;
 	margin-left: 1rem;
@@ -195,7 +195,7 @@ label{
 
 /*-----------Feature Module Pattern-----------*/
 /*Tutorial: https://www.w3schools.com/css/css_navbar_horizontal.asp*/
-/*Nav Bar Module*/ 
+/*Nav Bar Module*/
 .logo{
 	margin: 0.5rem;
 	margin-top: 1rem;
@@ -402,7 +402,7 @@ label{
 
 /*-----------Quiz Module-----------*/
 .quizContainer{
-	background-color: white;	
+	background-color: white;
 }
 
 .progressBarBorder{
@@ -479,4 +479,48 @@ label{
 
 ul, ol{
 	line-height: 1.5rem;
+}
+
+/*Hero Slider*/
+#heroSlider {
+	background-color: red;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	margin: auto;
+	overflow-x: hidden;
+}
+
+.slideImage img {
+	width: auto;
+	height: 100%;
+	position: absolute;
+}
+
+.slideText {
+	position: absolute;
+	bottom: 100px;
+  left: 10%;
+	width: 80%;
+	text-align: left;
+}
+
+.sliderDot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#dots {
+	position: absolute;
+  right: 10%;
+	bottom: 100px;
+}
+
+.active {
+  background-color: black;
 }
