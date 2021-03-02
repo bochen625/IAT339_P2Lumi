@@ -340,6 +340,19 @@ h1{
 	margin: 0 auto;
 }
 
+/* Sub Navigation */
+.subNavContainer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+}
+
+.subNavCategory {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+
 @media screen and (max-width: 125em){
 	.navButtons{
 		grid-column: 8/span 8;
