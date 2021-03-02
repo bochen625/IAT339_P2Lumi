@@ -524,3 +524,19 @@ ul, ol{
 .active {
   background-color: black;
 }
+
+/* Shop Tile */
+.shopTile .productCard:last-of-type{
+	background-image: none;
+}
+
+/* Pagination */
+.pagination {
+	display: inline-block;
+}
+
+.pagination a {
+	float: left;
+	margin-left: 30px;
+	color: #000000;
+}
