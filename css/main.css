@@ -179,9 +179,12 @@ button.btnStyle, input.btnStyle{
 /*Form Fields*/
 input{
 	margin: 0.2rem;
+	margin-top: 20px;
 	width: 28em;
 	background-color: white;
 	box-shadow: var(--dropShadow);
+	border: none;
+	padding: 10px;
 }
 
 input[type=text]:focus{
@@ -539,4 +542,53 @@ ul, ol{
 	float: left;
 	margin-left: 30px;
 	color: #000000;
+}
+
+/* Location */
+#socialLinks a {
+	margin-right: 30px;
+}
+
+#map {
+	margin-top: 50px;
+}
+
+.contactDetails {
+	margin-top: 50px;
+}
+
+/* Sub Navigation */
+.subNavigation {
+
+}
+
+.subNavigation a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.subNavCategory {
+	display: grid;
+}
+
+.subNavigation h5 {
+	margin-top: 0;
+}
+
+.subNavCategoryCollum2 {
+	padding-top: 40px;
+}
+
+.subNavCategoryCollum1 {
+}
+
+.subNavContainer {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.subNavCategory, .subNavLightingTypes, .subNavFeatures {
+	margin-top: 20%;
 }
