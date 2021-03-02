@@ -623,6 +623,43 @@ h1{
 	}
 }
 
+/*-----------Footer Modular Patterns-----------*/
+/*Footer*/
+.footBarContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.footerButtons{
+	grid-column: 1/span 2;
+}
+
+.footerLogo{
+	grid-column: 11/span 2;
+
+}
+
+.copyRight{
+	grid-column: 5/span 3;
+}
+
+.iconF{
+	grid-column: 8/span 1;
+}
+
+.iconT{
+	grid-column: 9/span 1;
+}
+
+.iconL{
+	grid-column: 10/span 1;
+
+}
+
 @media screen and (max-width: 70em){
 	.imgContainer img{
 		width: 27rem;

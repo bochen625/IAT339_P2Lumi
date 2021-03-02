@@ -592,3 +592,48 @@ ul, ol{
 .subNavCategory, .subNavLightingTypes, .subNavFeatures {
 	margin-top: 20%;
 }
+
+/*-----------Footer Module-----------*/
+.footBarContainer{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+.footerButtons {
+	list-style-type: none;
+	margin: 1.5rem;
+	padding: 0;
+/*	overflow: hidden;*/
+}
+
+.footerButtons li{
+	float: left;
+	margin: 0.15rem;
+}
+
+.footerButtons a {
+	display: block;
+	font-family: Opensans, sans-serif;
+	font-size: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+	padding: 0.25rem;
+	color: var(--textColour);
+	margin: 0.1rem;
+	margin-top: 0.25rem;
+}
+
+.footerLogo{
+	margin: 0.5rem;
+	margin-top: 13rem;
+}
+
+.copyRight{
+	margin: 0.5rem;
+	margin-top: 15.5rem;
+}
+
+.iconF, .iconT, .iconL{
+	margin: 0.5rem;
+	margin-top: 15rem;
+}
