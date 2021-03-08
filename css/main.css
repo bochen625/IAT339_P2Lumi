@@ -529,6 +529,10 @@ ul, ol{
 }
 
 /* Shop Tile */
+.shopTile .productCard img{
+	width: 100%;
+}
+
 .shopTile .productCard:last-of-type{
 	background-image: none;
 }
@@ -551,7 +555,11 @@ ul, ol{
 
 #map {
 	margin-top: 50px;
+	width: 100%;
+	height: 300px;
+	border: 0;
 }
+
 
 .contactDetails {
 	margin-top: 50px;
@@ -593,6 +601,7 @@ ul, ol{
 	margin-top: 20%;
 }
 
+<<<<<<< Updated upstream
 /*-----------Footer Module-----------*/
 .footBarContainer{
 	background-color: white;
@@ -779,3 +788,12 @@ ul, ol{
 
 
 
+=======
+.subNavIMG {
+	width: 1fr;
+}
+
+.subNavIMG img {
+	width: 100%;
+}
+>>>>>>> Stashed changes
