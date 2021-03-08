@@ -1899,6 +1899,7 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- FooterModule-->
 				<div class="patternContainer">
 					
@@ -1922,6 +1923,7 @@
 
 							</footer>
 						</div>
+					</div>	
 						
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
@@ -1937,10 +1939,10 @@
 									</code>
 							</div>
 						</div>
-				</div>	
+				
 
 					<!--Quiz CTA Module-->
-				<div class="patternContainer">
+					<div class="patternContainer">
 						<h4>Quiz CTA Module</h4>
 						<p class="note"> The lighitng quiz CTA module will be found on the landing page and product specification pages</p>
 						<div class="patternOverview">
@@ -1951,6 +1953,7 @@
 								</div>
 							</div>
 						</div>
+					</div>
 
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
@@ -1966,12 +1969,97 @@
 									</code>
 							</div>
 						</div>
-					</div>
+					
 
 					<!--Product Filter Module-->
 					<div class="patternContainer">
 						<h4>Product Filter Module</h4>
 						<p class="note"> Seen on main product page, filter is placed on left side of interface beside product tiles</p>
+						<div class="patternOverview">
+							<div class="filterContainer">
+								<div class="filterBlock">
+									<div class="filterContent">
+										<h3 class="filterHeader">Filter</h3>
+										<p>Style</p>
+											<label class="boxContainer">Desk Lamp
+												<input type="checkbox" checked="checked">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Table Lamp
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Floor Lamp
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Wall Lights
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Ceiling Lights
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+										<div class="divide"></div>
+										<p>Type</p>
+											<label class="boxContainer">General/Ambient
+												<input type="checkbox" checked="checked">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Task/Directional
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Accent
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+										<div class="divide"></div>
+										<p>Price</p>
+											<label class="boxContainer">Under $30
+												<input type="checkbox" checked="checked">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">$31-$50
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">$50-$100
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Over $100
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>	
+										<div class="divide"></div>
+										<p>Light Temprature</p>
+											<label class="boxContainer">Warm
+												<input type="checkbox" checked="checked">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Bright Yellow
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Bright White
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Cool
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+											<label class="boxContainer">Muli-Coloured
+												<input type="checkbox">
+												<span class="check"></span>
+											</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
 									<p class="codeSnippetTitle">HTML</p>
@@ -1986,7 +2074,7 @@
 									</code>
 							</div>
 						</div>
-					</div>
+					
 					
 					<!--Shopping Cart Module-->
 					<div class="patternContainer">
@@ -1995,24 +2083,27 @@
 						<div class="patternOverview">
 							<div class="shoppingCartContainer">
 								<div class="cartTile">
-
 									<div class="detailContainer">
 										<h4 class="yourOrder">Your Order</h4>
 										<div class="productOne">
-											<h5>Hang Lamp</h5>
+											<h5 class="hangLamp">Hang Lamp</h5>
+											<p class="hangLamp">$99</p>
 										</div>
+										<img src="img/order1.png" class="order1" alt="Hang Lamp">
 										<div class="productTwo">
-											<h5>Desk Lamp</h5>
+											<h5 class="deskLamp">Desk Lamp</h5>
+											<p class="deskLamp">$34</p>
 										</div>
+										<img src="img/order2.png" class="order2" alt="Desk Lamp">
 										<div class="priceDetails">
 											<h5>Subtotal:</h5>
 											<h5>Shipping:</h5>
 											<h5>Tax:</h5>
 										</div>
 										<div class="priceAmounts">
-											<h5>36.50</h5>
-											<h5>234.00</h5>
-											<h5>16.98</h5>
+											<h5>$36.50</h5>
+											<h5>$234.00</h5>
+											<h5>$16.98</h5>
 										</div>
 										<div class="numItems">
 											<h5># of items</h5>
@@ -2023,7 +2114,7 @@
 									</div>
 								</div>
 							</div>
-
+						</div>
 						</div>
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
@@ -2039,8 +2130,7 @@
 									</code>
 							</div>
 						</div>
-					</div>	
-						<!--Product Filter Module-->
+						
 
 						<!--Product Specification Photo Gallery Module-->
 					<div class="patternContainer">
@@ -2062,13 +2152,27 @@
 								</figure>					
 							</div>
 						</div>
+						</div>
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
 									<p class="codeSnippetTitle">HTML</p>
 									<code>
-										.
+										&ltdiv class="productGalleryContainer">
+											&ltfigure class="galleryImg-1">
+												&ltimg src="img/gallery1.jpg" class="productGalImg" alt="Product Image 1">
+											&lt/figure>
+											&ltfigure class="galleryImg-2">
+												&ltimg src="img/gallery2.jpg" class="productGalImg" alt="Product Image 2">
+											&lt/figure>
+											&ltfigure class="galleryImg-3">
+												&ltimg src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
+											&lt/figure>			
+											&ltfigure class="galleryImg-4">
+												&ltimg src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
+											&lt/figure>					
+										&lt/div>
 									</code>
-							</div>
+									</div>
 							<div class="codeSnippetPattern">
 									<p class="codeSnippetTitle">CSS</p>
 									<code>
@@ -2076,27 +2180,59 @@
 									</code>
 							</div>
 						</div>
-					</div>
+					
 
 						<!--User Submitted Module-->
 					<div class="patternContainer">
 						<h4>User Submitted Module</h4>
 						<p class="note"> Listed Under Product Photo Gallery, on every product speficiations page</p>
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">HTML</p>
-									<code>
-										.
-									</code>
-							</div>
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">CSS</p>
-									<code>
-										.
-									</code>
+						<div class="patternOverview">
+							<h3>User Submitted Photos</h3>
+							<div class="scrollUser">
+								<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
+								<img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
+								<img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
+								<img src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
 							</div>
 						</div>
 					</div>
+					<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lth3>User Submitted Photos&lt/h3>
+									&ltdiv class="scrollUser">
+										&ltimg src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
+										&ltimg src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
+										&ltimg src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
+										&ltimg src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
+									&lt/div>
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.userGalImg{
+										width: 100%;
+										height: 100%;
+									}
+
+									.scrollUser{
+									  overflow: auto;
+									  white-space: nowrap;
+									}
+
+									.scrollUser img {
+									  display: inline-block;
+									  color: white;
+									  text-align: center;
+									  padding: 0.75rem;
+									  text-decoration: none;
+									}
+								
+								</code>
+							</div>
 			</div>
 
 		</div>
