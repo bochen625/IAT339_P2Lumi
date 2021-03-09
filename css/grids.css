@@ -743,7 +743,7 @@ h1{
 	grid-template-columns:repeat(6, 1fr);
 	grid-template-rows: repeat(5, 0.5fr);
 	grid-column-gap: 0.5rem;
-	padding-left: 5rem;
+	padding-left: 2rem;
 	padding-right: 2rem;
 }
 .yourOrder{
@@ -753,43 +753,36 @@ h1{
 }
 
 .productOne{
-	grid-column: 1/span end;
-	grid-row: 2/span 1;
-}
-
-.order1{
-	grid-column: 4/span end;
+	grid-column: 2/span end;
 	grid-row: 2/span 1;
 }
 .productTwo{
-	grid-column: 1/span end;
+	grid-column: 2/span end;
 	grid-row: 3/span 1;
 }
-.order2{
-	grid-column: 4/span end;
-	grid-row: 3/span 1;
-}
+
 .priceDetails{
-	grid-column: 1/span 2;
+	grid-column: 2/span 2;
 	grid-row: 4 span 1;
 }
 
 .priceAmounts{
-	grid-column: 4/span end;
+	grid-column: 6/span 2;
 	grid-row: 4 span 1;
 
 }
 .numItems{
-	grid-column: 1/span 2;
+	grid-column: 2/span 2;
 	grid-row: 5 span 1;
 }
 
 .checkoutButton {
-	grid-column: 4/span end;
-	grid-row: 5/span 1;
+	grid-column: 5/span 1;
+	grid-row: 5/span 2;
 	float: right;
 }
 
+<<<<<<< Updated upstream
 /*-----------User Submitted Module-----------*/
 .userGalContainer{
 	display:grid;
@@ -870,6 +863,8 @@ h1{
 	grid-row: 2/span 1;
 }
 
+=======
+>>>>>>> Stashed changes
 
 @media screen and (max-width: 70em){
 	.imgContainer img{
