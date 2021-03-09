@@ -780,10 +780,32 @@ ul, ol{
 }
 
 
+/*--------hero with only text-----*/
+#textHero {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
 
+#textHero h1 {
 
+}
 
+#textHero p {
+	width: 30%;
+}
 
+#everything {
+	position: relative;
+}
+
+.onTop {
+	z-index: 9999px;
+	position: absolute;
+	width: 100vw;
+	margin-left: 0;
+	margin-top: 0;
+	position: fixed;
+}
 
 
 
