@@ -684,12 +684,11 @@ ul, ol{
 .priceAmounts{
 	text-align: right;
 }
-.pricedDetails{
-}
 
 .checkoutButton{
 	margin: 0.5rem;
 }
+<<<<<<< HEAD
 .productOne{
 }
 
@@ -825,3 +824,5 @@ ul, ol{
 	width: 100%;
 }
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 16adabc... Adding Filter and User Submitted Modules with code Snippets

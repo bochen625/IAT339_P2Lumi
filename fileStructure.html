@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Citations</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grids.css">
+    </head>
+
+    <body>
+        <div class="gridContainer">
+            <nav class="navContainer">
+                <h1>File Structure, Conventions, and Rules</h1>
+
+                <ul class="navButtons">
+                    <li><a href="index.html">Style Guide</a></li>
+                    <li><a href="patternLibrary.html">Pattern Library</a></li>
+                    <li><a href="wireframes.html">Wireframes</a></li>
+                    <li><a href="citations.html">Citations</a></li>
+                </ul>
+            </nav>
+
+            <div class="sectionContainer">
+                <h2> Naming Convention </h2>
+                <ul>
+                    <li> camelCase (ie: featureModule)</li>
+                    <li> The name should be descriptive and the individual should be able to understand what it is by reading the name.</li>
+                </ul>
+
+                <h2> Structure</h2>
+                <ul>
+                    <li>Section header and description (See below for example)</li>
+                    <li>Pattern overview container (Encapsulates everything BUT the title/description)</li>
+                    <li>Example:
+                        <ul class="codeSnippetExample">
+                            <li>&lt;h4&gt; Title of Module &lt;/h4&gt;</li>
+                            <li>&lt;p class="note"&gt;Description: What it's used for, who created it, and who is responsible for maintaining it.&lt;/p&gt;</li>
+                            <li>&lt;div class="patternOverview"&gt;</li>
+                            <li>&lt;!-- Code for module --&gt;</li>
+                            <li>&lt;!-- Code snippet for module --&gt;</li>
+                            <li>&lt;/div&gt;</li>
+                        </ul>
+                    </li>
+                    <li>Code snippet container (contains the code)
+                        <ul>
+                            <li>Example:
+                                <ul class="codeSnippetExample">
+                                    <li>&lt;div class="codeSnippetContainer"&gt;</li>
+                                    <li>&lt;div class="codeSnippetPattern"&gt;</li>
+                                    <li>&lt;p class="codeSnippetTitle"&gt;HTML&lt;/p&gt;</li>
+                                    <li>&lt;code&gt;</li>
+                                    <li>&lt;!--HTML Code--&gt;</li>
+                                    <li>&lt;/code&gt;</li>
+                                    <li>&lt;/div&gt;</li>
+                                    <li></li>
+                                    <li>&lt;div class="codeSnippetPattern"&gt;</li>
+                                    <li>&lt;p class="codeSnippetTitle"&gt;CSS&lt;/p&gt;</li>
+                                    <li>&lt;code&gt;</li>
+                                    <li>&lt;!--CSS Code--&gt;</li>
+                                    <li>&lt;/code&gt;</li>
+                                    <li>&lt;/div&gt;</li>
+                                    <li>&lt;/div&gt;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Global CSS variables (These variables allow you to call a colour WITHOUT specifying the hexcode):
+                        <ul class="codeSnippetExample">
+                            <li>&lt;!--Blue--&gt;</li>
+                            <li>--CTAColour</li>
+                            <li>&lt;!--Gray--&gt;</li>
+                            <li>--textColour</li>
+                            <li>&lt;!--Off white--&gt;</li>
+                            <li>--bgColour</li>
+                            <li>&lt;!--gradient--&gt;</li>
+                            <li>--gradientColour</li>
+                            <li>&lt;!--drop shadow--&gt;</li>
+                            <li>--dropShadow</li>
+                        </ul>
+                    </li>
+                    <li> Examples of how these global variables are used in CSS:</li>
+                        <ul>
+                            <li>color: var(--textColour); &lt;!--This will make the text gray--&gt;</li>
+                            <li>background-color: var(--bgColour); &lt;!--This will make the background off-white--&gt;</li>
+                            <li>background-color: var(--CTAColour); &lt;!--This will make the background blue--&gt;</li>
+                            <li>background-image: var(--gradientColour); &lt;!--This will create a gradient background using Lumi's brand colours--&gt;</li>
+                            <li>box-shadow: var(--dropShadow); &lt;!--This will create a light drop shadow around a box --&gt;</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
