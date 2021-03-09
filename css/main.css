@@ -770,6 +770,12 @@ ul, ol{
 	border-top: 0.05rem solid #D3D3D3;
 }
 
+/*--------About Us Module-----*/
+
+.bonnieImg, .jonathanImg, .shaantiImg{
+	width: 100%;
+	height: 100%;
+}
 
 
 
