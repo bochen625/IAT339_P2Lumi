@@ -1,0 +1,101 @@
+<!--
+	Basic structure of HTML from Paul's tutorial:
+	https://www.youtube.com/watch?v=adI6G7Y-0xE&feature=youtu.be
+-->
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Contact</title>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grids.css">
+	</head>
+
+	<body>
+
+<section id="everything">
+		<div class="gridContainer">
+
+	      <nav class="navBarContainer">
+	        <a href="#" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+	        <ul class="navButtons">
+	          <li><a href="#">Products</a></li>
+	          <li><a href="#">Inspiration</a></li>
+	          <li><a href="#">About Us</a></li>
+	          <li><a href="#"><img src="img/searchIcon.svg" alt="search icon"></a></li>
+	          <li><a href="#"><img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+	        </ul>
+	      </nav>
+
+				<div class="sectionContainer" id="modularPatterns">
+          <div class="patternOverview">
+            <section id="contactModules">
+              <div class="locationModule">
+                <h2>Location</h2>
+                <p>13450 102 Ave #250</p>
+                <p>Surrey, BC V3T 0A3</p>
+                <p>Canada</p>
+
+                <div class="contactDetails">
+                  <p>Telephone: 778-149-1885</p>
+                  <p>contact@lumi.ca</p>
+                  <p>Connect with us:</p>
+
+                  <div id="socialLinks">
+                    <a href=""><img src="./img/Socials/twitter.png"></a>
+                    <a href=""><img src="./img/Socials/linkedin.png"></a>
+                    <a href=""><img src="./img/Socials/facebook.png"></a>
+                    <a href=""><img src="./img/Socials/instagram.png"></a>
+                  </div>
+                  <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.729017428474!2d-122.85123638408858!3d49.18672848548525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9d358d76255%3A0x27cc0a8105206a6c!2sSimon%20Fraser%20University%20-%20Surrey%20Campus!5e0!3m2!1sen!2sca!4v1614673751675!5m2!1sen!2sca"></iframe>
+                </div>
+                </div>
+                <div class="contactModule">
+                  <h2>Get in touch</h2>
+                    <div class="patternStyleContainer">
+        							<form action="/action_page.php" method="get">
+        								<div class="patternStyle">
+        									<label for="fName">First Name:</label>
+        									<input type="text" id="fName" name="fName">
+        								</div>
+
+        								<div class="patternStyle">
+        									<label for="email">E-mail:</label>
+        									<input type="text" id="email" name="email">
+        									<button class ="btnStyle" type="submit" value="Submit">Submit</button>
+        									<button class ="btnReset" type="reset" value="Reset">Reset</button>
+        								</div>
+        							</form>
+        						</div>
+                  </div>
+          </div>
+
+          <footer class="footBarContainer">
+            <ul class="footerButtons">
+              <li><h5>RESCOURCES</h5></li>
+              <li><a href="index.html">Style Guide</a></li>
+              <li><a href="patternLibrary.html">Pattern Library</a></li>
+              <li><a href="wireframes.html">Wireframes</a></li>
+              <li><a href="citations.html">Citations</a></li>
+            </ul>
+            <h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
+
+            <a href="#" class="iconF"> <img src="img/facebook.png" alt="facebook icon"> </a>
+            <a href="#" class="iconT"> <img src="img/twitter.png" alt="twitter icon"> </a>
+            <a href="#" class="iconL"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+            <a href="#" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+
+          </footer>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

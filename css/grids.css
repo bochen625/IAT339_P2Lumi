@@ -85,6 +85,7 @@ h1{
 	grid-column-gap: 0.5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	grid-column: 1/span 12;
 }
 
 .navButtons{
@@ -312,6 +313,7 @@ h1{
 	grid-template-rows: repeat(3, 1fr);
 	grid-column-gap: 2em;
 	grid-row-gap: 2em;
+	grid-column: 1;
 }
 
 .shopTile .productCard:first-of-type{
@@ -349,7 +351,14 @@ h1{
 
 .subNavCategory {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* Contact Modules */
+#contactModules {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column: 2/span 8;
 }
 
 
@@ -722,6 +731,7 @@ h1{
 	grid-column-gap: 0.5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	background-color: rgba(135, 135, 135, .8);
 }
 
 .cartTile{
@@ -767,7 +777,7 @@ h1{
 .priceAmounts{
 	grid-column: 4/span end;
 	grid-row: 4 span 1;
-	
+
 }
 .numItems{
 	grid-column: 1/span 2;
@@ -794,7 +804,8 @@ h1{
 
 .filterContainer{
 	display:grid;
-	grid-template-columns:repeat(12, 1fr);
+	/* grid-template-columns:repeat(12, 1fr); */
+	grid-column: 1;
 	grid-template-rows: 1fr;
 	grid-column-gap: 0.5rem;
 	padding-left: 2rem;
@@ -993,6 +1004,18 @@ h1{
 	.shopTile .productCard:nth-of-type(9){
 		grid-column: 1/span 3;
 		grid-row-start: auto;
+	}
+
+	/* Contact Modules */
+	#contactModules {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-column: 2/span 8;
+	}
+
+	/* Hero with text only */
+	#textHero p {
+		width: 100%;
 	}
 
 
