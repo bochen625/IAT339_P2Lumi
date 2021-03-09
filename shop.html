@@ -1,0 +1,248 @@
+<!--
+	Basic structure of HTML from Paul's tutorial:
+	https://www.youtube.com/watch?v=adI6G7Y-0xE&feature=youtu.be
+-->
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Shop</title>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grids.css">
+	</head>
+
+	<body>
+
+<section id="everything">
+		<div class="gridContainer">
+
+	      <nav class="navBarContainer">
+	        <a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+	        <ul class="navButtons">
+	          <li><a href="shop.html">Products</a></li>
+	          <li><a href="#">Inspiration</a></li>
+	          <li><a href="aboutCompany.html">About Us</a></li>
+	          <li><a href="#"><img src="img/searchIcon.svg" alt="search icon"></a></li>
+	          <li><a href="shoppingCartModule.html"><img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+	        </ul>
+	      </nav>
+
+
+
+				<div class="sectionContainer" id="modularPatterns">
+					<div class="patternOverview">
+
+						<div id="textHero">
+							<h1>Shop all</h1>
+							<p>Designed to illuminate your home. Our range of selections include desk lamps, floor lamps, and wall lights to light up your office space, room and table.</p>
+						</div>
+
+						<div class="shopModule">
+							<div class="shopTile">
+
+								<div class="productCard">
+									<a href="ProductDetail.html"><img src="img/light1.png" alt="metal floor lamp with a circular bulb"></a>
+									<div class="productDetails">
+										<p class="productCardPName">Ambient Floor Lamp</p>
+										<p class="productCardPPrice">$139</p>
+									</div>
+								</div>
+
+								<div class="productCard">
+									<a href="ProductDetail.html"><img src="img/light2.png" alt="black metal lamp"></a>
+									<div class="productDetails">
+										<p class="productCardPName">Hang-over Floor Lamp</p>
+										<p class="productCardPPrice">$129</p>
+									</div>
+								</div>
+
+								<div class="productCard">
+									<a href="ProductDetail.html"><img src="img/light2.png" alt="black metal lamp"></a>
+									<div class="productDetails">
+										<p class="productCardPName">Hang-over Floor Lamp</p>
+										<p class="productCardPPrice">$129</p>
+									</div>
+								</div>
+
+								<div class="productCard">
+									<a href="ProductDetail.html"><img src="img/light1.png" alt="metal floor lamp with a circular bulb"></a>
+									<div class="productDetails">
+										<p class="productCardPName">Ambient Floor Lamp</p>
+										<p class="productCardPPrice">$139</p>
+									</div>
+								</div>
+
+								<div class="productCard">
+									<a href="ProductDetail.html"><img src="img/light2.png" alt="black metal lamp"></a>
+									<div class="productDetails">
+										<p class="productCardPName">Hang-over Floor Lamp</p>
+										<p class="productCardPPrice">$129</p>
+									</div>
+								</div>
+
+								<div class="productCard">
+									<a href="ProductDetail.html"><img src="img/light2.png" alt="black metal lamp"></a>
+									<div class="productDetails">
+										<p class="productCardPName">Hang-over Floor Lamp</p>
+										<p class="productCardPPrice">$129</p>
+									</div>
+								</div>
+
+								<div class="productCard">
+									<a href="ProductDetail.html"><img src="img/light1.png" alt="metal floor lamp with a circular bulb"></a>
+									<div class="productDetails">
+										<p class="productCardPName">Ambient Floor Lamp</p>
+										<p class="productCardPPrice">$139</p>
+									</div>
+								</div>
+
+								<div class="productCard">
+									<a href="ProductDetail.html"><img src="img/light2.png" alt="black metal lamp"></a>
+									<div class="productDetails">
+										<p class="productCardPName">Hang-over Floor Lamp</p>
+										<p class="productCardPPrice">$129</p>
+									</div>
+								</div>
+
+								<div class="productCard">
+									<a href="ProductDetail.html"><img src="img/light2.png" alt="black metal lamp"></a>
+									<div class="productDetails">
+										<p class="productCardPName">Hang-over Floor Lamp</p>
+										<p class="productCardPPrice">$129</p>
+									</div>
+								</div>
+
+								<div class="pagination">
+									<a href="#">&laquo;</a>
+									<a href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">&raquo;</a>
+								</div>
+
+							</div>
+
+							<div>
+									<div class="filterContainer">
+										<div class="filterBlock">
+											<div class="filterContent">
+												<h3 class="filterHeader">Filter</h3>
+												<p>Style</p>
+													<label class="boxContainer">Desk Lamp
+														<input type="checkbox" checked="checked">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Table Lamp
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Floor Lamp
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Wall Lights
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Ceiling Lights
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+												<div class="divide"></div>
+												<p>Type</p>
+													<label class="boxContainer">General/Ambient
+														<input type="checkbox" checked="checked">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Task/Directional
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Accent
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+												<div class="divide"></div>
+												<p>Price</p>
+													<label class="boxContainer">Under $30
+														<input type="checkbox" checked="checked">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">$31-$50
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">$50-$100
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Over $100
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+												<div class="divide"></div>
+												<p>Light Temprature</p>
+													<label class="boxContainer">Warm
+														<input type="checkbox" checked="checked">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Bright Yellow
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Bright White
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Cool
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+													<label class="boxContainer">Muli-Coloured
+														<input type="checkbox">
+														<span class="check"></span>
+													</label>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="patternOverview">
+						<div class="quizBannerContainer">
+							<h2 class="quizBH">Unsure what you're looking for?</h2>
+							<div class="quizCTA">
+								<a href="#" class="btnStyle">Take the Quiz!</a>
+							</div>
+						</div>
+					</div>
+
+					<footer class="footBarContainer">
+						<ul class="footerButtons">
+							<li><h5>RESCOURCES</h5></li>
+							<li><a href="index.html">Style Guide</a></li>
+							<li><a href="patternLibrary.html">Pattern Library</a></li>
+							<li><a href="wireframes.html">Wireframes</a></li>
+							<li><a href="citations.html">Citations</a></li>
+						</ul>
+						<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
+
+						<a href="#" class="iconF"> <img src="img/facebook.png" alt="facebook icon"> </a>
+						<a href="#" class="iconT"> <img src="img/twitter.png" alt="twitter icon"> </a>
+						<a href="#" class="iconL"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+						<a href="#" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+
+					</footer>
+
+				</div>
+
+</div>
+</section>
+  </body>
+</html>

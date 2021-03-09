@@ -1,0 +1,145 @@
+<!--
+	Basic structure of HTML from Paul's tutorial:
+	https://www.youtube.com/watch?v=adI6G7Y-0xE&feature=youtu.be
+-->
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Lumi</title>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="temporaryGrid.css">
+	</head>
+
+	<body>
+		<nav class="navContainer">
+			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+			<ul class="navButtons">
+				<li><a href="shop.html">Products</a></li>
+				<li><a href="#">Inspiration</a></li>
+				<li><a href="aboutCompany.html">About Us</a></li>
+				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
+				<li><a href="shoppingCartModule.html"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+			</ul>
+		</nav>
+
+		<div class="sectionContainerWithHero" id="heroHomePage">
+		<!--Hero-->
+			<div class ="heroSlider">
+				<div class="slideImage">
+					<img src="./img/heroImg1.png">
+					<div class="slideText">
+						<h1>W42 Ceiling Light</h1>
+						<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+						<a href="shop.html" class="btnStyle">Shop Now</a>
+					</div>
+				</div>
+
+				<div id="dots">
+					<span class="sliderDot"></span>
+					<span class="sliderDot"></span>
+					<span class="sliderDot"></span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="sectionContainer" id="homePage">
+			<div class="productRecommendation">
+				<h2 class="moduleHeader"> Similar Products</h2>
+				<div class="productCard">
+					<a href="#"><img src="img/light1.png" alt="metal floor lamp with a circular bulb"></a>
+					<div class="productDetails">
+						<p class="productCardPName">Ambient Floor Lamp</p>
+						<p class="productCardPPrice">$139</p>
+					</div>
+				</div>
+
+				<div class="productCard">
+					<a href="#"><img src="img/light2.png" alt="black metal lamp"></a>
+					<div class="productDetails">
+						<p class="productCardPName">Hang-over Floor Lamp</p>
+						<p class="productCardPPrice">$129</p>
+					</div>
+				</div>
+
+				<div class="productCard">
+					<a href="#"><img src="img/light3.png" alt="a black metal wall lamp"></a>
+					<div class="productDetails">
+						<p class="productCardPName">Swinging Golf Wall Lamp</p>
+						<p class="productCardPPrice">$99</p>
+					</div>
+				</div>
+
+				<div class="productCard">
+					<h3 class="productCardText"> Explore our collections and find a light that is suitable for your needs.</h3>
+					<a href="shop.html" class="btnStyle" id="productCTA">View More</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="sectionContainerWithHero">
+			<!--Quiz CTA Module-->
+			<div class="quizBanner">
+				<h2 class="quizBH">Unsure what you're looking for?</h2>
+				<div class="quizCTA">
+					<a href="#" class="btnStyle">Take the Quiz!</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="sectionContainer">
+			<h2 class="moduleHeader"> Inspirations and Ideas</h2>
+
+			<!--Blog Post 1-->
+			<div class="valueAndBlogCard">
+				<a href="#"> <img src="img/blog1.png" class="blogImg" alt="light bulb"> </a>
+				<a href="#"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
+				<div class="blogInfoBackground">
+					<h4 class="blogTitle"> Lamp Set-up Inspirations</h4>
+					<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should...</p>
+					<a href="#" class="inTextCTAStyle">read more</a>
+				</div>
+			</div>
+
+			<!--Blog Post 2-->
+			<div class="valueAndBlogCard">
+				<a href="#"> <img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"> </a>
+				<a href="#"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
+				<div class="blogInfoBackground">
+					<h4 class="blogTitle"> Lighting Your Workspace</h4>
+					<p class="blogDescription"> The type of lighting in your room can influence your productivity. Here’s a list of things to consider when setting up your ideal workspace.</p>
+					<a href="#" class="inTextCTAStyle">read more</a>
+				</div>
+			</div>
+
+			<!--CTA for Blog Module-->
+			<div class="valueAndBlogCard">
+				<h3 class="productCardText"> Explore our blogs to get more inspiration and ideas</h3>
+				<a href="#" class="btnStyle" id="blogCTA">Discover More</a>
+			</div>
+		</div>
+
+		<footer class="footBarContainer">
+			<ul class="footerButtons">
+				<li><h5>RESCOURCES</h5></li>
+				<li><a href="index.html">Style Guide</a></li>
+				<li><a href="patternLibrary.html">Pattern Library</a></li>
+				<li><a href="wireframes.html">Wireframes</a></li>
+				<li><a href="citations.html">Citations</a></li>
+			</ul>
+			<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
+
+			<a href="#" class="iconF"> <img src="img/facebook.png" alt="facebook icon"> </a>
+			<a href="#" class="iconT"> <img src="img/twitter.png" alt="twitter icon"> </a>
+			<a href="#" class="iconL"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+			<a href="home.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+
+		</footer>
+	</body>
+</html>
