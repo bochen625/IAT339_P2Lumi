@@ -782,7 +782,6 @@ h1{
 	float: right;
 }
 
-<<<<<<< Updated upstream
 /*-----------User Submitted Module-----------*/
 .userGalContainer{
 	display:grid;
@@ -819,7 +818,7 @@ h1{
 	grid-column: 2/span 4;
 }
 
-.quizCTA
+.quizCTAd
 {
 	grid-column: 2/span 2;
 }
@@ -862,9 +861,6 @@ h1{
 	grid-column: 8/span 3;
 	grid-row: 2/span 1;
 }
-
-=======
->>>>>>> Stashed changes
 
 @media screen and (max-width: 70em){
 	.imgContainer img{

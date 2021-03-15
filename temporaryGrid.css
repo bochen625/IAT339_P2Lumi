@@ -14,7 +14,6 @@
 	background-color: var(--bgColour);
 }
 
-
 .navContainer{
 	background-color: white;
 	box-shadow: var(--dropShadow);
@@ -26,53 +25,29 @@
 	margin-top: 0;
 }
 
-.note{
-	font-size: 1rem;
-	margin: 0.5rem;
-	padding: 1em;
-	font-style: italic;
-	background-image: var(--gradientColour);
-}
-
-.patternOverview{
-	margin: 0.5rem;
-}
-/*-----------Colour Palette----------*/
-.colourSwatchOverview{
-	margin: 0.5rem 0.5rem 0.5rem 0.5rem; /*top, left, right, btm*/
-	border: 0.5rem;
-	border-style: solid;
-	border-color: gray;
-	border-width: 0.15rem;
-}
-
-.colourSwatch{
-	height:5rem;
-}
-
-.colourSwatchDetail{
-}
-
 /*-----------Typography-----------*/
 h1, h2, h3, h4{
 	font-family: Poppins, sans-serif;
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 h2 {
-	font-size: 1.75rem;
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 2rem;
+	font-weight: 600;
 }
 
 h4 {
-
 	font-size: 1.25rem;
+	font-weight: 500;
 	margin: 0.5rem;
 	margin-left: 0;
 }
@@ -86,34 +61,6 @@ p a{
 	font-weight: bold;
 }
 
-/*----------Code Snippet------------*/
-.codeSnippetContainer{
-	background-color: lightgray;
-	padding: 1.5rem;
-	margin-top: 2rem;
-	max-height: 15rem;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	margin-bottom: 3rem;
-}
-
-.codeSnippetPattern{
-	margin-bottom: 1rem;
-	padding: 1em;
-}
-
-.codeSnippetTitle{
-	font-weight: bold;
-	margin-bottom: 0.5rem;
-}
-
-.codeSnippetPattern code{
-	font-size: 0.75rem;
-}
-
-.codeSnippetExample{
-	list-style: none;	
- }
 /*-----------Interactive Elements-----------*/
 /*CTA Button*/
 .btnStyle{
@@ -302,18 +249,6 @@ label{
 	text-decoration:underline;
 }
 
-/*Grid Structure*/
-.gridStructurePatternContainer{
-	background-color: gray;
-	opacity: 20%;
-}
-
-.gridOne, .gridTwo, .gridThree, .gridFour, .gridFive, .gridSix, .gridSeven, .gridEight, .gridNine, .gridTen, .gridEleven, .gridTwelve{
-	background-color: red;
-	opacity: 75%;
-}
-
-
 /*Recommendation Module*/
 .productCard img{
 	width: 100%;
@@ -322,9 +257,10 @@ label{
 	background-image: var(--gradientColour);
 }
 
-.productCardText{
-	margin-top: 10rem;
-	margin-left: 3rem;
+.productCardText:first-of-type{
+	font-size: 1.5rem;
+	margin-top: 13rem;
+	margin-left: 3.5rem; /*roughly 55px*/
 	width:clamp(7ch, 80%, 13ch);
 }
 
@@ -339,15 +275,6 @@ label{
 #productCTA{
 	margin-top: 2rem;
 	margin-left: 3rem;
-}
-
-.colourSwatch{
-	overflow: auto;
-}
-
-.colourSwatchDetail{
-	list-style-type:none;
-	margin-left:-0.5rem; /*centers text*/
 }
 
 /*-----------Value Module-----------*/
@@ -409,8 +336,28 @@ label{
 }
 
 /*-----------Quiz Module-----------*/
+.quizModal{
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 1.5rem;
+	padding-left: 6.25rem; /*roughly 100px*/
+	padding-right: 6.25rem;
+	margin-top: 4rem;
+}
+/*styling*/
+.quizModal{
+	display: none; /*sets state to hidden by default*/
+	position: fixed;
+	z-index: 1;
+	width: 100% /*Full width*/
+	height: 100%; /*full height*/
+	overflow: auto; /*allows scrolling if it's needed*/
+	background-color: rgba(135, 135, 135, 80%);
+}
+
 .quizContainer{
 	background-color: white;
+	min-height: 50rem;
 }
 
 .progressBarBorder{
@@ -419,6 +366,73 @@ label{
 	background-color: white;
 	border-radius: 0.2rem;
 	border: 0.1rem solid var(--textColour);
+}
+
+.progressBarProgress{
+	width: 14%;
+	height: 1.4rem;
+	background-color: var(--CTAColour);
+	border-radius: 0.2rem;
+	margin-top: -0.05rem;
+}
+
+.quizQuestion{
+	margin-top: -1rem;
+}
+/*grid*/
+.quizContainer{
+	grid-column: 2/span 10;
+	display:grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-column-gap: 1.5rem;
+	grid-template-rows: 0.5fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 0.2fr 0.2fr;
+	margin-top: 10rem;
+}
+
+.progressBarBorder{
+	grid-column: 3/span 6;
+	grid-row: 2/span 1;
+}
+
+.questionNumber{
+	grid-column: 3/span 6;
+	grid-row: 3/span 1;
+}
+
+.quizQuestion{
+	grid-column: 3/span 6;
+	grid-row: 4/span 1;
+}
+
+.quizBtnStyle:first-of-type{
+	grid-column: 3/span 3;
+	grid-row: 5/span 1;
+}
+
+.quizBtnStyle:nth-of-type(2){
+	grid-column: 6/span 3;
+	grid-row: 5/span 1;
+}
+
+.quizBtnStyle:nth-of-type(3){
+	grid-column: 3/span 3;
+	grid-row: 6/span 1;
+}
+
+.quizBtnStyle:nth-of-type(4){
+	grid-column: 6/span 3;
+	grid-row: 6/span 1;
+}
+
+/*Continue*/
+.btnStyle{
+	grid-column: 5/span 2;
+	grid-row: 8/span 1;
+}
+/*No Preference*/
+.quizNoPreference{
+	grid-column: 5/span 2;
+	grid-row: 9/span 1;
 }
 
 .progressBarProgress{
@@ -493,73 +507,84 @@ ul, ol{
 /*Footer*/
 .footBarContainer{
 	display:grid;
-	grid-template-columns:repeat(12, 1fr);
-	grid-template-rows: 1fr;
-	grid-column-gap: 0.5rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: 1/span 12;
+	grid-column-gap: 1.5rem;
+	padding-left: 6.25rem; /*roughly 100px*/
+	padding-right: 6.25rem;
+	margin-top: 10rem;
 }
 
-.footerButtons{
-	grid-column: 1/span 2;
+.footerResources li, .footerAbout li{
+	list-style-type: none;
+	text-align: left;
+	margin-left: -2.5rem;
+}
+.footerResources a, .footerAbout a{
+	display: block;
+	font-size: 0.75rem;
+	text-decoration: none;
+	color: var(--textColour);
+	margin-top: 0.25rem;
 }
 
 .footerLogo{
-	grid-column: 11/span 2;
-
+	grid-column: 12/span 1;
 }
 
 .copyRight{
-	grid-column: 5/span 3;
+	grid-column: 6/span 2;
+	text-align: center;
 }
 
-.iconF{
-	grid-column: 8/span 1;
-}
-
-.iconT{
-	grid-column: 9/span 1;
-}
-
-.iconL{
-	grid-column: 10/span 1;
-
+.socialMediaIcons{
+	grid-column: 10/span 2;
 }
 
 /*Hero Slider*/
 .heroSlider {
-	background-color: red;
-	height: 100vh;
-	width: 100%;
-	overflow-x: hidden;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 1.5rem;
+}
+
+.slideImage{
+	grid-column: 1/span 12;
 }
 
 .slideImage img {
-	height: 100%;
-	object-fit:cover;
+	width: 100%;
+	height: 92vh;
+	position: relative;
+	object-fit: cover;
 }
 
 .slideText {
 	position: absolute;
-	bottom: 100px;
-  	left: 10%;
-	width: 80%;
 	text-align: left;
+	left: 8.5%;
+	bottom: 12%;
+}
+
+.subheading{
+	width:clamp(20ch, 80%, 28ch);
+	font-weight: 400;
+	margin-top: 0rem;
+	margin-bottom: 1.5rem;
 }
 
 .sliderDot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 0.75rem;
+  width: 0.75rem;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-#dots {
+.heroSliderDots {
 	position: absolute;
-  right: 10%;
+  	right: 10%;
 	bottom: 100px;
 }
 
@@ -640,7 +665,6 @@ ul, ol{
 	margin-top: 20%;
 }
 
-<<<<<<< Updated upstream
 /*-----------Footer Module-----------*/
 .footBarContainer{
 	background-color: white;
@@ -681,143 +705,47 @@ ul, ol{
 	margin-top: 15.5rem;
 }
 
-.iconF, .iconT, .iconL{
+.socialMediaIcons{
 	margin: 0.5rem;
 	margin-top: 15rem;
 }
 
+.iconFb, .iconTwitter, .iconLinkedIn{
+	margin-right: 2rem;
+}
+
+.iconFb{
+	margin-left: 0.75rem;
+}
+
 /*-----------Quiz CTA Module-----------*/
-.quizBannerContainer{
-	background-image: url('../img/quizbanner.png');
-	background-repeat: no-repeat;
-	height: 30rem;
-	background-size: cover;
-	box-shadow: var(--dropShadow);
+.quizBanner{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 1.5rem;
+	margin-top: 5rem;
+}
+
+.quizBannerImg{
+	grid-column: 1/span 12;
+	width: 100%;
+	height: 41rem;
+	position: relative;
+	object-fit: cover;
+}
+
+.quizDescription{
+	position: absolute;
+	text-align: left;
+	left: 8.5%;
+	margin-top: 5rem;
 }
 
 .quizBH{
-	margin: 0.5rem;
-	margin-top: 7rem;
+	width:clamp(7ch, 80%, 15ch);
 }
 
-.quizCTA{
-	margin: 0.5rem;
-	min-height: 20rem;
-}
-
-/*-----------Product Image Gallery Module-----------*/
-.productGalImg{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
-}
-
-.cartTile{
-	background-color: white;
-	box-shadow: var(--dropShadow);
-}
-
-/*--------Shopping Cart Module-----*/
-
-.priceAmounts{
-	text-align: right;
-}
-.pricedDetails{
-}
-
-.checkoutButton{
-	margin: 0.5rem;
-}
-.productOne{
-}
-
-.hangLamp{
-}
-
-.order1, .order2{
-	width: 100%;
-	height: 100%;
-	padding: 0.5rem;
-}
-
-.deskLamp{
-}
-
-/*--------User Submitted Module-----*/
-.userGalImg{
-	width: 100%;
-	height: 100%;
-}
-
-.scrollUser{
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.scrollUser img {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 0.75rem;
-  text-decoration: none;
-}
-
-/*--------Product Filter Module-----*/
-
-.filterBlock{
-	background-color: white;
-	box-shadow: var(--dropShadow);
-}
-
-.check {
-  position: absolute;
- 	top: 0;
- 	left: 0;
- 	height: 0.875rem;
-	width: 0.875rem;
-	border-style: solid;
-	border-color: grey;
-	border-width: 0.01em;
-	border-radius: 0.25em;
-}
-
-.boxContainer {
-  display: block;
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 0.8rem;
-  cursor: pointer;
-  font-size: 0.875rem;
-  font-weight: 200;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.boxContainer input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* On mouse-over, add a grey background color */
-.boxContainer:hover input ~ .check {
-  background-color: #D3D3D3;
-}
-
-/* When the checkbox is checked, add a blue background */
-.boxContainer input:checked ~ .check {
-  background-color: #468CFF;
-}
-
-.divide{
-	border-top: 0.05rem solid #D3D3D3;
-}
-
+/*-----------Quiz CTA Module-----------*/
 
 /*Header (Nav Bar)*/
 .navContainer{
@@ -842,11 +770,17 @@ ul, ol{
 .sectionContainer{
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-column: 1/span 12;
 	grid-column-gap: 1.5rem;
 	padding-left: 6.25rem; /*roughly 100px*/
 	padding-right: 6.25rem;
-	margin-top: 5rem;
+	margin-top: 4rem;
+/*	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: 1/span 12;
+	grid-column-gap: 1.5rem;
+	padding-left: 6.25rem;*/ /*roughly 100px*/
+/*	padding-right: 6.25rem;
+	margin-top: 5rem;*/
 }
 .aboutCompany{
 	grid-column: 1/span 4;
@@ -868,7 +802,7 @@ ul, ol{
 }
 
 .moduleHeader{
-	grid-column: 1/span 2;
+	grid-column: 1/span 4;
 }
 
 .valueAndBlogCard:first-of-type{
@@ -884,19 +818,20 @@ ul, ol{
 }
 
 /*home page*/
-.sectionContainerWithHero{
+.productRecommendation{
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-column: 1/span 12;
 	grid-column-gap: 1.5rem;
+	padding-left: 6.25rem; /*roughly 100px*/
+	padding-right: 6.25rem;
+	margin-top: 4rem;
 }
 
-.productRecommendation{
-	margin-top: 5rem;
-	grid-column: 1/span 12;
+/*Product name/price*/
+.productDetails{
 	display: grid;
-	grid-template-columns: repeat(12,1fr);
-	grid-column-gap: 1.5rem;
+	grid-template-columns: 1fr 0.1fr;
+	margin-bottom: 0rem;
 }
 
 .productCard:first-of-type{
