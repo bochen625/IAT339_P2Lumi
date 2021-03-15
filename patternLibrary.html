@@ -1236,195 +1236,190 @@
 					</div>
 				</div>
 
+				<!-- Hero Slider-->
 				<div class="patternContainer">
 
 					<h4>Homepage: Hero Slider</h4>
 					<p class="note">Description: Used for homepage hero, as well as a CTA to view the shown product. Created and maintained by Jonathan</p>
 
 					<div class="patternOverview">
-
-							<div id="heroSlider">
-
-									<div class="slideImage">
-										<img src="./img/heroImg1.png">
-										<div class="slideText">
-											<h1>W42 Ceiling Light</h1>
-											<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-											<a href="#" class="btnStyle">Shop Now</a>
-										</div>
-									</div>
-
-									<div class="slideImage">
-										<img src="./img/feature1.png">
-										<div class="slideText">
-											<h1>W43 Floor Light</h1>
-											<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-											<a href="#" class="btnStyle">Shop Now</a>
-										</div>
-									</div>
-
-									<div class="slideImage">
-										<img src="./img/feature1.png">
-										<div class="slideText">
-											<h1>W44 Ambient Light</h1>
-											<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-											<a href="#" class="btnStyle">Shop Now</a>
-										</div>
-									</div>
-
-									<div id="dots">
-										<span class="sliderDot"></span>
-										<span class="sliderDot"></span>
-										<span class="sliderDot"></span>
-									</div>
-
+						<div id="heroSlider">
+							<div class="slideImage">
+								<img src="./img/heroImg1.png">
+								<div class="slideText">
+									<h1>W42 Ceiling Light</h1>
+									<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+									<a href="#" class="btnStyle">Shop Now</a>
+								</div>
 							</div>
 
-							<script>
-								var slideIndex = 0;
-								showSlides();
-
-								function showSlides() {
-								  var i;
-								  var slides = document.getElementsByClassName("slideImage");
-								  var dots = document.getElementsByClassName("sliderDot");
-								  for (i = 0; i < slides.length; i++) {
-								    slides[i].style.display = "none";
-								  }
-								  slideIndex++;
-								  if (slideIndex > slides.length) {slideIndex = 1}
-								  for (i = 0; i < dots.length; i++) {
-								    dots[i].className = dots[i].className.replace(" active", "");
-								  }
-								  slides[slideIndex-1].style.display = "block";
-								  dots[slideIndex-1].className += " active";
-								  setTimeout(showSlides, 5000);
-								}
-							</script>
-
-							<div class="codeSnippetContainer">
-								<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">HTML</p>
-									<code>
-										&lt;div id="heroSlider"&gt;<br>
-
-												&lt;div class="slideImage"&gt;<br>
-													&lt;img src="./img/heroImg1.png"&gt;<br>
-													&lt;div class="slideText"&gt;<br>
-														&lt;h1&gt;W42 Ceiling Light&lt;/h1&gt;<br>
-														&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.</h5><br>
-														&lt;a href="#" class="btnStyle">Shop Now</a><br>
-													&lt;/div&gt;<br>
-												&lt;/div&gt;<br>
-
-												&lt;div class="slideImage"&gt;<br>
-													&lt;img src="./img/feature1.png"&gt;<br>
-													&lt;div class="slideText"&gt;<br>
-														&lt;h1&gt;W43 Floor Light	&lt;/h1&gt;<br>
-														&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.	&lt;/h5&gt;<br>
-														&lt;a href="#" class="btnStyle">Shop Now	&lt;/a&gt;<br>
-													&lt;/div&gt;
-												&lt;/div&gt;
-
-												&lt;div class="slideImage"&gt;<br>
-													&lt;img src="./img/feature1.png"&gt;<br>
-													&lt;div class="slideText"&gt;<br>
-														&lt;h1&gt;W44 Ambient Light&lt;/h1&gt;<br>
-														&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.&lt;/h5&gt;<br>
-														&lt;a href="#" class="btnStyle">Shop Now&lt;/a&gt;<br>
-													&lt;/div&gt;<br>
-												&lt;/div&gt;<br>
-
-												&lt;div id="dots"&gt;<br>
-													&lt;span class="sliderDot"&gt;&lt;/span&gt;<br>
-													&lt;span class="sliderDot"&gt;&lt;/span&gt;<br>
-													&lt;span class="sliderDot"&gt;&lt;/span&gt;<br>
-												&lt;/div&gt;<br>
-											</code>
-										</div>
-
-										<div class="codeSnippetPattern">
-											<p class="codeSnippetTitle">CSS</p>
-											<code>
-												#heroSlider {<br>
-													background-color: red;<br>
-													height: 100vh;<br>
-													width: 100%;<br>
-													position: relative;<br>
-													margin: auto;<br>
-													overflow-x: hidden;<br>
-												}<br>
-												<br>
-												.slideImage img {<br>
-													width: auto;<br>
-													height: 100%;<br>
-													position: absolute;<br>
-												}<br>
-												<br>
-												.slideText {<br>
-													position: absolute;<br>
-													bottom: 100px;<br>
-												  left: 10%;<br>
-													width: 80%;<br>
-													text-align: left;<br>
-												}<br>
-												<br>
-
-												.sliderDot {<br>
-												  height: 15px;<br>
-												  width: 15px;<br>
-												  margin: 0 2px;<br>
-												  background-color: #bbb;<br>
-												  border-radius: 50%;<br>
-												  display: inline-block;<br>
-												  transition: background-color 0.6s ease;<br>
-												}<br>
-												<br>
-												#dots {<br>
-													position: absolute;<br>
-												  right: 10%;<br>
-													bottom: 100px;<br>
-												}<br>
-												<br>
-												.active {<br>
-												  background-color: black;<br>
-												}<br>
-
-											</code>
-										</div>
-
-										<div class="codeSnippetPattern">
-											<p class="codeSnippetTitle">JS</p>
-											<code>
-												var slideIndex = 0;
-												showSlides();
-
-												function showSlides() {
-													var i;
-													var slides = document.getElementsByClassName("slideImage");
-													var dots = document.getElementsByClassName("sliderDot");
-													for (i = 0; i < slides.length; i++) {
-														slides[i].style.display = "none";
-													}
-													slideIndex++;
-													if (slideIndex > slides.length) {slideIndex = 1}
-													for (i = 0; i < dots.length; i++) {
-														dots[i].className = dots[i].className.replace(" active", "");
-													}
-													slides[slideIndex-1].style.display = "block";
-													dots[slideIndex-1].className += " active";
-													setTimeout(showSlides, 5000);
-												}
-													</code>
-												</div>
-									</div>
-
+							<div class="slideImage">
+								<img src="./img/feature1.png">
+								<div class="slideText">
+									<h1>W43 Floor Light</h1>
+									<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+									<a href="#" class="btnStyle">Shop Now</a>
 								</div>
+							</div>
 
+							<div class="slideImage">
+								<img src="./img/feature1.png">
+								<div class="slideText">
+									<h1>W44 Ambient Light</h1>
+									<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+									<a href="#" class="btnStyle">Shop Now</a>
+								</div>
+							</div>
 
+							<div id="dots">
+								<span class="sliderDot"></span>
+								<span class="sliderDot"></span>
+								<span class="sliderDot"></span>
+							</div>
+						</div>
+
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							  var i;
+							  var slides = document.getElementsByClassName("slideImage");
+							  var dots = document.getElementsByClassName("sliderDot");
+							  for (i = 0; i < slides.length; i++) {
+							    slides[i].style.display = "none";
+							  }
+							  slideIndex++;
+							  if (slideIndex > slides.length) {slideIndex = 1}
+							  for (i = 0; i < dots.length; i++) {
+							    dots[i].className = dots[i].className.replace(" active", "");
+							  }
+							  slides[slideIndex-1].style.display = "block";
+							  dots[slideIndex-1].className += " active";
+							  setTimeout(showSlides, 5000);
+							}
+						</script>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;div id="heroSlider"&gt;<br>
+
+									&lt;div class="slideImage"&gt;<br>
+										&lt;img src="./img/heroImg1.png"&gt;<br>
+										&lt;div class="slideText"&gt;<br>
+											&lt;h1&gt;W42 Ceiling Light&lt;/h1&gt;<br>
+											&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.</h5><br>
+											&lt;a href="#" class="btnStyle">Shop Now</a><br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;<br>
+
+									&lt;div class="slideImage"&gt;<br>
+										&lt;img src="./img/feature1.png"&gt;<br>
+										&lt;div class="slideText"&gt;<br>
+											&lt;h1&gt;W43 Floor Light	&lt;/h1&gt;<br>
+											&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.	&lt;/h5&gt;<br>
+											&lt;a href="#" class="btnStyle">Shop Now	&lt;/a&gt;<br>
+										&lt;/div&gt;
+									&lt;/div&gt;
+
+									&lt;div class="slideImage"&gt;<br>
+										&lt;img src="./img/feature1.png"&gt;<br>
+										&lt;div class="slideText"&gt;<br>
+											&lt;h1&gt;W44 Ambient Light&lt;/h1&gt;<br>
+											&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.&lt;/h5&gt;<br>
+											&lt;a href="#" class="btnStyle">Shop Now&lt;/a&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;<br>
+
+									&lt;div id="dots"&gt;<br>
+										&lt;span class="sliderDot"&gt;&lt;/span&gt;<br>
+										&lt;span class="sliderDot"&gt;&lt;/span&gt;<br>
+										&lt;span class="sliderDot"&gt;&lt;/span&gt;<br>
+									&lt;/div&gt;<br>
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									#heroSlider {<br>
+										background-color: red;<br>
+										height: 100vh;<br>
+										width: 100%;<br>
+										position: relative;<br>
+										margin: auto;<br>
+										overflow-x: hidden;<br>
+									}<br>
+									<br>
+									.slideImage img {<br>
+										width: auto;<br>
+										height: 100%;<br>
+										position: absolute;<br>
+									}<br>
+									<br>
+									.slideText {<br>
+										position: absolute;<br>
+										bottom: 100px;<br>
+									  left: 10%;<br>
+										width: 80%;<br>
+										text-align: left;<br>
+									}<br>
+									<br>
+
+									.sliderDot {<br>
+									  height: 15px;<br>
+									  width: 15px;<br>
+									  margin: 0 2px;<br>
+									  background-color: #bbb;<br>
+									  border-radius: 50%;<br>
+									  display: inline-block;<br>
+									  transition: background-color 0.6s ease;<br>
+									}<br>
+									<br>
+									#dots {<br>
+										position: absolute;<br>
+									  right: 10%;<br>
+										bottom: 100px;<br>
+									}<br>
+									<br>
+									.active {<br>
+									  background-color: black;<br>
+									}<br>
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">JS</p>
+								<code>
+									var slideIndex = 0;
+									showSlides();
+
+									function showSlides() {
+										var i;
+										var slides = document.getElementsByClassName("slideImage");
+										var dots = document.getElementsByClassName("sliderDot");
+										for (i = 0; i < slides.length; i++) {
+											slides[i].style.display = "none";
+										}
+										slideIndex++;
+										if (slideIndex > slides.length) {slideIndex = 1}
+										for (i = 0; i < dots.length; i++) {
+											dots[i].className = dots[i].className.replace(" active", "");
+										}
+										slides[slideIndex-1].style.display = "block";
+										dots[slideIndex-1].className += " active";
+										setTimeout(showSlides, 5000);
+									}
+								</code>
+							</div>
+						</div>
 					</div>
+				</div>
 
-					<div class="patternContainer">
+				<!--Shop grid-->
+				<div class="patternContainer">
 					<h4>Shop Page: Shop Grid</h4>
 					<p class="note">Description: Used to display products that one can click on to see the detail page. Created and maintained by Jonathan</p>
 
@@ -1672,9 +1667,10 @@
 					</div>
 				</div>
 
-				<h4>About Page: Location Module</h4>
-					<p class="note">Description: Has the location info of the company. Created and maintained by Jonathan</p>
 
+				<div class="patternContainer">
+					<h4>About Page: Location Module</h4>
+					<p class="note">Description: Has the location info of the company. Created and maintained by Jonathan</p>
 
 					<div class="patternOverview">
 						<div class="locationModule">
@@ -1696,59 +1692,59 @@
 								</div>
 								<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.729017428474!2d-122.85123638408858!3d49.18672848548525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9d358d76255%3A0x27cc0a8105206a6c!2sSimon%20Fraser%20University%20-%20Surrey%20Campus!5e0!3m2!1sen!2sca!4v1614673751675!5m2!1sen!2sca"></iframe>
 							</div>
+							<div class="codeSnippetContainer">
+								<div class="codeSnippetPattern">
+									<p class="codeSnippetTitle">HTML</p>
+									<code>
+										&lt;div class="locationModule"><br>
+											&lt;h2>Location&lt;/h2><br>
+											&lt;p>13450 102 Ave #250&lt;/p><br>
+											&lt;p>Surrey, BC V3T 0A3&lt;/p><br>
+											&lt;p>Canada&lt;/p><br>
 
+											&lt;div class="contactDetails"&gt;<br>
+												&lt;p>Telephone: 778-149-1885&lt;/p&gt;<br>
+												&lt;p>contact@lumi.ca&lt;/p&gt;<br>
+												&lt;p>Connect with us:&lt;/p&gt;<br>
 
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>
-									&lt;div class="locationModule"><br>
-										&lt;h2>Location&lt;/h2><br>
-										&lt;p>13450 102 Ave #250&lt;/p><br>
-										&lt;p>Surrey, BC V3T 0A3&lt;/p><br>
-										&lt;p>Canada&lt;/p><br>
-
-										&lt;div class="contactDetails"&gt;<br>
-											&lt;p>Telephone: 778-149-1885&lt;/p&gt;<br>
-											&lt;p>contact@lumi.ca&lt;/p&gt;<br>
-											&lt;p>Connect with us:&lt;/p&gt;<br>
-
-											&lt;div id="socialLinks"&gt;<br>
-												&lt;a href=""&gt;&lt;img src="./img/Socials/twitter.png"&gt;&lt;/a&gt;<br>
-												&lt;a href=""&gt;&lt;img src="./img/Socials/linkedin.png"&gt;&lt;/a&gt;<br>
-												&lt;a href=""&gt;&lt;img src="./img/Socials/facebook.png"&gt;&lt;/a&gt;<br>
-												&lt;a href=""&gt;&lt;img src="./img/Socials/instagram.png"&gt;&lt;/a&gt;<br>
+												&lt;div id="socialLinks"&gt;<br>
+													&lt;a href=""&gt;&lt;img src="./img/Socials/twitter.png"&gt;&lt;/a&gt;<br>
+													&lt;a href=""&gt;&lt;img src="./img/Socials/linkedin.png"&gt;&lt;/a&gt;<br>
+													&lt;a href=""&gt;&lt;img src="./img/Socials/facebook.png"&gt;&lt;/a&gt;<br>
+													&lt;a href=""&gt;&lt;img src="./img/Socials/instagram.png"&gt;&lt;/a&gt;<br>
+												&lt;/div&gt;<br>
+												&lt;iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607
+												.729017428474!2d-122.85123638408858!3d49.18672848548525!2m3!1f0!2f0!3f0!3m2!1i1024!
+												2i768!4f13.1!3m3!1m2!1s0x5485d9d358d76255%3A0x27cc0a8105206a6c!2sSimon%20Fraser%20U
+												niversity%20-%20Surrey%20Campus!5e0!3m2!1sen!2sca!4v1614673751675!5m2!1sen!2sca"
+												width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;<br>
 											&lt;/div&gt;<br>
-											&lt;iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607
-											.729017428474!2d-122.85123638408858!3d49.18672848548525!2m3!1f0!2f0!3f0!3m2!1i1024!
-											2i768!4f13.1!3m3!1m2!1s0x5485d9d358d76255%3A0x27cc0a8105206a6c!2sSimon%20Fraser%20U
-											niversity%20-%20Surrey%20Campus!5e0!3m2!1sen!2sca!4v1614673751675!5m2!1sen!2sca"
-											width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;<br>
-										&lt;/div&gt;<br>
-								</code>
-							</div>
+									</code>
+								</div>
 
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									#socialLinks a {<br>
-										margin-right: 30px;<br>
-									}<br>
-									<br>
-									#map {<br>
-										margin-top: 50px;<br>
-									}<br>
-									<br>
-									.contactDetails {<br>
-										margin-top: 50px;<br>
-									}<br>
-									<br>
-								</code>
+								<div class="codeSnippetPattern">
+									<p class="codeSnippetTitle">CSS</p>
+									<code>
+										#socialLinks a {<br>
+											margin-right: 30px;<br>
+										}<br>
+										<br>
+										#map {<br>
+											margin-top: 50px;<br>
+										}<br>
+										<br>
+										.contactDetails {<br>
+											margin-top: 50px;<br>
+										}<br>
+										<br>
+									</code>
+								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-
+				<div class="patternContainer"
 					<h4>Navigation: Sub-navigation Module</h4>
 					<p class="note">Description: Is the expanded view of the navigation. Created and maintained by Jonathan</p>
 
@@ -1790,10 +1786,7 @@
 									<img src="./img/navImg.png">
 								</div>
 							</div>
-
-
 						</div>
-
 
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
@@ -1896,361 +1889,340 @@
 						</div>
 					</div>
 				</div>
+				
 				<!-- FooterModule-->
 				<div class="patternContainer">
-
-						<h4>Footer</h4>
-						<p class="note"> Footer will include citations, about designers, style guide, and social media links</p>
-						<div class="patternOverview">
-							<footer class="footBarContainer">
-								<ul class="footerButtons">
-									<li><h5>RESCOURCES</h5></li>
-									<li><a href="index.html">Style Guide</a></li>
-									<li><a href="patternLibrary.html">Pattern Library</a></li>
-									<li><a href="wireframes.html">Wireframes</a></li>
-									<li><a href="citations.html">Citations</a></li>
-								</ul>
-								<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
-
-								<a href="#" class="iconF"> <img src="img/facebook.png" alt="facebook icon"> </a>
-								<a href="#" class="iconT"> <img src="img/twitter.png" alt="twitter icon"> </a>
-								<a href="#" class="iconL"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
-								<a href="#" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
-
-							</footer>
-						</div>
-<<<<<<< Updated upstream
-					</div>
-
-=======
-						
->>>>>>> Stashed changes
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">HTML</p>
-									<code>
-										.
-									</code>
-							</div>
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">CSS</p>
-									<code>
-										.
-									</code>
-							</div>
-						</div>
-<<<<<<< Updated upstream
-
-=======
-				</div>	
->>>>>>> Stashed changes
-
-					<!--Quiz CTA Module-->
-				<div class="patternContainer">
-						<h4>Quiz CTA Module</h4>
-						<p class="note"> The lighitng quiz CTA module will be found on the landing page and product specification pages</p>
-						<div class="patternOverview">
-							<div class="quizBannerContainer">
-								<h2 class="quizBH">Unsure what you're looking for?</h2>
-								<div class="quizCTA">
-									<a href="#" class="btnStyle">Take the Quiz!</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">HTML</p>
-									<code>
-										.
-									</code>
-							</div>
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">CSS</p>
-									<code>
-										.
-									</code>
-							</div>
-						</div>
-<<<<<<< Updated upstream
-
-=======
-					</div>
->>>>>>> Stashed changes
-
-					<!--Product Filter Module-->
-					<div class="patternContainer">
-						<h4>Product Filter Module</h4>
-						<p class="note"> Seen on main product page, filter is placed on left side of interface beside product tiles</p>
-<<<<<<< Updated upstream
-						<div class="patternOverview">
-							<div class="filterContainer">
-								<div class="filterBlock">
-									<div class="filterContent">
-										<h3 class="filterHeader">Filter</h3>
-										<p>Style</p>
-											<label class="boxContainer">Desk Lamp
-												<input type="checkbox" checked="checked">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Table Lamp
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Floor Lamp
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Wall Lights
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Ceiling Lights
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-										<div class="divide"></div>
-										<p>Type</p>
-											<label class="boxContainer">General/Ambient
-												<input type="checkbox" checked="checked">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Task/Directional
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Accent
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-										<div class="divide"></div>
-										<p>Price</p>
-											<label class="boxContainer">Under $30
-												<input type="checkbox" checked="checked">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">$31-$50
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">$50-$100
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Over $100
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-										<div class="divide"></div>
-										<p>Light Temprature</p>
-											<label class="boxContainer">Warm
-												<input type="checkbox" checked="checked">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Bright Yellow
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Bright White
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Cool
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-											<label class="boxContainer">Muli-Coloured
-												<input type="checkbox">
-												<span class="check"></span>
-											</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-=======
->>>>>>> Stashed changes
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">HTML</p>
-									<code>
-										.
-									</code>
-							</div>
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">CSS</p>
-									<code>
-										.
-									</code>
-							</div>
-						</div>
-<<<<<<< Updated upstream
-
-
-=======
-					</div>
+					<h4>Footer</h4>
+					<p class="note"> Footer will include citations, about designers, style guide, and social media links</p>
 					
->>>>>>> Stashed changes
-					<!--Shopping Cart Module-->
-					<div class="patternContainer">
-						<h4>Shopping Cart Module</h4>
-						<p class="note"> Viewable shopping cart once clicking upon cart icon and when completeing checkout form</p>
-						<div class="patternOverview">
-							<div class="shoppingCartContainer">
-								<div class="cartTile">
+					<div class="patternOverview">
+						<footer class="footBarContainer">
+							<ul class="footerButtons">
+								<li><h5>RESCOURCES</h5></li>
+								<li><a href="index.html">Style Guide</a></li>
+								<li><a href="patternLibrary.html">Pattern Library</a></li>
+								<li><a href="wireframes.html">Wireframes</a></li>
+								<li><a href="citations.html">Citations</a></li>
+							</ul>
+							<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
 
-									<div class="detailContainer">
-										<h4 class="yourOrder">Your Order</h4>
-										<div class="productOne">
-											<h5>Hang Lamp</h5>
-										</div>
-										<div class="productTwo">
-											<h5>Desk Lamp</h5>
-										</div>
-										<div class="priceDetails">
-											<h5>Subtotal:</h5>
-											<h5>Shipping:</h5>
-											<h5>Tax:</h5>
-										</div>
-										<div class="priceAmounts">
-											<h5>36.50</h5>
-											<h5>234.00</h5>
-											<h5>16.98</h5>
-										</div>
-										<div class="numItems">
-											<h5># of items</h5>
-										</div>
-										<div class="checkoutButton">
-											<a href="#" class="btnStyle">Checkout</a>
-										</div>
-									</div>
-								</div>
-							</div>
+							<a href="#" class="iconF"> <img src="img/facebook.png" alt="facebook icon"> </a>
+							<a href="#" class="iconT"> <img src="img/twitter.png" alt="twitter icon"> </a>
+							<a href="#" class="iconL"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+							<a href="#" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
 
-						</div>
+						</footer>
+
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">HTML</p>
-									<code>
-										.
-									</code>
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									Lorem ipsum
+								</code>
 							</div>
+							
 							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">CSS</p>
-									<code>
-										.
-									</code>
-							</div>
-						</div>
-<<<<<<< Updated upstream
-
-=======
-					</div>	
-						<!--Product Filter Module-->
->>>>>>> Stashed changes
-
-						<!--Product Specification Photo Gallery Module-->
-					<div class="patternContainer">
-						<h4>Product Photo Gallery Module</h4>
-						<p class="note"> On product specifications page, under the detailed breakdown of product features </p>
-						<div class="patternOverview">
-							<div class="productGalleryContainer">
-								<figure class="galleryImg-1">
-									<img src="img/gallery1.jpg" class="productGalImg" alt="Product Image 1">
-								</figure>
-								<figure class="galleryImg-2">
-									<img src="img/gallery2.jpg" class="productGalImg" alt="Product Image 2">
-								</figure>
-								<figure class="galleryImg-3">
-									<img src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
-								</figure>
-								<figure class="galleryImg-4">
-									<img src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
-								</figure>
-							</div>
-						</div>
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">HTML</p>
-									<code>
-<<<<<<< Updated upstream
-										&ltdiv class="productGalleryContainer">
-											&ltfigure class="galleryImg-1">
-												&ltimg src="img/gallery1.jpg" class="productGalImg" alt="Product Image 1">
-											&lt/figure>
-											&ltfigure class="galleryImg-2">
-												&ltimg src="img/gallery2.jpg" class="productGalImg" alt="Product Image 2">
-											&lt/figure>
-											&ltfigure class="galleryImg-3">
-												&ltimg src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
-											&lt/figure>
-											&ltfigure class="galleryImg-4">
-												&ltimg src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
-											&lt/figure>
-										&lt/div>
-=======
-										.
->>>>>>> Stashed changes
-									</code>
-							</div>
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">CSS</p>
-									<code>
-										.
-									</code>
-							</div>
-						</div>
-<<<<<<< Updated upstream
-
-=======
-					</div>
->>>>>>> Stashed changes
-
-						<!--User Submitted Module-->
-					<div class="patternContainer">
-						<h4>User Submitted Module</h4>
-						<p class="note"> Listed Under Product Photo Gallery, on every product speficiations page</p>
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">HTML</p>
-									<code>
-										.
-									</code>
-							</div>
-							<div class="codeSnippetPattern">
-<<<<<<< Updated upstream
 								<p class="codeSnippetTitle">CSS</p>
 								<code>
-									.userGalImg{
-										width: 100%;
-										height: 100%;
-									}
-
-									.scrollUser{
-									  overflow: auto;
-									  white-space: nowrap;
-									}
-
-									.scrollUser img {
-									  display: inline-block;
-									  color: white;
-									  text-align: center;
-									  padding: 0.75rem;
-									  text-decoration: none;
-									}
-
+									Lorem ipsum
 								</code>
-=======
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<!--Quiz CTA Module-->
+				<div class="patternContainer">
+					<h4>Quiz CTA Module</h4>
+					<p class="note"> The lighitng quiz CTA module will be found on the landing page and product specification pages</p>
+					<div class="patternOverview">
+						<div class="quizBannerContainer">
+							<h2 class="quizBH">Unsure what you're looking for?</h2>
+							<div class="quizCTA">
+								<a href="#" class="btnStyle">Take the Quiz!</a>
+							</div>
+						</div>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									.
+								</code>
+							</div>
+						
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.
+								</code>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Product Filter Module-->
+				<div class="patternContainer">
+					<h4>Product Filter Module</h4>
+					<p class="note"> Seen on main product page, filter is placed on left side of interface beside product tiles</p>
+					<div class="patternOverview">
+						<div class="filterContainer">
+							<div class="filterBlock">
+								<div class="filterContent">
+									<h3 class="filterHeader">Filter</h3>
+									<p>Style</p>
+										<label class="boxContainer">Desk Lamp
+											<input type="checkbox" checked="checked">
+											<span class="check"></span>
+										</label>
+										<label class="boxContainer">Table Lamp
+											<input type="checkbox">
+											<span class="check"></span>
+										</label>
+										<label class="boxContainer">Floor Lamp
+											<input type="checkbox">
+											<span class="check"></span>
+										</label>
+										<label class="boxContainer">Wall Lights
+											<input type="checkbox">
+											<span class="check"></span>
+										</label>
+										<label class="boxContainer">Ceiling Lights
+											<input type="checkbox">
+											<span class="check"></span>
+										</label>
+									<div class="divide"></div>
+									<p>Type</p>
+										<label class="boxContainer">General/Ambient
+											<input type="checkbox" checked="checked">
+											<span class="check"></span>
+										</label>
+										<label class="boxContainer">Task/Directional
+											<input type="checkbox">
+											<span class="check"></span>
+										</label>
+										<label class="boxContainer">Accent
+											<input type="checkbox">
+											<span class="check"></span>
+										</label>
+									<div class="divide"></div>
+									<p>Price</p>
+									<label class="boxContainer">Under $30
+										<input type="checkbox" checked="checked">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">$31-$50
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">$50-$100
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Over $100
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<div class="divide"></div>
+									<p>Light Temprature</p>
+									<label class="boxContainer">Warm
+										<input type="checkbox" checked="checked">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Bright Yellow
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Bright White
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Cool
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Muli-Coloured
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+					
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									.
+								</code>
+							</div>
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.
+								</code>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!--Shopping Cart Module-->
+				<div class="patternContainer">
+					<h4>Shopping Cart Module</h4>
+					<p class="note"> Viewable shopping cart once clicking upon cart icon and when completeing checkout form</p>
+					<div class="patternOverview">
+						<div class="shoppingCartContainer">
+							<div class="cartTile">
+
+								<div class="detailContainer">
+									<h4 class="yourOrder">Your Order</h4>
+									<div class="productOne">
+										<h5>Hang Lamp</h5>
+									</div>
+									<div class="productTwo">
+										<h5>Desk Lamp</h5>
+									</div>
+									<div class="priceDetails">
+										<h5>Subtotal:</h5>
+										<h5>Shipping:</h5>
+										<h5>Tax:</h5>
+									</div>
+									<div class="priceAmounts">
+										<h5>36.50</h5>
+										<h5>234.00</h5>
+										<h5>16.98</h5>
+									</div>
+									<div class="numItems">
+										<h5># of items</h5>
+									</div>
+									<div class="checkoutButton">
+										<a href="#" class="btnStyle">Checkout</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+									<p class="codeSnippetTitle">HTML</p>
+									<code>
+										.
+									</code>
+							</div>
+							<div class="codeSnippetPattern">
 									<p class="codeSnippetTitle">CSS</p>
 									<code>
 										.
 									</code>
->>>>>>> Stashed changes
 							</div>
 						</div>
 					</div>
-			</div>
+				</div>	
 
-		</div>
+				<!--Product Filter Module-->
+				<!--Product Specification Photo Gallery Module-->
+				<div class="patternContainer">
+					<h4>Product Photo Gallery Module</h4>
+					<p class="note"> On product specifications page, under the detailed breakdown of product features </p>
+					<div class="patternOverview">
+						<div class="productGalleryContainer">
+							<figure class="galleryImg-1">
+								<img src="img/gallery1.jpg" class="productGalImg" alt="Product Image 1">
+							</figure>
+							<figure class="galleryImg-2">
+								<img src="img/gallery2.jpg" class="productGalImg" alt="Product Image 2">
+							</figure>
+							<figure class="galleryImg-3">
+								<img src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
+							</figure>
+							<figure class="galleryImg-4">
+								<img src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
+							</figure>
+						</div>
+					</div>
+					
+					<div class="codeSnippetContainer">
+						<div class="codeSnippetPattern">
+							<p class="codeSnippetTitle">HTML</p>
+							<code>
+								&ltdiv class="productGalleryContainer">
+									&ltfigure class="galleryImg-1">
+										&ltimg src="img/gallery1.jpg" class="productGalImg" alt="Product Image 1">
+									&lt/figure>
+									&ltfigure class="galleryImg-2">
+										&ltimg src="img/gallery2.jpg" class="productGalImg" alt="Product Image 2">
+									&lt/figure>
+									&ltfigure class="galleryImg-3">
+										&ltimg src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
+									&lt/figure>
+									&ltfigure class="galleryImg-4">
+										&ltimg src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
+									&lt/figure>
+								&lt/div>
+							</code>
+						</div>
+						<div class="codeSnippetPattern">
+							<p class="codeSnippetTitle">CSS</p>
+							<code>
+								.
+							</code>
+						</div>
+					</div>
+				</div>
+
+				<!--User Submitted Module-->
+				<div class="patternContainer">
+					<h4>User Submitted Module</h4>
+					<p class="note"> Listed Under Product Photo Gallery, on every product speficiations page</p>
+					<div class="patternOverview">
+						<h3>User Submitted Photos</h3>
+						<div class="scrollUser">
+							<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
+							<img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
+							<img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
+							<img src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
+						</div>
+					</div>
+					
+					<div class="codeSnippetContainer">
+						<div class="codeSnippetPattern">
+							<p class="codeSnippetTitle">HTML</p>
+							<code>
+								&lt;h3&gt;User Submitted Photos&lt;/h3&gt;
+								&ltdiv class="scrollUser">
+									&ltimg src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
+									&ltimg src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
+									&ltimg src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
+									&ltimg src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
+								&lt/div>
+							</code>
+						</div>
+
+						<div class="codeSnippetPattern">
+							<p class="codeSnippetTitle">CSS</p>
+							<code>
+								.userGalImg{
+									width: 100%;
+									height: 100%;
+								}
+
+								.scrollUser{
+								  overflow: auto;
+								  white-space: nowrap;
+								}
+
+								.scrollUser img {
+								  display: inline-block;
+								  color: white;
+								  text-align: center;
+								  padding: 0.75rem;
+								  text-decoration: none;
+								}
+
+							</code>
+						</div>
+					</div>
+				</div>
 	</body>
 </html>
