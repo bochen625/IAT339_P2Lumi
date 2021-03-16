@@ -9,21 +9,22 @@
 		
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/grids.css">
+		<link rel="stylesheet" href="temporaryGrid.css">
+		<!-- <link rel="stylesheet" href="css/grids.css"> -->
 	</head>
 		
 	<body>
-		<div class="gridContainer">
-			<nav class="navBarContainer">
-				<a href="#" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
-				<ul class="navButtons">
-				<li><a href="#">Products</a></li>
+		<nav class="navContainer">
+			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+			<ul class="navButtons">
+				<li><a href="shop.html">Products</a></li>
 				<li><a href="#">Inspiration</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#"><img src="img/searchIcon.svg" alt="search icon"></a></li>
-				<li><a href="#"><img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
-				</ul>
-			</nav>
+				<li><a href="aboutCompany.html">About Us</a></li>
+				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
+				<li><a href="shoppingCartModule.html"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+			</ul>
+		</nav>
+		<div class="gridContainer">
 			<div class="sectionContainer">
 				<h1>Meet the Team</h1>
 				<div class="usContainer">
@@ -57,21 +58,38 @@
 				</div>
 			</div>	
 		</div>
+		<!--Footer-->
 		<footer class="footBarContainer">
-			<ul class="footerButtons">
-				<li><h5>RESCOURCES</h5></li>
+			<!--Resources-->
+			<ul class="footerResources">
+				<li><h5>RESOURCES</h5></li>
+				<li><a href="aboutUs.html">About the Designers</a></li>
 				<li><a href="index.html">Style Guide</a></li>
 				<li><a href="patternLibrary.html">Pattern Library</a></li>
 				<li><a href="wireframes.html">Wireframes</a></li>
 				<li><a href="citations.html">Citations</a></li>
 			</ul>
+
+			<!--Company-->
+			<ul class="footerAbout">
+				<li><h5>COMPANY</h5></li>
+				<li><a href="aboutCompany.html">About Lumi</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+			</ul>
+
+			<!--Copyright-->
 			<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
 
-			<a href="#" class="iconF"> <img src="img/facebook.png" alt="facebook icon"> </a>
-			<a href="#" class="iconT"> <img src="img/twitter.png" alt="twitter icon"> </a>
-			<a href="#" class="iconL"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+			<!--Social Media-->
+			<div class="socialMediaIcons">
+				<a href="#" class="iconFb"> <img src="img/facebook.png" alt="facebook icon"> </a>
+				<a href="#" class="iconTwitter"> <img src="img/twitter.png" alt="twitter icon"> </a>
+				<a href="#" class="iconLinkedIn"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+				<a href="#" class="iconIG"> <img src="img/instagram.png" alt="linkedin icon"> </a>
+			</div>
+			
+			<!--Lumi Logo-->
 			<a href="home.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
-
 		</footer>
 	</body>
 </html>
