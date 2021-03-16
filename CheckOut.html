@@ -28,7 +28,7 @@
 			<div class="patternOverview">
 
 				<div class="row">
-					  <div class="col-75">
+					  <div class="col-25">
 					    <div class="container">
 					      <form action="/action_page.php">
 
@@ -66,9 +66,9 @@
 					            </div>
 					          
 
-					          <div class="col-50">
+					          <div class="col-25">
 					            <h3>Payment</h3>
-					            <label for="fname">Accepted Cards</label>
+					            <label for="fname">Accepted Methods</label>
 					            <div class="icon-container">
 					              <i class="fa fa-cc-visa" style="color:navy;"></i>
 					              <i class="fa fa-cc-amex" style="color:blue;"></i>
@@ -90,41 +90,60 @@
 					              <div class="col-50">
 					                <label for="cvv">CVV</label>
 					                <input type="text" id="cvv" name="cvv" placeholder="444">
+					                 <label>
+				          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+				        </label>
 					              </div>
 					            </div>
 					            
+
+
 					          </div>
 							</div>
 
 					        </div>
-				        <label>
-				          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-				        </label>
-				        <input type="submit" value="Continue to checkout" class="btn">
+				       		   
+				        <input type="submit" value="Continue to checkout" class="btnStyle">
 				      </form>
 				    </div>
 				  </div>
 
 					  <div class="col-25">
-					    <div class="container">
-					      <h4>Cart
-					        <span class="price" style="color:black">
-					          <i class="fa fa-shopping-cart"></i>
-					          <b>4</b>
-					        </span>
-					      </h4>
-					      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-					      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-					      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-					      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-					      <hr>
-					      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-					    </div>
+							<div class="cartTile">
+								<div class="detailContainer">
+									<h4 class="yourOrder">Your Order</h4>
+									<div class="productOne">
+										<h5>Hang Lamp</h5>
+									</div>
+									<div class="productTwo">
+										<h5>Desk Lamp</h5>
+									</div>
+									<div class="priceDetails">
+										<h5>Subtotal:</h5>
+										<h5>Shipping:</h5>
+										<h5>Tax:</h5>
+									</div>
+									<div class="priceAmounts">
+										<h5>36.50</h5>
+										<h5>234.00</h5>
+										<h5>16.98</h5>
+									</div>
+									<div class="numItems">
+										<h5># of items</h5>
+									</div>
+									<div class="checkoutButton">
+										<a href="#" class="btnStyle">Checkout</a>
+									</div>
+								</div>
+							</div>
+					
 					  </div>
 					</div>
 
 		</div>
 	</div>
+
+	<div></div>
 	<!--end of grid container-->
 
 			<footer class="footBarContainer">

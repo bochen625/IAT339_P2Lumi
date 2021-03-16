@@ -770,7 +770,9 @@ ul, ol{
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  margin: 0 -16px;
+  grid-column: 1/span 6;
+  margin: 0 -16px
+
 }
 
 .col-25 {
@@ -784,8 +786,8 @@ ul, ol{
 }
 
 .col-75 {
-  -ms-flex: 75%; /* IE10 */
-  flex: 75%;
+  -ms-flex: 65%; /* IE10 */
+  flex: 65%;
 }
 
 .col-25,
