@@ -9,46 +9,145 @@
 		
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/grids.css">
+		<link rel="stylesheet" href="temporaryGrid.css">
+		<!-- <link rel="stylesheet" href="css/grids.css"> -->
 	</head>
 
 	<body>
-		<nav class="navBarContainer">
-	        <a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
-	        <ul class="navButtons">
-	          <li><a href="shop.html">Products</a></li>
-	          <li><a href="#">Inspiration</a></li>
-	          <li><a href="aboutCompany.html">About Us</a></li>
-	          <li><a href="#"><img src="img/searchIcon.svg" alt="search icon"></a></li>
-	          <li><a href="shoppingCartModule.html"><img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
-	        </ul>
-	    </nav>
-		<h1>Header Module</h1>
-		<h2>4 Form Fill Mods</h2>
-		<h2>CHeckout Mod Floating</h2>
-	
-		<h2>Footer</h2>
-		<div class="gridContainer">
+		<nav class="navContainer">
+			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+			<ul class="navButtons">
+				<li><a href="shop.html">Products</a></li>
+				<li><a href="#">Inspiration</a></li>
+				<li><a href="aboutCompany.html">About Us</a></li>
+				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
+				<li><a href="shoppingCartModule.html"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+			</ul>
+		</nav>
 
-		
-			<!--
-			<nav class="navContainer">
-				<h1>About Us</h1>
-
-				<ul class="navButtons">
-					<li><a href="index.html">Style Guide</a></li>
-					<li><a href="patternLibrary.html">Pattern Library</a></li>
-					<li><a href="wireframes.html">Wireframes</a></li>
-					<li><a href="citations.html">Citations</a></li>
-				</ul>
-			</nav>
-			-->
-			<div class="sectionContainer">
-				
+	    <div class="patternOverview">
 
 			<div class="sectionContainer">
+				<div id="heroSlider">
+					
+				<div class="slideImage">
+					<h1>W44 Ambient Light</h1>
+					<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+				<img src="./img/heroImg1.png">
+				</div>			
+			</div>
 				
 			</div>
-		</div>
+
+	<!--Product Photo Gallery Module-->
+			<div class="sectionContainer">
+				<div class="modulePatternContainer">
+					<div class="descriptionContainer">
+					<h2>About the Lamp</h2>
+					<p>Designed to illuminate your space so you can do the task you need to do. The CK Desk Lamp offers great control over how much light you need and where you need it. The base of this task lamp also provides a surface for you to put your phone and allows for wireless charging.</p>
+					</div>
+
+					<a href="#" class="featureBtn">Wireless Charging <span class="dot"></span></a>
+					<a href="#" class="featureBtn">Dimmable Lighting <span class="dot"></span></a>
+					<a href="#" class="featureBtn">180 Arm Adjustability <span class="dot"></span></a>
+					<div class="imgContainer">
+					<img src="img/feature1.png" alt="circular wooden lamp base with a metal X in the center">
+					</div>
+					<h2 class="productSpecsHeader">Product Specifications</h2>
+
+					<ul class="productSpecs">
+					<li class="productSpecsTitle">Specifications:</li> <li>Product type: Desk Lamp</li>
+					<li>Material: Alder wood and metal</li>
+					<li>Colour: White</li>
+					<li>Switch Type: On-off</li>
+					</ul>
+
+					<ul class="productSpecs">
+					<li class="productSpecsTitle">Weight and Dimensions</li>
+					<li>Dimensions: 25"H x 10"W x 7"D</li>
+					<li>Base: 1"H x 10"W x 5'D</li>
+					<li>Overall Weight: 5.5lbs</li>
+					</ul>
+
+					<ul class="productSpecs">
+					<li class="productSpecsTitle">Light</li>
+					<li>Light Direction: Down (Adjustable)</li>
+					<li>Light Temperature: Warm</li>
+					<li>Number of lights</li>
+					<li>Light Bulb: Standard, A19</li>
+					</ul>
+				</div>
+
+		<!--Product Specification Photo Gallery Module-->
+					<div class="patternOverview">
+							<div class="productGalleryContainer">
+								<figure class="galleryImg-1">
+									<img src="img/gallery1.jpg" class="productGalImg" alt="Product Image 1">
+								</figure>
+								<figure class="galleryImg-2">
+									<img src="img/gallery2.jpg" class="productGalImg" alt="Product Image 2">
+								</figure>
+								<figure class="galleryImg-3">
+									<img src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
+								</figure>
+								<figure class="galleryImg-4">
+									<img src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
+								</figure>
+							</div>
+						</div>
+
+		<!--User Submitted Module-->
+						<div class="patternOverview">
+							<h3>User Submitted Photos</h3>
+							<div class="scrollUser">
+								<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
+								<img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
+								<img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
+								<img src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
+							</div>
+						</div>
+		<!--Quiz CTA Module-->	
+				<div class="patternOverview">
+						<div class="quizBannerContainer">
+							<h2 class="quizBH">Unsure what you're looking for?</h2>
+							<div class="quizCTA">
+								<a href="#" class="btnStyle">Take the Quiz!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		<!--Footer Module-->	
+		<footer class="footBarContainer">
+			<!--Resources-->
+			<ul class="footerResources">
+				<li><h5>RESOURCES</h5></li>
+				<li><a href="aboutUs.html">About the Designers</a></li>
+				<li><a href="index.html">Style Guide</a></li>
+				<li><a href="patternLibrary.html">Pattern Library</a></li>
+				<li><a href="wireframes.html">Wireframes</a></li>
+				<li><a href="citations.html">Citations</a></li>
+			</ul>
+
+			<!--Company-->
+			<ul class="footerAbout">
+				<li><h5>COMPANY</h5></li>
+				<li><a href="aboutCompany.html">About Lumi</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+			</ul>
+
+			<!--Copyright-->
+			<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
+
+			<!--Social Media-->
+			<div class="socialMediaIcons">
+				<a href="#" class="iconFb"> <img src="img/facebook.png" alt="facebook icon"> </a>
+				<a href="#" class="iconTwitter"> <img src="img/twitter.png" alt="twitter icon"> </a>
+				<a href="#" class="iconLinkedIn"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+				<a href="#" class="iconIG"> <img src="img/instagram.png" alt="linkedin icon"> </a>
+			</div>
+			
+			<!--Lumi Logo-->
+			<a href="home.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+		</footer>
 	</body>
 </html>
