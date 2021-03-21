@@ -193,8 +193,8 @@ label{
 
 /*Feature Module*/
 .modulePatternContainer{
-	background-color: white;
-	box-shadow: var(--dropShadow);
+	/*background-color: white;
+	box-shadow: var(--dropShadow);*/
 }
 
 /*Feature Module Buttons*/
@@ -258,8 +258,8 @@ label{
 }
 
 .productCardText:first-of-type{
-	font-size: 1.5rem;
-	margin-top: 13rem;
+	font-size: 1.4rem;
+	/*margin-top: 13rem; */
 	margin-left: 3.5rem; /*roughly 55px*/
 	width:clamp(7ch, 80%, 13ch);
 }
@@ -273,7 +273,7 @@ label{
 }
 
 #productCTA{
-	margin-top: 2rem;
+	margin-top: 0.5rem;
 	margin-left: 3rem;
 }
 
@@ -822,8 +822,8 @@ ul, ol{
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-column-gap: 1.5rem;
-	padding-left: 6.25rem; /*roughly 100px*/
-	padding-right: 6.25rem;
+	padding-left: 1rem; /*roughly 100px*/
+	padding-right: 1rem;
 	margin-top: 4rem;
 }
 
@@ -835,7 +835,7 @@ ul, ol{
 }
 
 .productCard:first-of-type{
-	grid-column: 1/span 3;
+	grid-column: 1/span 4;
 }
 
 .productCard:nth-of-type(2){

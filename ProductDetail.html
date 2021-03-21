@@ -14,6 +14,7 @@
 	</head>
 
 	<body>
+		<div class="gridContainer">
 		<nav class="navContainer">
 			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
 			<ul class="navButtons">
@@ -25,22 +26,19 @@
 			</ul>
 		</nav>
 
-	    <div class="patternOverview">
-
-			<div class="sectionContainer">
-				<div id="heroSlider">
-					
-				<div class="slideImage">
-					<h1>W44 Ambient Light</h1>
-					<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-				<img src="./img/heroImg1.png">
-				</div>			
+		<div class="productdetailContainer">
+			<!-- Hero Image-->
+			<div class="ckBannerContainer"id="prodHeroImg">
+				<div class="ckLampText">
+					<h2 class="ckHeader">CK Desk Lamp $124</h2>
+					<h4 class="subheading">A simple and modern task lamp that is powerful yet compact</h4>
+					<a href="shoppingCartModule.html" class="btnStyle">Add to Cart</a>
+				</div>
 			</div>
-				
-			</div>
+			<!-- Product ddescription breakdown-->
 
-	<!--Product Photo Gallery Module-->
-			<div class="sectionContainer">
+			<div id="productDescrip">
+
 				<div class="modulePatternContainer">
 					<div class="descriptionContainer">
 					<h2>About the Lamp</h2>
@@ -77,47 +75,98 @@
 					<li>Light Bulb: Standard, A19</li>
 					</ul>
 				</div>
+			</div>
+			<!-- Product Photo Gallery-->
 
-		<!--Product Specification Photo Gallery Module-->
-					<div class="patternOverview">
-							<div class="productGalleryContainer">
-								<figure class="galleryImg-1">
-									<img src="img/gallery1.jpg" class="productGalImg" alt="Product Image 1">
-								</figure>
-								<figure class="galleryImg-2">
-									<img src="img/gallery2.jpg" class="productGalImg" alt="Product Image 2">
-								</figure>
-								<figure class="galleryImg-3">
-									<img src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
-								</figure>
-								<figure class="galleryImg-4">
-									<img src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
-								</figure>
-							</div>
-						</div>
+			<div id="photoGallery">
+				<div class="productGalleryContainer">
+							<figure class="galleryImg-1">
+								<img src="img/gallery1.png" class="productGalImg" alt="Product Image 1">
+							</figure>
+							<figure class="galleryImg-2">
+								<img src="img/image 304.png" class="productGalImg" alt="Product Image 2">
+							</figure>
+							<figure class="galleryImg-3">
+								<img src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
+							</figure>
+							<figure class="galleryImg-4">
+								<img src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
+							</figure>
+				</div>
+			</div>
+			<!-- User Submitted Photos-->
 
-		<!--User Submitted Module-->
-						<div class="patternOverview">
-							<h3>User Submitted Photos</h3>
-							<div class="scrollUser">
-								<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
-								<img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
-								<img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
-								<img src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
+			<div id="userSubImg">
+
+					<div class="scrollUser">
+						<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
+						<img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
+						<img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
+						<img src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
+						<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
+						<img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
+						<img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
+					</div>
+				<h4 id="userSub">User Submitted Photos</h4>
+			</div>
+			<!-- Recommendation of Similiar Products-->
+
+			<div id="similiarProd">
+				<h3 id="similiarProd">Similar Products</h3>
+					<div class="recModContainer">
+							
+							<div class="productCard">
+								<a href="#"><img src="img/light1.png" alt="metal floor lamp with a circular bulb" style="width: 100%"></a>
+								<div class="productDetails">
+									<p class="productCardPName">Ambient Floor Lamp</p>
+									<p class="productCardPPrice">$139</p>
+								</div>
+							</div>
+
+							<div class="productCard">
+								<a href="#"><img src="img/light2.png" alt="black metal lamp" style="width: 100%"></a>
+								<div class="productDetails">
+									<p class="productCardPName">Hang-over Floor Lamp</p>
+									<p class="productCardPPrice">$129</p>
+								</div>
+							</div>
+
+							<div class="productCard">
+								<a href="#"><img src="img/light3.png" alt="a black metal wall lamp" style="width: 100%"></a>
+								<div class="productDetails">
+									<p class="productCardPName">Swinging Golf Wall Lamp</p>
+									<p class="productCardPPrice">$99</p>
+								</div>
+							</div>
+							<div class="productCard">
+								<a href="#"><img src="img/colbyCeilingLight.png" alt="a black metal wall lamp" style="width: 100%"></a>
+								<div class="productDetails">
+									<p class="productCardPName">Colby Ceiling Light</p>
+									<p class="productCardPPrice">$84</p>
+								</div>
+							</div>
+
+							<div class="productCard">
+								<h3 class="productCardText"> Explore our collections and find a light that is suitable for your needs.</h3>
+								<a href="shop.html" class="btnStyle" id="productCTA">View More</a>
 							</div>
 						</div>
-		<!--Quiz CTA Module-->	
-				<div class="patternOverview">
-						<div class="quizBannerContainer">
-							<h2 class="quizBH">Unsure what you're looking for?</h2>
-							<div class="quizCTA">
-								<a href="#" class="btnStyle">Take the Quiz!</a>
-							</div>
-						</div>
+			</div>
+			<!-- Quiz CTA-->
+
+			<div id="quizCTA">
+				<div class="quizBannerContainer">
+					<h2 class="quizBH">Unsure of what lighting you're looking for?</h2>
+					<div class="quizCTA">
+						<a href="#" class="btnStyle">Take the Quiz!</a>
 					</div>
 				</div>
-		<!--Footer Module-->	
-		<footer class="footBarContainer">
+			</div>
+
+
+			<!-- Footer-->
+
+			<footer class="footBarContainer">
 			<!--Resources-->
 			<ul class="footerResources">
 				<li><h5>RESOURCES</h5></li>
@@ -149,5 +198,10 @@
 			<!--Lumi Logo-->
 			<a href="home.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
 		</footer>
+
+		</div> <!--end Product Detail container-->
+
+	</div> <!--end of grid container-->
+
 	</body>
 </html>
