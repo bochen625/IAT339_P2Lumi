@@ -333,7 +333,7 @@ label{
 
 .productCardText a{
 	text-decoration: none;
-} 
+}
 
 .colourSwatch{
 	overflow: auto;
@@ -808,7 +808,7 @@ ul, ol{
 
 .close a{
 	text-decoration: none;
-	color: #468CFF; 
+	color: #468CFF;
 }
 .shoppingcartContainer > h3{
 	padding: 1.25rem 0;
@@ -821,7 +821,7 @@ ul, ol{
 .light{
 	display: flex;
 	width: 100%;
-	height: 12.5rem; 
+	height: 12.5rem;
 	overflow: hidden;
 	margin-bottom: 1.25rem;
 	background-color: white;
@@ -856,7 +856,7 @@ ul, ol{
 	background-color: white;
 	color:  #468CFF;
 	font-weight: 600;
-	border: 0.05rem solid #468CFF; 
+	border: 0.05rem solid #468CFF;
 	border-radius: 0.75rem;
 }
 
