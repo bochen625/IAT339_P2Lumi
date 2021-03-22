@@ -495,8 +495,8 @@ ul, ol{
 .slideImage img {
 	height: 100%;
 	width: auto;
-	overflow-x: auto;
 	position: absolute;
+	object-fit: cover;
 }
 
 .slideText {
