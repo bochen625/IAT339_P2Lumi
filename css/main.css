@@ -496,7 +496,7 @@ ul, ol{
 	height: 100%;
 	width: auto;
 	position: absolute;
-	object-fit: cover;
+	object-fit: fill;
 }
 
 .slideText {
