@@ -494,8 +494,8 @@ ul, ol{
 }
 
 .slideImage img {
-	width: auto;
-	height: 100%;
+	height: auto;
+	width: 100%;
 	position: absolute;
 }
 
