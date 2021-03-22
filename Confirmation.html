@@ -5,68 +5,38 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Shopping Cart Overview</title>
+		<title>Checkout</title>
 		
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/shaantitemporary.css">
 		<!-- <link rel="stylesheet" href="css/grids.css"> -->
 		<link rel="stylesheet" href="temporaryGrid.css">
-		<!-- <linking for google icons"> -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
 	</head>
+
 	<body>
-		
-		<div class="shoppingcartContainer">
-			<div class="close">
-				<a href="shop.html" class="material-icons">&#xe5cd;</a>
+		<nav class="navContainer">
+			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+			<ul class="navButtons">
+				<li><a href="shop.html">Products</a></li>
+				<li><a href="#">Inspiration</a></li>
+				<li><a href="aboutCompany.html">About Us</a></li>
+				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
+				<li><a href="shoppingCartModule.html"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+			</ul>
+		</nav>
+
+		<div class="confirmContainer">
+			<div class="confirm-info">
+				<h2>Thank you!</h2>
+				<p> A confirmation has been sent to yout email.</p>
+				<a href="shop.html" class="btnStyle">Continue Shopping</a>
 			</div>
-			<h3>Shopping Cart</h3>
-				<div class="cart">
-					<div class="lightproducts">
-						<div class="light">
-							<img src="img/colbyCeilingLight.png" alt="black Colby Ceiling Light">
-								<div class="light-info">
-										<h4 class="light-name"> Colby Ceiling Lamp</h4>
-										<h5 class="light-price">$84</h5>
-										<h5 class="light-offer"></h5>
-										<p class="light-qauntity"> Qnt: <input value="1" name=""> 
-										</p>
-										<p class="light-remove">
-											<span class="remove">Remove</span>
-										</p>
-								</div>
-						</div>
-						<div class="light">
-							<img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light">
-								<div class="light-info">
-										<h4 class="light-name">W42 Ceiling Light</h4>
-										<h5 class="light-price">$84</h5>
-										<h5 class="light-offer"></h5>
-										<p class="light-qauntity"> Qnt: <input value="1" name=""> 
-										</p>
-										<p class="light-remove">
-											<span class="remove">Remove</span>
-										</p>
-								</div>
-						</div>
-					</div>
-				</div>
-					<div class="cart-total">
-						<p>	
-							<span>Total Price</span>
-							<span>$168</span>
-						</p>
-						<p>
-							<span>Number of Items</span>
-							<span>2</span>
-						</p>
-						<a href="Checkout.html" class="btnStyle">Proceed to Checkout</a>
-					</div>
 		</div>
 
-			<!--Footer-->
+					<!--Footer-->
 		<footer class="footBarContainer">
 			<!--Resources-->
 			<ul class="footerResources">

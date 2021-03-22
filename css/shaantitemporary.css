@@ -509,7 +509,10 @@ span.price {
 }
 
 /* New Shopping Cart Module */
-
+.close{
+	margin-top: 2.5rem;
+	grid-column: 12/span 1;
+}
 .shoppingcartContainer{
 	display:grid;
 	grid-template-columns:repeat(12, 1fr);
@@ -529,4 +532,26 @@ span.price {
 	grid-column: 9/span 3;
 }
 
+/* Checkout Order Summary */
+
+#summary.cart{
+	grid-column: 1/span end;
+}
+
+/*------ Confirmation Page -------*/
+
+.confirmContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-template-rows: (2, 1fr);
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: 0 auto;
+}
+.confirm-info {
+	margin-top: 5rem;
+	grid-column: 1/ span end;
+	text-align: center;
+}
 
