@@ -2,10 +2,10 @@
 
 .aboutContainter{
 	display:grid;
-	height:100vh ;
+	height:100vh;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 0.75fr 1fr 1fr 1fr;
-	grid-column-gap: 1.5rem;
+	grid-column-gap: 0.5rem;
 	grid-row-gap: 0.2rem;
 }
 
@@ -27,6 +27,10 @@
 #shaanti{
 	grid-column: 8/span 3;
 	grid-row: 2/span 1;
+}
+
+#about.footBarContainer{
+	grid-column: 8/span 3;
 }
 
 @media only screen and (max-width: 40rem){
@@ -61,7 +65,7 @@
 /* Product Detail Page*/
 .productdetailContainer{
 	display:grid;
-	height:100vh ;
+	height:100vh;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(5, 1fr);
 	grid-column-gap: 1.5rem;
@@ -400,4 +404,149 @@ padding-right: 1em;
 	}
 }
 
+/* Checkout & Payment Method Form Fill*/
+.checkoutContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: 0 auto;
+}
 
+.container {
+	grid-column: 1/ span 7;
+ 	background-color: white;
+ 	box-shadow: var(--dropShadow);
+ 	padding: 0rem 2.5rem 1.25rem 2.5rem;
+ 	margin: 2rem;
+}
+
+
+.total{
+	margin-top: 1.25rem;
+	grid-column: 8/ span end;
+}
+
+#order.btnStyle{
+	grid-column: 6/ span 3;
+}
+
+input[type=nametext] {
+  width: 50%;
+  margin-bottom: 1.25rem;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type=checkbox]{
+width: 5%;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+	width: 50%;
+ 	display: block;
+ 	margin: 0;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout for checkout-the two columns changed 1 stacked column*/
+
+	.total{
+		margin-top: 1.25rem;
+		grid-column: 1/ span end;
+	}
+	#order.btnStyle{
+		grid-column: 2/ span 1;
+		margin-bottom: 2rem;
+	}
+	.container {
+	grid-column: 1/ span end;
+	}
+
+}
+
+/* On mouse-over, add a grey background color */
+.boxContainer:hover input ~ .check {
+  background-color: #D3D3D3;
+}
+
+/* When the checkbox is checked, add a blue background */
+.boxContainer input:checked ~ .check {
+  background-color: #468CFF;
+}
+
+.divide{
+	border-top: 0.05rem solid #D3D3D3;
+}
+
+/* New Shopping Cart Module */
+.close{
+	margin-top: 2.5rem;
+	grid-column: 12/span 1;
+}
+.shoppingcartContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: 0 auto;
+}
+.shoppingcartContainer > h3{
+	grid-column: 2/span end;
+}
+.cart{
+	grid-column: 2/span 7;
+}
+.cart-total{
+	grid-column: 9/span 3;
+}
+
+/* Checkout Order Summary */
+
+#summary.cart{
+	grid-column: 1/span end;
+}
+
+/*------ Order Confirmation Page -------*/
+
+.confirmContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: 0 auto;
+}
+.confirm-info {
+	margin-top: 10rem;
+	margin-bottom: 2rem;
+	grid-column: 1/ span end;
+	text-align: center;
+}
+.confirm-info > h1{
+	margin: 0rem;
+}

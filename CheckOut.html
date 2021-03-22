@@ -9,8 +9,13 @@
 		
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
-		<!-- <link rel="stylesheet" href="css/grids.css"> -->
 		<link rel="stylesheet" href="temporaryGrid.css">
+		<link rel="stylesheet" href="css/shaantitemporary.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- last link for payment method icons -->
+
+
+		<!-- Followed w3 how to-checkout form for basic layout for fill https://www.w3schools.com/howto/howto_css_checkout_form.asp-->
 
 	</head>
 
@@ -27,185 +32,128 @@
 		</nav>
 
 		<div class="gridContainer">
-			<div class="patternOverview">
-
-				<div class="row">
-					  <div class="col-25">
-					    <div class="container">
-					      <form action="/action_page.php">
-
-					        <div class="row">
-					          <div class="col-50">
-					            <h3>Shipping Address</h3>
-
-					            <div class="row">
-					              <div class="col-50">
+				<div class="checkoutContainer">
+					  <div class="container">					    
+					      <form action="/action_page.php">				  
+					            <h3>Shipping Address</h3>			     
+					              <div class="info">
 					                <label for="fName">First Name</label>
-					                <input type="text" id="fName" name="firstName" placeholder="John">
-					              </div>
-					              <div class="col-50">
-					                <label for="lName">Last Name</label>
-					                <input type="text" id="lName" name="lastName" placeholder="Smith">
-					              </div>
+					                <input type="nametext" id="fName" name="firstName" placeholder="John" size="2">	
+					                 <label for="lName">Last Name</label> 
+					                <input type="nametext" id="lName" name="lastName" placeholder="Smith">		
 					            </div>
-
-					            <label for="email"><i class="fa fa-envelope"></i>Email</label>
+					       
+					            <div class="address">
+					            <label for="email">Email</label>
 					            <input type="text" id="email" name="email" placeholder="johnsmith@gmail.com">
-					            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-					            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-					            <label for="city"><i class="fa fa-institution"></i> City</label>
+					            <label for="adr">Address</label>
+					            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" size="">
+					            <label for="city">City</label>
 					            <input type="text" id="city" name="city" placeholder="Vancouver">
+					            </div>
 
 					            <div class="row">
-					              <div class="col-50">
+					              <div class="info">
 					                <label for="state">Province</label>
-					                <input type="text" id="province" name="province" placeholder="BC">
+					                <input type="nametext" id="province" name="province" placeholder="BC">
 					              </div>
-					              <div class="col-50">
+					              <div class="info">
 					                <label for="postalcode">Postal Code</label>
-					                <input type="text" id="postalcode" name="postalcode" placeholder="V2H3O9">
+					                <input type="nametext" id="postalcode" name="postalcode" placeholder="V2H3O9">
 					              </div>
 					            </div>
-					         	<label>
+					         	
 							    	<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-							 	</label>
+							 	
 
-					          <div class="col-25">
+					          <div class="row">
 					            <h3>Payment</h3>
-					            <label for="fname">Accepted Methods</label>
-					            <div class="icon-container">
-					              <i class="fa fa-cc-visa" style="color:navy;"></i>
-					              <i class="fa fa-cc-amex" style="color:blue;"></i>
-					              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-					              <i class="fa fa-cc-discover" style="color:orange;"></i>
+					            <div class="info">
+						            <label for="fname">Accepted Cards</label>
+						            <div class="icon-container">
+						              <i class="fa fa-cc-visa" style="color:navy;"></i>
+						              <i class="fa fa-cc-amex" style="color:blue;"></i>
+						              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+						              <i class="fa fa-cc-discover" style="color:orange;"></i>
+						            </div>
+						            <label for="cname">Full name on card</label>
+						            <input type="text" id="cname" name="cardname" placeholder="John Smith">
+						            <label for="ccnum">Credit card number</label>
+						            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+						            <label for="expmonth">Exp Month</label>
+						            <input type="nametext" id="expmonth" name="expmonth" placeholder="March">
 					            </div>
-					            <label for="cname">Name on Card</label>
-					            <input type="text" id="cname" name="cardname" placeholder="John Smith">
-					            <label for="ccnum">Credit card number</label>
-					            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-					            <label for="expmonth">Exp Month</label>
-					            <input type="text" id="expmonth" name="expmonth" placeholder="March">
-
 					            <div class="row">
-					              <div class="col-50">
+					             
 					                <label for="expyear">Exp Year</label>
-					                <input type="text" id="expyear" name="expyear" placeholder="2021">
-					              </div>
-					              <div class="col-50">
+					                <input type="nametext" id="expyear" name="expyear" placeholder="2021">			             			              
 					                <label for="cvv">CVV</label>
-					                	<input type="text" id="cvv" name="cvv" placeholder="444">
-					                	<input type="submit" value="Place Order" class="btnStyle">
-					              </div>
+					                	<input type="nametext" id="cvv" name="cvv" placeholder="444">
+					                		             
 					            </div>					       
-								
-					          </div>
-							</div>
-					       </div>
-				       		
-				      </form>
-				    </div>
-				  </div>
+							</form>
 
-					  <div class="col-25">
-							<div class="cartTile">
-								<div class="detailContainer">
-									<h4 class="yourOrder">Your Order</h4>
-									<div class="productOne">
-										<h5>Hang Lamp</h5>
-									</div>
-									<div class="productTwo">
-										<h5>Desk Lamp</h5>
-									</div>
-									<div class="priceDetails">
-										<h5>Subtotal:</h5>
-										<h5>Shipping:</h5>
-										<h5>Tax:</h5>
-									</div>
-									<div class="priceAmounts">
-										<h5>36.50</h5>
-										<h5>234.00</h5>
-										<h5>16.98</h5>
-									</div>
-									<div class="numItems">
-										<h5># of items</h5>
+						</div>
+					 </div>		
+
+					     <a href="orderConfirmation.html" class="btnStyle" id="order">Place Order</a>		       						    
+
+					  <div class="total">
+							<h4>Items</h4>
+								<div class="cart" id="summary">
+									<div class="lightproducts">
+										<div class="light">
+											<img src="img/colbyCeilingLight.png" alt="black Colby Ceiling Light">
+												<div class="light-info">
+														<h4 class="light-name"> Colby Ceiling Lamp</h4>
+														<h5 class="light-price">$84</h5>
+														<h5 class="light-offer"></h5>
+														<p class="light-qauntity"> Qnt: <input value="1" name=""> 
+														</p>
+														<p class="light-remove">
+															<span class="remove">Remove</span>
+														</p>
+												</div>
+										</div>
+										<div class="light">
+											<img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light">
+												<div class="light-info">
+														<h4 class="light-name">W42 Ceiling Light</h4>
+														<h5 class="light-price">$84</h5>
+														<h5 class="light-offer"></h5>
+														<p class="light-qauntity"> Qnt: <input value="1" name=""> 
+														</p>
+														<p class="light-remove">
+															<span class="remove">Remove</span>
+														</p>
+												</div>
+										</div>
+										<div class="cart-total">
+											<p>	
+												<span>Sub-total</span>
+												<span>$168</span>
+											</p>
+											<p>
+												<span>Shipping</span>
+												<span>--</span>
+											</p>
+											<p>
+												<span>Sales Tax</span>
+												<span>--</span>
+											</p>
+											<p>
+												<span>Total</span>
+
+												<span>$168</span>
+											
+											</p>
+											
+										</div>
 									</div>
 								</div>
-							</div>	
-
-							<div class="shopping-cart">
-  <!-- Title -->
-  <div class="title">
-    Shopping Bag
-  </div>
- 
-  <!-- Product #1 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
- 
-    <div class="image">
-      <img src="item-1.png" alt="" />
-    </div>
- 
-    <div class="description">
-      <span>Common Projects</span>
-      <span>Bball High</span>
-      <span>White</span>
-    </div>
- 
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div>
- 
-    <div class="total-price">$549</div>
-  </div>
- 
-  <!-- Product #2 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
- 
-    <div class="image">
-      <img src="item-2.png" alt=""/>
-    </div>
- 
-    <div class="description">
-      <span>Maison Margiela</span>
-      <span>Future Sneakers</span>
-      <span>White</span>
-    </div>
- 
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div>
- 
-    <div class="total-price">$870</div>
-  </div>
-  </div>				
-					  </div>
-
-					</div>
-
-		</div>
-	</div>
-
-	<!--end of grid container-->
+							
+						</div>
+  </div><!--end of grid container-->
 
 			<!--Footer-->
 		<footer class="footBarContainer">

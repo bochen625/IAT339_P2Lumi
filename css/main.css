@@ -768,111 +768,121 @@ ul, ol{
   height: 0;
   width: 0;
 }
-/*--------Checkout Module-----*/
+/*--------Shopping Cart Overviw & Checkout Module-----*/
+/*--Importing google fonts for google icon use, https://google.github.io/material-design-icons/#icon-images-for-the-web----*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  grid-column: 1/span 6;
-  margin: 0 -16px
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
 
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
-.col-25 {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
+.close a{
+	text-decoration: none;
+	color: #468CFF; 
+}
+.shoppingcartContainer > h3{
+	padding: 1.25rem 0;
 }
 
-.col-50 {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
+.lightproducts{
+	flex: 0.75;
 }
 
-.col-75 {
-  -ms-flex: 65%; /* IE10 */
-  flex: 65%;
+.light{
+	display: flex;
+	width: 100%;
+	height: 12.5rem; 
+	overflow: hidden;
+	margin-bottom: 1.25rem;
+	background-color: white;
+	box-shadow: var(--dropShadow);
 }
 
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
+.light > img{
+	width: 12.5rem;
+	height: 13.75rem;
+	object-fit: cover;
+}
+.light-info{
+	padding: 1.25rem;
+	width: 100%;
+	position: relative;
+}
+.light-name, .light-price, .light-offer{
+	margin-bottom: 1.25rem;
+}
+.light-remove{
+	position: absolute;
+	bottom: 1.25rem;
+	right: 1.25rem;
+	background-color: #d3d3d3;
+	padding: 0.625rem 1.563rem;
+	color: white;
+	border-radius: 0.75rem;
+	font-weight: 500;
+	cursor: pointer;
+}
+.light-remove:hover{
+	background-color: white;
+	color:  #468CFF;
+	font-weight: 600;
+	border: 0.05rem solid #468CFF; 
+	border-radius: 0.75rem;
 }
 
-.container {
-  background-color: white;
-  box-shadow: var(--dropShadow);
-  padding: 5px 20px 15px 20px;
+.light-qauntity > input{
+	width: 2.5rem;
+	padding: 0.313rem;
+	text-align: center;
+}
+.cart-total{
+	margin-left: 1.25rem;
+	padding: 1.25rem;
+	height: 15rem;
+}
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.875rem;
+}
+.cart-total a{
+	display: block;
 }
 
-input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+/*--------Confirmation Page-----*/
+.confirm-info{
+
 }
-
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
-}
-
-.btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-.btn:hover {
-  background-color: #45a049;
-}
-
-span.price {
-  float: right;
-  color: grey;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
-}
-
-
-
-/* On mouse-over, add a grey background color */
-.boxContainer:hover input ~ .check {
-  background-color: #D3D3D3;
-}
-
-/* When the checkbox is checked, add a blue background */
-.boxContainer input:checked ~ .check {
-  background-color: #468CFF;
-}
-
-.divide{
-	border-top: 0.05rem solid #D3D3D3;
-}
-
 /*--------Product Detail Page-----*/
 
 .ckLampText{
