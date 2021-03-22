@@ -11,7 +11,11 @@
 	background-color: var(--bgColour);
 }
 
-
+.background{
+	background: rgb(255,255,255);
+	background: linear-gradient(-200deg, rgba(255,255,255,1) 18%, rgba(254,150,32,0.2) 47%, rgba(253,60,89,0.2) 74%, rgba(111,163,249,0.2) 100%);
+	/*gradient selected and created from https://cssgradient.io/*/
+}
 .navContainer{
 	background-color: white;
 	box-shadow: var(--dropShadow);
@@ -318,7 +322,7 @@ label{
 }
 
 .productCardText{
-	margin-top: 10rem;
+	margin-top: 2rem;
 	margin-left: 3rem;
 	width:clamp(7ch, 80%, 13ch);
 }
@@ -329,12 +333,7 @@ label{
 
 .productCardText a{
 	text-decoration: none;
-}
-
-#productCTA{
-	margin-top: 2rem;
-	margin-left: 3rem;
-}
+} 
 
 .colourSwatch{
 	overflow: auto;
@@ -667,6 +666,7 @@ ul, ol{
 }
 
 /*-----------Product Image Gallery Module-----------*/
+
 .productGalImg{
 	width: 100%;
 	height: 100%;
@@ -684,12 +684,11 @@ ul, ol{
 .priceAmounts{
 	text-align: right;
 }
-.pricedDetails{
-}
 
 .checkoutButton{
 	margin: 0.5rem;
 }
+<<<<<<< HEAD
 .productOne{
 }
 
@@ -706,8 +705,13 @@ ul, ol{
 }
 
 /*--------User Submitted Module-----*/
-.userGalImg{
-	width: 100%;
+.userGalImg1, .userGalImg2, .userGalImg3 , .userGalImg4{
+	width: 20%;
+	height: 50%;
+}
+
+.userGalImg5{
+	width: 20%;
 	height: 100%;
 }
 
@@ -720,7 +724,7 @@ ul, ol{
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 0.75rem;
+  padding-right: 0.7rem;
   text-decoration: none;
 }
 
@@ -764,27 +768,127 @@ ul, ol{
   height: 0;
   width: 0;
 }
+/*--------Shopping Cart Overviw & Checkout Module-----*/
+/*--Importing google fonts for google icon use, https://google.github.io/material-design-icons/#icon-images-for-the-web----*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 
-/* On mouse-over, add a grey background color */
-.boxContainer:hover input ~ .check {
-  background-color: #D3D3D3;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
-/* When the checkbox is checked, add a blue background */
-.boxContainer input:checked ~ .check {
-  background-color: #468CFF;
+.close a{
+	text-decoration: none;
+	color: #468CFF; 
+}
+.shoppingcartContainer > h3{
+	padding: 1.25rem 0;
 }
 
-.divide{
-	border-top: 0.05rem solid #D3D3D3;
+.lightproducts{
+	flex: 0.75;
 }
 
-/*--------About Us Module-----*/
-
-.bonnieImg, .jonathanImg, .shaantiImg{
+.light{
+	display: flex;
 	width: 100%;
-	height: 100%;
+	height: 12.5rem; 
+	overflow: hidden;
+	margin-bottom: 1.25rem;
+	background-color: white;
+	box-shadow: var(--dropShadow);
 }
+
+.light > img{
+	width: 12.5rem;
+	height: 13.75rem;
+	object-fit: cover;
+}
+.light-info{
+	padding: 1.25rem;
+	width: 100%;
+	position: relative;
+}
+.light-name, .light-price, .light-offer{
+	margin-bottom: 1.25rem;
+}
+.light-remove{
+	position: absolute;
+	bottom: 1.25rem;
+	right: 1.25rem;
+	background-color: #d3d3d3;
+	padding: 0.625rem 1.563rem;
+	color: white;
+	border-radius: 0.75rem;
+	font-weight: 500;
+	cursor: pointer;
+}
+.light-remove:hover{
+	background-color: white;
+	color:  #468CFF;
+	font-weight: 600;
+	border: 0.05rem solid #468CFF; 
+	border-radius: 0.75rem;
+}
+
+.light-qauntity > input{
+	width: 2.5rem;
+	padding: 0.313rem;
+	text-align: center;
+}
+.cart-total{
+	margin-left: 1.25rem;
+	padding: 1.25rem;
+	height: 15rem;
+}
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.875rem;
+}
+.cart-total a{
+	display: block;
+}
+
+/*--------Confirmation Page-----*/
+.confirm-info{
+
+}
+/*--------Product Detail Page-----*/
+
+.ckLampText{
+	color: white;
+}
+
 
 /*--------hero with only text-----*/
 #textHero {
@@ -816,6 +920,7 @@ ul, ol{
 
 
 
+
 =======
 .subNavIMG {
 	width: 1fr;
@@ -825,3 +930,5 @@ ul, ol{
 	width: 100%;
 }
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 16adabc... Adding Filter and User Submitted Modules with code Snippets
