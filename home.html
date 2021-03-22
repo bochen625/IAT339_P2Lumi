@@ -1,7 +1,3 @@
-<!--
-	Basic structure of HTML from Paul's tutorial:
-	https://www.youtube.com/watch?v=adI6G7Y-0xE&feature=youtu.be
--->
 <!doctype html>
 
 <html lang="en">
@@ -12,7 +8,6 @@
 		<title>Lumi</title>
 
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="temporaryGrid.css">
 	</head>
 
@@ -28,73 +23,68 @@
 			</ul>
 		</nav>
 
-		<div class="sectionContainerWithHero" id="heroHomePage">
 		<!--Hero-->
-			<div class ="heroSlider">
-				<div class="slideImage">
-					<img src="./img/heroImg1.png">
-					<div class="slideText">
-						<h1>W42 Ceiling Light</h1>
-						<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-						<a href="shop.html" class="btnStyle">Shop Now</a>
-					</div>
-				</div>
+		<div class ="heroSlider">
+<!-- 			<img src="img/heroCeilingLight.png" class="slideImage" alt="A metallic ceiling light">
+			
+			<div class="slideText">
+				<h2>W42 Ceiling Light</h2>
+				<h4 class="subheading">A durable, metallic light. Provides a soft, directional light.</h4>
+				<a href="shop.html" class="btnStyle">Shop Now</a>
+			</div>
 
-				<div id="dots">
-					<span class="sliderDot"></span>
-					<span class="sliderDot"></span>
-					<span class="sliderDot"></span>
-				</div>
+			<div class="heroSliderDots">
+				<span class="sliderDot"></span>
+				<span class="sliderDot"></span>
+				<span class="sliderDot"></span>
+			</div> -->
+		</div>
 
+		<!--New Arrivals Recommendation-->
+		<div class="productRecommendation">
+			<h3 class="moduleHeader"> New Arrivals</h3>
+			<div class="productCard">
+				<a href="ProductDetail.html"><img src="img/colbyCeilingLight.png" alt="black circular ceiling light"></a>
+				<div class="productDetails">
+					<p class="productCardPName">Ambient Floor Lamp</p>
+					<p class="productCardPPrice">$139</p>
+				</div>
+			</div>
+
+			<div class="productCard">
+				<a href="ProductDetail.html"><img src="img/coneCeilingLight.png" alt="blue coned-shape ceiling light"></a>
+				<div class="productDetails">
+					<p class="productCardPName">Hang-over Floor Lamp</p>
+					<p class="productCardPPrice">$129</p>
+				</div>
+			</div>
+
+			<div class="productCard">
+				<a href="ProductDetail.html"><img src="img/w42CeilingLight.png" alt="a white metallic ceiling light"></a>
+				<div class="productDetails">
+					<p class="productCardPName">Swinging Golf Wall Lamp</p>
+					<p class="productCardPPrice">$99</p>
+				</div>
+			</div>
+
+			<div class="productCard">
+				<h3 class="productCardText"> Explore our collections and find a light that is suitable for your needs.</h3>
+				<a href="shop.html" class="btnStyle" id="productCTA">View More</a>
 			</div>
 		</div>
 
-		<div class="sectionContainer" id="homePage">
-			<div class="productRecommendation">
-				<h2 class="moduleHeader"> Similar Products</h2>
-				<div class="productCard">
-					<a href="#"><img src="img/light1.png" alt="metal floor lamp with a circular bulb"></a>
-					<div class="productDetails">
-						<p class="productCardPName">Ambient Floor Lamp</p>
-						<p class="productCardPPrice">$139</p>
-					</div>
-				</div>
-
-				<div class="productCard">
-					<a href="#"><img src="img/light2.png" alt="black metal lamp"></a>
-					<div class="productDetails">
-						<p class="productCardPName">Hang-over Floor Lamp</p>
-						<p class="productCardPPrice">$129</p>
-					</div>
-				</div>
-
-				<div class="productCard">
-					<a href="#"><img src="img/light3.png" alt="a black metal wall lamp"></a>
-					<div class="productDetails">
-						<p class="productCardPName">Swinging Golf Wall Lamp</p>
-						<p class="productCardPPrice">$99</p>
-					</div>
-				</div>
-
-				<div class="productCard">
-					<h3 class="productCardText"> Explore our collections and find a light that is suitable for your needs.</h3>
-					<a href="shop.html" class="btnStyle" id="productCTA">View More</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="sectionContainerWithHero">
-			<!--Quiz CTA Module-->
-			<div class="quizBanner">
+		<!--Quiz-->
+		<div class="quizBanner">
+			<img src="img/quizbanner.png" class ="quizBannerImg" alt="pink LED light">
+			<div class="quizDescription">
 				<h2 class="quizBH">Unsure what you're looking for?</h2>
-				<div class="quizCTA">
-					<a href="#" class="btnStyle">Take the Quiz!</a>
-				</div>
+				<button class="btnStyle" id="quizCTA">Take the Quiz!</button>
 			</div>
 		</div>
 
+		<!--Inspirations-->
 		<div class="sectionContainer">
-			<h2 class="moduleHeader"> Inspirations and Ideas</h2>
+			<h3 class="moduleHeader"> Inspirations and Ideas</h3>
 
 			<!--Blog Post 1-->
 			<div class="valueAndBlogCard">
@@ -125,21 +115,38 @@
 			</div>
 		</div>
 
+		<!--Footer-->
 		<footer class="footBarContainer">
-			<ul class="footerButtons">
-				<li><h5>RESCOURCES</h5></li>
+			<!--Resources-->
+			<ul class="footerResources">
+				<li><h5>RESOURCES</h5></li>
+				<li><a href="aboutUs.html">About the Designers</a></li>
 				<li><a href="index.html">Style Guide</a></li>
 				<li><a href="patternLibrary.html">Pattern Library</a></li>
 				<li><a href="wireframes.html">Wireframes</a></li>
 				<li><a href="citations.html">Citations</a></li>
 			</ul>
+
+			<!--Company-->
+			<ul class="footerAbout">
+				<li><h5>COMPANY</h5></li>
+				<li><a href="aboutCompany.html">About Lumi</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+			</ul>
+
+			<!--Copyright-->
 			<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
 
-			<a href="#" class="iconF"> <img src="img/facebook.png" alt="facebook icon"> </a>
-			<a href="#" class="iconT"> <img src="img/twitter.png" alt="twitter icon"> </a>
-			<a href="#" class="iconL"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+			<!--Social Media-->
+			<div class="socialMediaIcons">
+				<a href="#" class="iconFb"> <img src="img/facebook.png" alt="facebook icon"> </a>
+				<a href="#" class="iconTwitter"> <img src="img/twitter.png" alt="twitter icon"> </a>
+				<a href="#" class="iconLinkedIn"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+				<a href="#" class="iconIG"> <img src="img/instagram.png" alt="linkedin icon"> </a>
+			</div>
+			
+			<!--Lumi Logo-->
 			<a href="home.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
-
 		</footer>
 	</body>
 </html>
