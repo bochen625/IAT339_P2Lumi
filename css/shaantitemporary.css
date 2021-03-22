@@ -472,7 +472,7 @@ span.price {
 }
 
 /* Responsive layout for checkout-the two columns changed 1 stacked column*/
-
+@media screen and (max-width: 65em){
 	.total{
 		margin-top: 1.25rem;
 		grid-column: 1/ span end;
