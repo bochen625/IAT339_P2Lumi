@@ -823,13 +823,14 @@ ul, ol{
 	width: 100%;
 	height: 12.5rem; 
 	overflow: hidden;
-	border: 0.05rem solid grey;
 	margin-bottom: 1.25rem;
+	background-color: white;
+	box-shadow: var(--dropShadow);
 }
 
 .light > img{
-	width: 10.5rem;
-	height: 14.75rem;
+	width: 12.5rem;
+	height: 13.75rem;
 	object-fit: cover;
 }
 .light-info{

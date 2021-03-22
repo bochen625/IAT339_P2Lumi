@@ -130,8 +130,8 @@ button.btnStyle, input.btnStyle{
 
 /*Form Fields*/
 input{
-	margin: 0.2rem;
-	margin-top: 20px;
+	margin: 0rem;
+	margin-top: 1rem;
 	width: 28em;
 	background-color: white;
 	box-shadow: var(--dropShadow);

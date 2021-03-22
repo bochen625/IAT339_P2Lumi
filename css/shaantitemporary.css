@@ -404,42 +404,44 @@ padding-right: 1em;
 	}
 }
 
-/* Checkout Form Fill*/
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  grid-column: 1/span 6;
-  margin: 0 -16px
-
-}
-
-.col-25 {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-}
-
-.col-50 {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-}
-
-.col-75 {
-  -ms-flex: 65%; /* IE10 */
-  flex: 65%;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
+/* Checkout & Payment Method Form Fill*/
+.checkoutContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: 0 auto;
 }
 
 .container {
-  background-color: white;
-  box-shadow: var(--dropShadow);
-  padding: 5px 20px 15px 20px;
+	grid-column: 1/ span 7;
+ 	background-color: white;
+ 	box-shadow: var(--dropShadow);
+ 	padding: 0rem 2.5rem 1.25rem 2.5rem;
+ 	margin: 2rem;
+}
+
+
+.total{
+	margin-top: 1.25rem;
+	grid-column: 8/ span end;
+}
+
+#order.btnStyle{
+	grid-column: 6/ span 3;
+}
+
+input[type=nametext] {
+  width: 50%;
+  margin-bottom: 1.25rem;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type=checkbox]{
+width: 5%;
 }
 
 input[type=text] {
@@ -451,8 +453,9 @@ input[type=text] {
 }
 
 label {
-  margin-bottom: 10px;
-  display: block;
+	width: 50%;
+ 	display: block;
+ 	margin: 0;
 }
 
 .icon-container {
@@ -461,38 +464,28 @@ label {
   font-size: 24px;
 }
 
-.btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-}
 
-.btn:hover {
-  background-color: #45a049;
-}
 
 span.price {
   float: right;
   color: grey;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
+/* Responsive layout for checkout-the two columns changed 1 stacked column*/
+
+	.total{
+		margin-top: 1.25rem;
+		grid-column: 1/ span end;
+	}
+	#order.btnStyle{
+		grid-column: 2/ span 1;
+		margin-bottom: 2rem;
+	}
+	.container {
+	grid-column: 1/ span end;
+	}
+
 }
-
-
 
 /* On mouse-over, add a grey background color */
 .boxContainer:hover input ~ .check {
@@ -538,20 +531,22 @@ span.price {
 	grid-column: 1/span end;
 }
 
-/*------ Confirmation Page -------*/
+/*------ Order Confirmation Page -------*/
 
 .confirmContainer{
 	display:grid;
 	grid-template-columns:repeat(12, 1fr);
-	grid-template-rows: (2, 1fr);
 	grid-column-gap: 0.5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	margin: 0 auto;
 }
 .confirm-info {
-	margin-top: 5rem;
+	margin-top: 10rem;
+	margin-bottom: 2rem;
 	grid-column: 1/ span end;
 	text-align: center;
 }
-
+.confirm-info > h1{
+	margin: 0rem;
+}

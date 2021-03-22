@@ -5,7 +5,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Shopping Cart Overview</title>
+		<title>Your Cart Overview</title>
+		<!--For understanding basic shopping cart module, followed a video tutorial rhttps://www.youtube.com/watch?v=6JCyMPfRxoM-->
 		
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -17,12 +18,22 @@
     
 	</head>
 	<body>
+		<nav class="navContainer">
+			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+			<ul class="navButtons">
+				<li><a href="shop.html">Products</a></li>
+				<li><a href="#">Inspiration</a></li>
+				<li><a href="aboutCompany.html">About Us</a></li>
+				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
+				<li><a href="shoppingCartModule.html"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+			</ul>
+		</nav>
 		
 		<div class="shoppingcartContainer">
 			<div class="close">
 				<a href="shop.html" class="material-icons">&#xe5cd;</a>
 			</div>
-			<h3>Shopping Cart</h3>
+			<h3>Your Cart</h3>
 				<div class="cart">
 					<div class="lightproducts">
 						<div class="light">
@@ -54,13 +65,21 @@
 					</div>
 				</div>
 					<div class="cart-total">
-						<p>	
-							<span>Total Price</span>
-							<span>$168</span>
-						</p>
 						<p>
 							<span>Number of Items</span>
 							<span>2</span>
+						</p>
+						<p>	
+							<span>Sub-total</span>
+							<span>$168</span>
+						</p>
+						<p>
+							<span>Shipping</span>
+							<span>--</span>
+						</p>
+						<p>
+							<span>Sales Tax</span>
+							<span>--</span>
 						</p>
 						<a href="Checkout.html" class="btnStyle">Proceed to Checkout</a>
 					</div>
