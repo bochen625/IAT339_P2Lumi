@@ -73,6 +73,7 @@
 }
 
 #prodHeroImg{
+	background-image: url('img/instagram.png');
 	grid-column: 1/end;
 	grid-row: 1/1;
 }
@@ -98,7 +99,7 @@
 
 	/* Product Detail PG-Hero/Banner*/
 .ckBannerContainer{
-	background-image: url('img/productdetailhero.png');
+	background-image: url('img/instagram.png');
 	background-repeat: no-repeat;
 	height: 30rem;
 	background-size: cover;
@@ -464,8 +465,6 @@ label {
   font-size: 24px;
 }
 
-
-
 span.price {
   float: right;
   color: grey;
@@ -501,7 +500,7 @@ span.price {
 	border-top: 0.05rem solid #D3D3D3;
 }
 
-/* New Shopping Cart Module */
+/* ---- New Shopping Cart Overveiw & Checkout Module------ */
 .close{
 	margin-top: 2.5rem;
 	grid-column: 12/span 1;
