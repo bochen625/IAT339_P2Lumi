@@ -584,9 +584,13 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 }
 
 #back{
-	width: 75%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	width: 60%;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+#close{
+	text-decoration: none;
 }
 
 /*Quiz progress bar*/
@@ -600,16 +604,19 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 }
 
 .progressBarProgress{
-	width: 14%;
 	height: 1.4rem;
 	background-color: var(--CTAColour);
 	border-radius: 0.2rem;
 	/*margin-top: -0.05rem;*/
 }
 
-/*Progress Bar: Q5 of 7*/
-#quizQFive{
-	width: 57%;
+/*Progress Bar:*/
+#quizQOne{
+	width: 50%;
+}
+
+#quizQTwo{
+	width: 100%;
 }
 
 /*Quiz Questions*/
@@ -620,10 +627,6 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 .question a{
 	text-decoration: none;
 }
-
-/*.helpIcon: hover{
-	fill: red;
-}*/
 
 /*Quiz MC answers + buttons*/
 /*-----------Quiz (Text MC)-----------*/
@@ -671,6 +674,8 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 	text-decoration: underline;
 	height: 100%;
 	margin: 0.5rem;
+	margin-top: 1rem;
+	text-align: center;
 }
 
 /*---------About Us----------*/
