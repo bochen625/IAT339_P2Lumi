@@ -351,7 +351,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 	width: 100%;
 	position: relative;
 	margin: auto;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .slideImage img {
