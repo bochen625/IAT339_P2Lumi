@@ -14,9 +14,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- last link for payment method icons -->
 
-
 		<!-- Followed w3 how to-checkout form for basic layout for fill https://www.w3schools.com/howto/howto_css_checkout_form.asp-->
-
 	</head>
 
 	<body>
@@ -33,42 +31,50 @@
 
 		<div class="gridContainer">
 				<div class="checkoutContainer">
-					  <div class="container">					    
-					      <form action="/action_page.php">				  
-					            <h3>Shipping Address</h3>			     
-					              <div class="info">
+					 <div class="checkoutBox">
+					      <form action="/action_page.php">		
+					       <div class="containerCH">			  
+					            <div class="colfull">
+					            	<h3>Shipping Address</h3>    
+					            </div>
+					        
+					            <div class="col1">
 					                <label for="fName">First Name</label>
 					                <input type="nametext" id="fName" name="firstName" placeholder="John" size="2">	
-					                 <label for="lName">Last Name</label> 
-					                <input type="nametext" id="lName" name="lastName" placeholder="Smith">		
 					            </div>
-					       
-					            <div class="address">
-					            <label for="email">Email</label>
-					            <input type="text" id="email" name="email" placeholder="johnsmith@gmail.com">
-					            <label for="adr">Address</label>
-					            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" size="">
+					            <div class="col2">
+					                 <label for="lName">Last Name</label> 
+					                <input type="nametext" id="lName" name="lastName" placeholder="Smith">
+					            </div>		
+
+					            <div class="colfull">
+					            	<label for="email">Email</label>
+					            	<input type="text" id="email" name="email" placeholder="johnsmith@gmail.com">
+					        	</div>
+					        	<div class="col1">
+						            <label for="adr">Address</label>
+						            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" size="">
+						        </div>
+						        <div class="col2">
 					            <label for="city">City</label>
 					            <input type="text" id="city" name="city" placeholder="Vancouver">
 					            </div>
 
-					            <div class="row">
-					              <div class="info">
+					             <div class="col1">
 					                <label for="state">Province</label>
 					                <input type="nametext" id="province" name="province" placeholder="BC">
-					              </div>
-					              <div class="info">
+					             </div>
+					              <div class="col2">
 					                <label for="postalcode">Postal Code</label>
 					                <input type="nametext" id="postalcode" name="postalcode" placeholder="V2H3O9">
 					              </div>
-					            </div>
-					         	
+					            
+					         	<div class="colfull">
 							    	<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-							 	
+							 	</div>
 
-					          <div class="row">
-					            <h3>Payment</h3>
-					            <div class="info">
+								<div class="colfull">
+					            	<h3>Payment</h3>
 						            <label for="fname">Accepted Cards</label>
 						            <div class="icon-container">
 						              <i class="fa fa-cc-visa" style="color:navy;"></i>
@@ -80,24 +86,25 @@
 						            <input type="text" id="cname" name="cardname" placeholder="John Smith">
 						            <label for="ccnum">Credit card number</label>
 						            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+						         </div>
+						         <div class="colfull">
 						            <label for="expmonth">Exp Month</label>
 						            <input type="nametext" id="expmonth" name="expmonth" placeholder="March">
 					            </div>
-					            <div class="row">
-					             
+					            <div class="col1">		       
 					                <label for="expyear">Exp Year</label>
-					                <input type="nametext" id="expyear" name="expyear" placeholder="2021">			             			              
+					                <input type="nametext" id="expyear" name="expyear" placeholder="2021">			             
+					            </div>  
+					            <div class="col2">
 					                <label for="cvv">CVV</label>
-					                	<input type="nametext" id="cvv" name="cvv" placeholder="444">
-					                		             
-					            </div>					       
+					                <input type="nametext" id="cvv" name="cvv" placeholder="444">                		             
+					            </div>	
+
+					            </div>			       
 							</form>
-
 						</div>
-					 </div>		
 
-					     <a href="orderConfirmation.html" class="btnStyle" id="order">Place Order</a>		       						    
-
+					     <a href="orderConfirmation.html" class="btnStyle" id="order">Place Order</a>		       						 
 					  <div class="total">
 							<h4>Items</h4>
 								<div class="cart" id="summary">
@@ -110,9 +117,9 @@
 														<h5 class="light-offer"></h5>
 														<p class="light-qauntity"> Qnt: <input value="1" name=""> 
 														</p>
-														<p class="light-remove">
+														<!--<p class="light-remove">
 															<span class="remove">Remove</span>
-														</p>
+														</p>-->
 												</div>
 										</div>
 										<div class="light">
@@ -123,9 +130,9 @@
 														<h5 class="light-offer"></h5>
 														<p class="light-qauntity"> Qnt: <input value="1" name=""> 
 														</p>
-														<p class="light-remove">
+														<!--<p class="light-remove">
 															<span class="remove">Remove</span>
-														</p>
+														</p>-->
 												</div>
 										</div>
 										<div class="cart-total">
