@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Lumi Lighting Quiz</title>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/webMain.css">
+		<link rel="stylesheet" href="temporaryGrid.css">
+	</head>
+
+	<body>
+		<nav class="navContainer">
+			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+			<ul class="navButtons">
+				<li><a href="shop.html">Products</a></li>
+				<li><a href="#">Inspiration</a></li>
+				<li><a href="aboutCompany.html">About Us</a></li>
+				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
+				<li><a href="shoppingCartModule.html"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+			</ul>
+		</nav>
+
+		<div class="quizBgContainer">
+			<div class="quizGrid">
+
+				<!-- Quiz Content -->
+				<div class="quizContainer">
+					<div class="quizNavBar">
+						<button class="textBtnStyle" id="back"> ← Back</button>
+						<button class="textBtnStyle" id="close">X</button>
+					</div>
+
+					<div class="progressBarContainer">
+						<div class="progressBarProgress" id="quizQFive"></div>
+					</div>
+					
+					<div class="question">
+						<p class="questionNumber">Q5 of 7:</p>
+						<h2 class="quizQuestion">What will you use the lamp for?</h2>
+					</div>
+
+					<!-- Embedding an image in a button class: https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
+					<div class="quizCard">
+						<form action="/action_page.php" method="get">
+							<input type="image" src="img/reading.png" class="quizImg" alt="books stacked on each other">
+							<label for="readingNWriting">Reading / Writing</label>
+						</form>
+					</div>
+
+					<div class="quizCard">
+						<form action="/action_page.php" method="get">
+							<input type="image" src="img/officeWork.png" class="quizImg" alt="person working on a laptop">
+							<label for="officeWork">Office Work</label>
+						</form>
+					</div>
+
+					<div class="quizCard">
+						<form action="/action_page.php" method="get">
+							<input type="image" src="img/decoration.png" class="quizImg" alt="decorative candle lights">
+							<label for="deco">Decoration</label>
+						</form>
+					</div>
+
+					<div class="quizCard">
+						<form action="/action_page.php" method="get">
+							<input type="image" src="img/lightUpRoom.png" class="quizImg" alt="living room with a lot of lights">
+							<label for="lightRoom">To light up a room</label>
+						</form>
+					</div>
+
+					<div class="quizCard">
+						<form action="/action_page.php" method="get">
+							<input type="image" src="img/other.png" class="quizImg" alt="blank image">
+							<label for="other">Other</label>
+						</form>
+					</div>
+
+					<button class="btnStyle" id="continue">Continue</button>
+					<button class="textBtnStyle" id="noPreference">No Preference</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
