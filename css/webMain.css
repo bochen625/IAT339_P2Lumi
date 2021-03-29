@@ -1,0 +1,753 @@
+*{
+	box-sizing:border-box; /*Controls how we measure our width*/
+}
+:root{ /*global styling+declarations: Variables: https://www.w3schools.com/css/css3_variables.asp*/
+	--CTAColour: #468CFF;
+	--textColour: #212429;
+	--bgColour: #FCFCFC;
+	/* Linear Gradients: https://www.w3schools.com/css/css3_gradients.asp*/
+	--gradientColour: linear-gradient(135deg, rgba(251, 203, 79, 25%), rgba(253, 60, 89, 20%), rgba(111, 163, 249, 20%));
+	--dropShadow: 0em 0em 1em rgba(0, 0, 0, 0.05); 	/*Blur box: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+
+	font-family: Lato, sans-serif;
+	color: var(--textColour);
+	background-color: var(--bgColour);
+}
+
+/*-----------Section---------*/
+.sectionContainer{
+	margin-bottom: 2.5rem;
+	margin-top: 0;
+}
+
+/*-----------Typography-----------*/
+h1, h2, h3, h4{
+	font-family: Poppins, sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 1.25rem;
+	font-weight: 500;
+	margin: 0.5rem;
+	margin-left: 0;
+}
+
+body {
+	font-size: 1rem;
+}
+
+
+p a{
+	font-weight: bold;
+}
+
+ul, ol{
+	line-height: 1.5rem;
+}
+
+/*-----------Colours-----------*/
+#CTAColour{
+	background-color: var(--CTAColour);
+}
+
+
+#gColour{
+	background-image: var(--gradientColour);
+}
+
+#textColour{
+	background-color: var(--textColour);
+}
+
+#bgColour{
+	background-color: var(--bgColour);
+}
+
+
+/*-----------Interactive Elements-----------*/
+/*CTA Button*/
+.btnStyle{
+	display: inline-block;
+	background-color: var(--CTAColour);
+	border-radius: 0.75rem;
+	width: 12rem;
+	font-size:1rem;
+	color: white;
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+}
+
+.btnStyle:hover{
+	font-weight: bold;
+	background-color: #2678ff;
+}
+
+.btnStyle:focus, .btnStyle:active{
+	color: var(--textColour);
+}
+
+/*Form Buttons*/
+button.btnStyle, input.btnStyle{
+	border-style: none;
+}
+
+.btnStyleDisabled{
+	display: inline-block;
+	background-color: var(--CTAColour);
+	border-radius: 0.75rem;
+	border-style: none;
+	width: 12rem;
+	font-size:1rem;
+	color: white;
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+	opacity: 50%;
+	cursor: not-allowed;
+	margin-left: 1rem;
+}
+
+.btnReset{
+	display: inline-block;
+	background-color: white;
+	border-radius: 0.75rem;
+	border: 0.15rem solid var(--CTAColour);
+	width: 12rem;
+	font-size:1rem;
+	color: var(--CTAColour);
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+	opacity: 50%;
+	margin-top: 2rem;
+	margin-left: 1rem;
+}
+
+.btnReset:hover{
+	background-color: var(--CTAColour);
+	font-weight: bold;
+	color:white;
+	opacity: 100%;
+}
+
+/*Form Fields*/
+input{
+	margin: 0rem;
+	margin-top: 1rem;
+	width: 28em;
+	background-color: white;
+	box-shadow: var(--dropShadow);
+	border: none;
+	padding: 10px;
+}
+
+input[type=text]:focus{
+	/*background-color: #2222;*/
+}
+
+label{
+	color: var(--textColour);
+	font-weight: bold;
+}
+
+/*-----------Feature Module Pattern-----------*/
+/*Tutorial: https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+/*Nav Bar Module*/
+.logo{
+	margin: 0.5rem;
+	margin-top: 1rem;
+}
+
+.navBarContainer{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+.navButtons {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+/*	overflow: hidden;*/
+}
+
+.navButtons li{
+	float: left;
+	margin: 0.15rem;
+}
+
+.navButtons a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 0.25rem;
+	color: var(--textColour);
+	margin: 1.25rem;
+	margin-top: 1.75rem;
+}
+
+.navButtons a:hover{
+	font-weight: bold;
+}
+
+.navButtons a:focus, a:active{
+	text-decoration: underline;
+}
+
+/*-----------Interactive Elements-----------*/
+/*CTA Button*/
+.btnStyle{
+	display: inline-block;
+	background-color: var(--CTAColour);
+	border-radius: 0.75rem;
+	width: 12rem;
+	font-size:1rem;
+	color: white;
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+}
+
+.btnStyle:hover{
+	font-weight: bold;
+	background-color: #2678ff;
+}
+
+.btnStyle:focus, .btnStyle:active{
+	color: var(--textColour);
+}
+
+/*Form Buttons*/
+button.btnStyle, input.btnStyle{
+	border-style: none;
+}
+
+.btnStyleDisabled{
+	display: inline-block;
+	background-color: var(--CTAColour);
+	border-radius: 0.75rem;
+	border-style: none;
+	width: 12rem;
+	font-size:1rem;
+	color: white;
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+	opacity: 50%;
+	cursor: not-allowed;
+	margin-left: 1rem;
+}
+
+.btnReset{
+	display: inline-block;
+	background-color: white;
+	border-radius: 0.75rem;
+	border: 0.15rem solid var(--CTAColour);
+	width: 12rem;
+	font-size:1rem;
+	color: var(--CTAColour);
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+	opacity: 50%;
+	margin-top: 2rem;
+	margin-left: 1rem;
+}
+
+.btnReset:hover{
+	background-color: var(--CTAColour);
+	font-weight: bold;
+	color:white;
+	opacity: 100%;
+}
+
+/*Form Fields*/
+input{
+	margin: 0rem;
+	margin-top: 1rem;
+	width: 28em;
+	background-color: white;
+	box-shadow: var(--dropShadow);
+	border: none;
+	padding: 10px;
+}
+
+input[type=text]:focus{
+	/*background-color: #2222;*/
+}
+
+label{
+	color: var(--textColour);
+	font-weight: bold;
+}
+
+/*-----------Nav bar-----------*/
+/*Tutorial: https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+.navContainer{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+.logo{
+	margin: 0.5rem;
+	margin-top: 1rem;
+}
+
+.navBarContainer{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+.navButtons {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+/*	overflow: hidden;*/
+}
+
+.navButtons li{
+	float: left;
+	margin: 0.15rem;
+}
+
+.navButtons a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 0.25rem;
+	color: var(--textColour);
+	margin: 1.25rem;
+	margin-top: 1.75rem;
+}
+
+.navButtons a:hover{
+	font-weight: bold;
+}
+
+.navButtons a:focus, a:active{
+	text-decoration: underline;
+}
+
+/*------------Hero---------*/
+/*Hero Image:
+https://www.w3schools.com/howto/howto_css_hero_image.asp*/
+#heroSlider {
+	height: 78vh;
+	width: 100%;
+	position: relative;
+	margin: auto;
+	overflow-x: hidden;
+}
+
+.slideImage img {
+	width: 100%;
+	height: 45rem;
+	object-fit: cover;
+	object-position: bottom;
+}
+
+.slideText {
+	position: absolute;
+	bottom: 100px;
+  	left: 10%;
+	width: 80%;
+	text-align: left;
+}
+
+.sliderDot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+#dots {
+	position: absolute;
+	right: 10%;
+	bottom: 100px;
+}
+
+.active {
+  background-color: black;
+}
+
+/*-----Feature Module------*/
+/*Feature Module Buttons*/
+.dot{
+  height: 1em;
+  width: 1em;
+  background-color: var(--CTAColour);
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 2.5rem;
+  margin-left: 3em;
+}
+
+.featureBtn{
+	display: inline-block;
+	background-color: white;
+	box-shadow: var(--dropShadow);
+	opacity:50%;
+	font-size:1rem;
+	color: var(--textColour);
+	font-weight: bold;
+	text-align: left;
+	text-decoration:none;
+	padding: 0.75em;
+	padding-left: 5em;
+	min-height: 5rem;
+}
+
+.featureBtn:hover, .featureBtn a:focus, a:active{
+	opacity:100%;
+}
+
+/*image*/
+.imgContainer img{ /*https://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css*/
+	width: 60rem;
+	height: 25rem;
+	object-fit:cover;
+}
+
+.productSpecsHeader{
+	margin-bottom: 0.5rem;
+}
+
+.productSpecs{
+	list-style-type:none;
+	margin-left: -2.5rem;
+	margin-top: -1rem;
+}
+
+.productSpecsTitle{
+	text-decoration:underline;
+}
+
+/*Recommendation Module*/
+.productCard img{
+	width: 100%;
+}
+.productCard:last-of-type{
+	background-image: var(--gradientColour);
+	height: auto;
+}
+
+.productCardText, .blogCardText{
+	font-size: 1.5rem;
+	margin-top: 10rem;
+	margin-left: 3.5rem;
+	width:clamp(7ch, 80%, 13ch);
+}
+
+.productCardText a:hover, .blogCardText a:hover{
+	font-weight: bold;
+}
+
+.productCardText a, .blogCardText a{
+	text-decoration: none;
+}
+
+#productCTA{
+	margin-top: 0.5rem;
+	margin-left: 3rem;
+}
+
+/*-----------Value Module-----------*/
+.valueAndBlogCard{
+	background-image: var(--gradientColour);
+	min-height: 18rem; /*31.5rem for 1920px*/
+	position: relative;
+}
+
+.companyValues{
+	text-align: center;
+	padding-top: 7rem;
+	font-size: 1.25rem;
+}
+
+/*-----------Blog Module-----------*/
+/*How to overlap images (position and z-index property): https://www.w3docs.com/snippets/css/how-to-position-one-image-on-top-of-another-in-html-css.html*/
+.blogImg{
+	width: 100%;
+	position: relative;
+	z-index: -1;
+}
+
+.blogBlurredImgBg{
+	width: 100%;
+	max-height: 15rem;
+	object-fit: cover;
+	/*Object fit:
+	https://css-tricks.com/almanac/properties/o/object-position/*/
+	object-position: left bottom;
+	margin-top: -50rem;
+	filter: blur(0.2em);
+}
+
+.blogTitle{
+	color: white;
+	margin-top: -13rem;
+	padding-left: 3.5rem;
+}
+
+.blogDescription{
+	color: white;
+	padding-left: 3.5rem;
+	padding-right: 3.5rem;
+	width: 100%;
+}
+
+.inTextCTAStyle{
+	font-weight: bold;
+	color: white;
+	padding-left: 3.5rem;
+}
+
+.blogInfoBackground{
+	position: absolute;
+	z-index: 1;
+}
+
+#blogCTA{
+	margin-top: 2rem;
+	margin-left: 3rem;
+}
+
+/*-----------Quiz Banner-----------*/
+.quizCTABanner{
+	margin-top: 4rem;
+	background-image: url('img/quizbanner.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 35rem;
+	background-size: cover;
+	margin-bottom: 4rem;
+}
+.quizBannerImg{
+	margin-top: 5rem;
+	max-width: 100%;
+	height: 75%;
+	object-fit: cover;
+}
+
+.quizDescription{
+	position: absolute;
+	left: 8.5%;
+	margin-top: 10rem;
+}
+
+.quizBH{
+	text-align: left;
+	width:clamp(7ch, 80%, 15ch);
+}
+
+/*-----------Quiz Pop-up-----------*/
+.quizBgContainer{
+	/*display: none;*/ /*sets state to hidden by default*/
+	position: fixed;
+	z-index: -1;
+	background-color: rgba(135, 135, 135, 80%);
+	width: 100vw; /*full width*/
+	height: 100vh; /*full height*/
+	overflow: auto; /*scroll if needed*/
+}
+
+.quizContainer{
+	background-color: white;
+	overflow: auto;
+	min-height: 75vh;
+	z-index: 1;
+}
+
+/*Quiz nav-bar*/
+.quizNavBar{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+#back{
+	width: 75%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+/*Quiz progress bar*/
+.progressBarContainer{
+	width: 100%;
+	height: 1.5rem;
+	background-color: white;
+	border-radius: 0.2rem;
+	border: 0.1rem solid var(--textColour);
+	margin-top: 4rem;
+}
+
+.progressBarProgress{
+	width: 14%;
+	height: 1.4rem;
+	background-color: var(--CTAColour);
+	border-radius: 0.2rem;
+	/*margin-top: -0.05rem;*/
+}
+
+/*Progress Bar: Q5 of 7*/
+#quizQFive{
+	width: 57%;
+}
+
+/*Quiz Questions*/
+.quizQuestion{
+	margin-top: -1rem;
+}
+
+.question a{
+	text-decoration: none;
+}
+
+/*.helpIcon: hover{
+	fill: red;
+}*/
+
+/*Quiz MC answers + buttons*/
+/*-----------Quiz (Text MC)-----------*/
+.quizBtnStyle{
+	display: inline-block;
+	background-color: white;
+	border-radius: 0.75rem;
+	border: 0.1rem solid var(--CTAColour);
+	width: 100%;
+	font-weight: bold;
+	font-size:1rem;
+	color: var(--CTAColour);
+	text-align: center;
+	text-decoration:none;
+	padding: 0.75em;
+	margin-bottom: 1.5rem;
+}
+
+.quizBtnStyle:hover, .quizBtnStyle:focus{
+	border: 0.2rem solid var(--CTAColour);
+}
+
+.textBtnStyle{
+	background-color: white;
+	border: none;
+	color: rgb(135, 135, 135);
+}
+
+/*---------Quiz (Image Selection)----------*/
+.quizCard{
+	margin-bottom: 1rem;
+}
+
+.quizImg{
+	width: 100%;
+}
+
+/*---------Quiz Continue/no preference----------*/
+#continue{
+	width:100%;
+	height: 100%;
+}
+
+#noPreference{
+	text-decoration: underline;
+	height: 100%;
+	margin: 0.5rem;
+}
+
+/*---------About Us----------*/
+.aboutCompanyImg{
+	width: 100%;
+	height: auto;
+	background-color: gray;
+}
+
+/*-----------Footer-----------*/
+.footBarContainer{
+	background-color: white;
+	box-shadow: var(--dropShadow);
+}
+
+.footerButtons {
+	list-style-type: none;
+	margin: 1.5rem;
+	padding: 0;
+/*	overflow: hidden;*/
+}
+
+.footerButtons li{
+	float: left;
+	margin: 0.15rem;
+}
+
+.footerButtons a {
+	display: block;
+	font-family: Opensans, sans-serif;
+	font-size: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+	padding: 0.25rem;
+	color: var(--textColour);
+	margin: 0.1rem;
+	margin-top: 0.25rem;
+}
+
+.footerResources li, .footerAbout li{
+	list-style-type: none;
+	text-align: left;
+	margin-left: -2.5rem;
+}
+
+.footerResources a, .footerAbout a{
+	display: block;
+	font-size: 0.75rem;
+	text-decoration: none;
+	color: var(--textColour);
+	margin-top: 0.25rem;
+}
+
+.footerLogo img{
+	width: 130%;
+	height: auto;
+	margin-left: -0.5rem;
+}
+
+.copyRight{
+	text-align: center;
+	margin: 0.5rem;
+	margin-top: 15rem;
+}
+
+.socialMediaIcons a{
+	text-decoration: none;
+}
+
+.iconFb, .iconTwitter, .iconLinkedIn{
+	margin-right: 1.5rem;
+}
+
+.iconFb{
+	margin-left: -0.5rem;
+}
+
+.iconIG{
+	margin-right: 0rem;
+}
