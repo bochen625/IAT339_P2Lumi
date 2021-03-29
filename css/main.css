@@ -245,8 +245,9 @@ label{
 
 /*Feature Module*/
 .modulePatternContainer{
+	/*
 	background-color: white;
-	box-shadow: var(--dropShadow);
+	box-shadow: var(--dropShadow);*/
 }
 
 /*Feature Module Buttons*/

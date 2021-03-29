@@ -73,7 +73,7 @@
 }
 
 #prodHeroImg{
-	background-image: url('img/instagram.png');
+	/*background-image: url('img/productdetailhero.png');*/
 	grid-column: 1/end;
 	grid-row: 1/1;
 }
@@ -84,6 +84,7 @@
 
 #userSubImg{
 	grid-column: 2/end;
+	margin-top: 2rem;
 	margin-bottom: 5rem;
 }
 
@@ -99,16 +100,15 @@
 
 	/* Product Detail PG-Hero/Banner*/
 .ckBannerContainer{
-	background-image: url('img/instagram.png');
-	background-repeat: no-repeat;
-	height: 30rem;
+	background: url('../img/productdetailhero.png') repeat 0 0;
+	height: 32rem;
 	background-size: cover;
 	display:grid;
-	grid-template-columns:repeat(12, 1fr);
+	grid-template-columns:repeat(13, 1fr);
 	grid-column-gap: 0.5rem;
 }
 .ckLampText{
-margin-top: 10rem;
+margin-top: 12rem;
 grid-column: 8/span 4;
 }
 		/* Product Detail PG-Product Spec Breakdown Section*/
@@ -118,7 +118,6 @@ grid-template-columns: repeat(12, 1fr);
 grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr 0.5fr 1.25fr;
 grid-column-gap: 2em;
 grid-row-gap: 2em;
-background-color: white;
 }
 
 	/*Description*/
@@ -254,7 +253,6 @@ figure.galleryImg-4{
 	grid-template-rows: 0.2fr ;
 	grid-column-gap: 2em;
 	grid-row-gap: 2em;
-	margin-bottom: 5rem;
 }
 
 .descriptionTitle{
