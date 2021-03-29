@@ -486,15 +486,41 @@ textarea {
     display: none;
   }
 
+/* filter  */
   .filterContainer{
     width: 90vw;
     padding-left: 0rem;
     padding-right: 0rem;
   }
 
+  #blackBackground {
+    position: static;
+  }
+
+/* shopping module */
   .miniShoppingCartContainer {
     left: 0;
     width: 100vw;
+    /* margin-top: -20vh; */
+    height: 100vh;
+    position: static;
+  }
+
+  .light {
+    height: 15vh;
+  }
+
+  .light img {
+    height: 15vh;
+  }
+
+  .light-info {
+    margin-top: -15px;
+  }
+
+  .light-remove{
+    bottom: -.5rem;
+    right: 1.25rem;
   }
 
 }
