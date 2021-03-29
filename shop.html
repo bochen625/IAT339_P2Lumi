@@ -10,67 +10,141 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Lumi | Shop</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script>
+		$(document).ready(function(){
+		  $(".shoppingCartButton").click(function(){
+		    $("#blackBackground").toggleClass("show");
+		  });
+		});
+		</script>
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="temporaryGrid.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/jonathanTemporary.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- <link rel="stylesheet" href="css/grids.css">
 		<link rel="stylesheet" href="css/main.css"> -->
 	</head>
 
 	<body>
 
+
 		<!-- Nav -->
 		<nav class="navContainer">
 			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
 			<ul class="navButtons">
-				<li><a href="shop.html">Products</a></li>
+				<div id="hoverable">
+					<li><a href="shop.html">Products</a></li>
+					<!-- Sub-Nav -->
+					<div class="subNavigation">
+						<div class="subNavContainer">
+
+							<div class="subNavCategory">
+								<div class="subNavCategoryCollum1">
+									<h5>Category</h5>
+									<a href="">Desk Lamp</a>
+									<a href="">Table Lamp</a>
+									<a href="">Floor Lamp</a>
+								</div>
+								<div class="subNavCategoryCollum2">
+									<a href="">Wall Lamp</a>
+									<a href="">Ceiling Lights</a>
+									<a href="">Ceiling Lights</a>
+								</div>
+							</div>
+
+							<div class="subNavLightingTypes">
+								<div class="subNavLightingTypesCollum1">
+									<h5>Types of Lighting</h5>
+									<a href="">Task Lighting</a>
+									<a href="">Ambient Lighting</a>
+									<a href="">Accent Lighting</a>
+								</div>
+							</div>
+
+							<div class="subNavFeatures">
+								<div class="subFeaturesCollum1">
+									<h5>Features</h5>
+									<a href="">Lighting Quiz</a>
+								</div>
+							</div>
+
+							<div class="subNavIMG">
+								<img src="./img/navImg.png">
+							</div>
+						</div>
+					</div>
+				</div>
 				<li><a href="#">Inspiration</a></li>
 				<li><a href="aboutCompany.html">About Us</a></li>
 				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
-				<li><a href="shoppingCartModule.html"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+				<li><a href="#" class="shoppingCartButton"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
 			</ul>
 		</nav>
 
-		<!-- Sub-Nav -->
-		<!-- <div class="subNavigation">
-			<div class="subNavContainer">
-
-				<div class="subNavCategory">
-					<div class="subNavCategoryCollum1">
-						<h5>Category</h5>
-						<a href="">Desk Lamp</a>
-						<a href="">Table Lamp</a>
-						<a href="">Floor Lamp</a>
-					</div>
-					<div class="subNavCategoryCollum2">
-						<a href="">Wall Lamp</a>
-						<a href="">Ceiling Lights</a>
-						<a href="">Ceiling Lights</a>
-					</div>
+<div class="hide" id="blackBackground">
+		<div class="miniShoppingCartContainer">
+			<div class="shoppingcartContainer">
+				<div class="close">
+					<a href="#" class="material-icons">&#xe5cd;</a>
 				</div>
-
-				<div class="subNavLightingTypes">
-					<div class="subNavLightingTypesCollum1">
-						<h5>Types of Lighting</h5>
-						<a href="">Task Lighting</a>
-						<a href="">Ambient Lighting</a>
-						<a href="">Accent Lighting</a>
+				<h3>Your Cart</h3>
+					<div class="cart">
+						<div class="lightproducts">
+							<div class="light">
+								<img src="img/colbyCeilingLight.png" alt="black Colby Ceiling Light">
+									<div class="light-info">
+											<h4 class="light-name"> Colby Ceiling Lamp</h4>
+											<h5 class="light-price">$84</h5>
+											<h5 class="light-offer"></h5>
+											<p class="light-qauntity"> Qnt: <input value="1" name="">
+											</p>
+											<p class="light-remove">
+												<span class="remove">Remove</span>
+											</p>
+									</div>
+							</div>
+							<div class="light">
+								<img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light">
+									<div class="light-info">
+											<h4 class="light-name">W42 Ceiling Light</h4>
+											<h5 class="light-price">$84</h5>
+											<h5 class="light-offer"></h5>
+											<p class="light-qauntity"> Qnt: <input value="1" name="">
+											</p>
+											<p class="light-remove">
+												<span class="remove">Remove</span>
+											</p>
+									</div>
+							</div>
+						</div>
 					</div>
-				</div>
-
-				<div class="subNavFeatures">
-					<div class="subFeaturesCollum1">
-						<h5>Features</h5>
-						<a href="">Lighting Quiz</a>
-					</div>
-				</div>
-
-				<div class="subNavIMG">
-					<img src="./img/navImg.png">
-				</div>
+						<div class="cart-total">
+							<p>
+								<span>Number of Items</span>
+								<span>2</span>
+							</p>
+							<p>
+								<span>Sub-total</span>
+								<span>$168</span>
+							</p>
+							<p>
+								<span>Shipping</span>
+								<span>--</span>
+							</p>
+							<p>
+								<span>Sales Tax</span>
+								<span>--</span>
+							</p>
+							<a href="Checkout.html" class="btnStyle">Proceed to Checkout</a>
+						</div>
 			</div>
-		</div> -->
+		</div>
+		</div>
+
 
 		<div class="sectionContainer">
 			<!-- Intro Text -->
@@ -81,6 +155,92 @@
 		</div>
 
 		<div class="sectionContainer">
+
+			<div>
+					<div class="filterContainer">
+						<div class="filterBlock">
+							<div class="filterContent">
+								<h3 class="filterHeader">Filter</h3>
+								<p>Style</p>
+									<label class="boxContainer">Desk Lamp
+										<input type="checkbox" checked="checked">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Table Lamp
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Floor Lamp
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Wall Lights
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Ceiling Lights
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+								<div class="divide"></div>
+								<p>Type</p>
+									<label class="boxContainer">General/Ambient
+										<input type="checkbox" checked="checked">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Task/Directional
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Accent
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+								<div class="divide"></div>
+								<p>Price</p>
+									<label class="boxContainer">Under $30
+										<input type="checkbox" checked="checked">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">$31-$50
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">$50-$100
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Over $100
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+								<div class="divide"></div>
+								<p>Light Temprature</p>
+									<label class="boxContainer">Warm
+										<input type="checkbox" checked="checked">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Bright Yellow
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Bright White
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Cool
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+									<label class="boxContainer">Muli-Coloured
+										<input type="checkbox">
+										<span class="check"></span>
+									</label>
+							</div>
+						</div>
+					</div>
+			</div>
+
 			<!-- Shop Grid -->
 			<div class="shopModule">
 				<div class="shopTile">
@@ -167,90 +327,7 @@
 
 				</div>
 
-				<div>
-						<div class="filterContainer">
-							<div class="filterBlock">
-								<div class="filterContent">
-									<h3 class="filterHeader">Filter</h3>
-									<p>Style</p>
-										<label class="boxContainer">Desk Lamp
-											<input type="checkbox" checked="checked">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Table Lamp
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Floor Lamp
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Wall Lights
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Ceiling Lights
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-									<div class="divide"></div>
-									<p>Type</p>
-										<label class="boxContainer">General/Ambient
-											<input type="checkbox" checked="checked">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Task/Directional
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Accent
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-									<div class="divide"></div>
-									<p>Price</p>
-										<label class="boxContainer">Under $30
-											<input type="checkbox" checked="checked">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">$31-$50
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">$50-$100
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Over $100
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-									<div class="divide"></div>
-									<p>Light Temprature</p>
-										<label class="boxContainer">Warm
-											<input type="checkbox" checked="checked">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Bright Yellow
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Bright White
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Cool
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-										<label class="boxContainer">Muli-Coloured
-											<input type="checkbox">
-											<span class="check"></span>
-										</label>
-								</div>
-							</div>
-						</div>
-				</div>
+
 			</div>
 		</div>
 

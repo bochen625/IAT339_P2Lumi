@@ -32,7 +32,7 @@
 .shopModule {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-  grid-column: span 12;
+  grid-column: span 11;
 }
 
 .shopTile{
@@ -41,7 +41,7 @@
 	grid-template-rows: repeat(3, 1fr);
 	grid-column-gap: 2em;
 	grid-row-gap: 2em;
-	grid-column: 1;
+	grid-column: 1/span 4;
 }
 
 .shopTile .productCard:first-of-type{
@@ -70,6 +70,12 @@
 	margin: 0 auto;
 }
 
+.pagination a {
+	float: left;
+	margin-left: 30px;
+	color: #000000;
+}
+
 /*--------Product Filter Module-----*/
 
 .filterContainer{
@@ -78,7 +84,6 @@
 	grid-column: 1;
 	grid-template-rows: 1fr;
 	grid-column-gap: 0.5rem;
-	padding-left: 2rem;
 	padding-right: 2rem;
 }
 
@@ -270,6 +275,8 @@ textarea {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
+  z-index: -1px;
+  background-color: white;
 }
 
 .subNavCategory {
@@ -283,14 +290,18 @@ textarea {
 
 /* Sub Navigation */
 .subNavigation {
+  display: none;
+  width: 100vw;
+  margin-left: -66vw;
+  margin-top: 5em;
   background-color: white;
 }
 
 .subNavigation a {
-	display: block;
-	color: black;
 	text-decoration: none;
 	margin-bottom: 10px;
+  text-align: left;
+  margin-left: 0;
 }
 
 .subNavCategory {
@@ -302,14 +313,15 @@ textarea {
 }
 
 .subNavCategoryCollum2 {
-	padding-top: 40px;
+	padding-top: 25px;
 }
 
 .subNavCategoryCollum1 {
+
 }
 
 .subNavContainer {
-	width: 90%;
+	width: 80vw;
 	margin: 0 auto;
 }
 
@@ -317,6 +329,77 @@ textarea {
 	margin-top: 20%;
 }
 
+/* Subnav Animation */
+#hoverable {
+
+  z-index: -1000px;
+}
+#hoverable:hover .subNavigation {
+  display: block;
+  position: absolute;
+}
+
+.navContainer{
+	z-index: 1000px;
+}
+
+/* Mini Shopping Cart Container */
+
+.close{
+	margin-top: 2.5rem;
+	grid-column: 12/span 1;
+}
+
+.miniShoppingCartContainer {
+  width: 30vw;
+  z-index: 1000px;
+  position: fixed;
+  right: 0;
+  background-color: white;
+  height: 100vh;
+}
+
+.shoppingcartContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-template-rows: 2fr;
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: 0 auto;
+}
+.shoppingcartContainer > h3{
+	grid-column: 2/span end;
+}
+.cart{
+	grid-column: 1/span 12;
+}
+.cart-total{
+	grid-column: 1/span 12;
+}
+
+#blackBackground {
+  margin-top: -5.7em;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .2);
+  position: fixed;
+  z-index: 1000px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Checkout Order Summary */
+
+#summary.cart{
+	grid-column: 1/span end;
+}
 
 
 
@@ -330,6 +413,7 @@ textarea {
   .shopTile{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 9fr;
+    width:90vw;
   }
 
   .shopTile .productCard:first-of-type{
@@ -400,6 +484,17 @@ textarea {
 
   .subNavIMG {
     display: none;
+  }
+
+  .filterContainer{
+    width: 90vw;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .miniShoppingCartContainer {
+    left: 0;
+    width: 100vw;
   }
 
 }
