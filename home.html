@@ -24,20 +24,63 @@
 		</nav>
 
 		<!--Hero-->
-		<div class ="heroSlider">
-<!-- 			<img src="img/heroCeilingLight.png" class="slideImage" alt="A metallic ceiling light">
-			
-			<div class="slideText">
-				<h2>W42 Ceiling Light</h2>
-				<h4 class="subheading">A durable, metallic light. Provides a soft, directional light.</h4>
-				<a href="shop.html" class="btnStyle">Shop Now</a>
+		<div class="patternOverview">
+			<div id="heroSlider">
+				<div class="slideImage">
+					<img src="./img/heroImg1.png">
+					<div class="slideText">
+						<h1>W42 Ceiling Light</h1>
+						<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+						<a href="#" class="btnStyle">Shop Now</a>
+					</div>
+				</div>
+
+				<div class="slideImage">
+					<img src="./img/feature1.png">
+					<div class="slideText">
+						<h1>W43 Floor Light</h1>
+						<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+						<a href="#" class="btnStyle">Shop Now</a>
+					</div>
+				</div>
+
+				<div class="slideImage">
+					<img src="./img/feature1.png">
+					<div class="slideText">
+						<h1>W44 Ambient Light</h1>
+						<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+						<a href="#" class="btnStyle">Shop Now</a>
+					</div>
+				</div>
+
+				<div id="dots">
+					<span class="sliderDot"></span>
+					<span class="sliderDot"></span>
+					<span class="sliderDot"></span>
+				</div>
 			</div>
 
-			<div class="heroSliderDots">
-				<span class="sliderDot"></span>
-				<span class="sliderDot"></span>
-				<span class="sliderDot"></span>
-			</div> -->
+			<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				  var i;
+				  var slides = document.getElementsByClassName("slideImage");
+				  var dots = document.getElementsByClassName("sliderDot");
+				  for (i = 0; i < slides.length; i++) {
+				    slides[i].style.display = "none";
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}
+				  for (i = 0; i < dots.length; i++) {
+				    dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 5000);
+				}
+			</script>
 		</div>
 
 		<!--New Arrivals Recommendation-->
@@ -74,11 +117,10 @@
 		</div>
 
 		<!--Quiz-->
-		<div class="quizBanner">
-			<img src="img/quizbanner.png" class ="quizBannerImg" alt="pink LED light">
+		<div class="quizCTABanner">
 			<div class="quizDescription">
 				<h2 class="quizBH">Unsure what you're looking for?</h2>
-				<button class="btnStyle" id="quizCTA">Take the Quiz!</button>
+				<a href="quiz.html" class="btnStyle" id="quizCTA">Take the Quiz!</a>
 			</div>
 		</div>
 
@@ -92,7 +134,7 @@
 				<a href="#"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
 				<div class="blogInfoBackground">
 					<h4 class="blogTitle"> Lamp Set-up Inspirations</h4>
-					<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should...</p>
+					<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should look.</p>
 					<a href="#" class="inTextCTAStyle">read more</a>
 				</div>
 			</div>
@@ -110,7 +152,7 @@
 
 			<!--CTA for Blog Module-->
 			<div class="valueAndBlogCard">
-				<h3 class="productCardText"> Explore our blogs to get more inspiration and ideas</h3>
+				<h3 class="blogCardText"> Explore our blogs to get more inspiration and ideas</h3>
 				<a href="#" class="btnStyle" id="blogCTA">Discover More</a>
 			</div>
 		</div>

@@ -502,7 +502,7 @@ ul, ol{
 .slideText {
 	position: absolute;
 	bottom: 100px;
-  left: 10%;
+  	left: 10%;
 	width: 80%;
 	text-align: left;
 }
