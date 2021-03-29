@@ -636,9 +636,42 @@
 	}
 
 }
+/*Breaking point 381px*/
+@media screen and (max-width:23.813em){
+	.blogTitle{
+		padding-left: 2rem;
+	}
+
+	.blogDescription{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.inTextCTAStyle{
+		padding-left: 2rem;
+	}
+
+}
 
 /*Phone: 320px*/
 @media screen and (max-width:20em){
+	.blogImg{
+		display: none;
+	}
+
+	.blogBlurredImgBg{
+		margin-top: 0rem;
+		height: 30rem;
+	}
+
+	.blogTitle{
+		margin-top: -14.5rem;
+	}
+
+	.blogDescription{
+		padding-right: 1rem;
+	}
+
 	.blogCardText{
 		font-size: 1.25rem;
 		width:clamp(7ch, 80%, 14ch);
