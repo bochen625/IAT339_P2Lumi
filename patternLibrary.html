@@ -1947,14 +1947,35 @@
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">HTML</p>
 								<code>
-									.
+									&lt;div class="quizBannerContainer"&gt;<br>
+										&lt;h2 class="quizBH">Unsure what you're looking for?</h2&gt;<br>
+										&lt;div class="quizCTA"&gt;<br>
+											&lt;a href="#" class="btnStyle">Take the Quiz!</a&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;<br>
 								</code>
 							</div>
 						
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">CSS</p>
 								<code>
-									.
+									quizBannerContainer{<br>
+										background-image: url('../img/quizbanner.png');<br>
+										background-repeat: no-repeat;<br>
+										height: 30rem;<br>
+										background-size: cover;<br>
+										box-shadow: var(--dropShadow);<br>
+									}<br>
+
+									.quizBH{<br>
+										margin: 0.5rem;<br>
+										margin-top: 7rem;<br>
+									}<br>
+
+									.quizCTA{<br>
+										margin: 0.5rem;<br>
+										min-height: 20rem;<br>
+									}<br>
 								</code>
 							</div>
 						</div>
@@ -2120,57 +2141,67 @@
 					</div>
 				</div>	
 
-				<!--Product Filter Module-->
 				<!--Product Specification Photo Gallery Module-->
 				<div class="patternContainer">
 					<h4>Product Photo Gallery Module</h4>
 					<p class="note"> On product specifications page, under the detailed breakdown of product features </p>
 					<div class="patternOverview">
-			<div id="photoGallery">
-				<div class="productGalleryContainer">
-							<figure class="galleryImg-1">
-								<img src="img/gallery1.png" class="productGalImg" alt="Product Image 1">
-							</figure>
-							<figure class="galleryImg-2">
-								<img src="img/image 304.png" class="productGalImg" alt="Product Image 2">
-							</figure>
-							<figure class="galleryImg-3">
-								<img src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
-							</figure>
-							<figure class="galleryImg-4">
-								<img src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
-							</figure>
-				</div>
-			</div>
-					</div>
-					
+						<div id="photoGallery">
+							<div class="productGalleryContainer">
+									<figure class="galleryImg-1">
+										<img src="img/gallery1.png" class="productGalImg" alt="Product Image 1">
+									</figure>
+									<figure class="galleryImg-2">
+										<img src="img/image 304.png" class="productGalImg" alt="Product Image 2">
+									</figure>
+									<figure class="galleryImg-3">
+										<img src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
+									</figure>
+									<figure class="galleryImg-4">
+										<img src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
+									</figure>
+							</div>
+						</div>					
 					<div class="codeSnippetContainer">
 						<div class="codeSnippetPattern">
 							<p class="codeSnippetTitle">HTML</p>
 							<code>
-								&ltdiv class="productGalleryContainer">
-									&ltfigure class="galleryImg-1">
-										&ltimg src="img/gallery1.jpg" class="productGalImg" alt="Product Image 1">
-									&lt/figure>
-									&ltfigure class="galleryImg-2">
-										&ltimg src="img/gallery2.jpg" class="productGalImg" alt="Product Image 2">
-									&lt/figure>
-									&ltfigure class="galleryImg-3">
-										&ltimg src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3">
-									&lt/figure>
-									&ltfigure class="galleryImg-4">
-										&ltimg src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
-									&lt/figure>
-								&lt/div>
+								&lt;div id="photoGallery"><br>
+									&lt;div class="productGalleryContainer"&gt;<br>
+												&lt;figure class="galleryImg-1"&gt;<br>
+													&lt;img src="img/gallery1.png" class="productGalImg" alt="Product Image 1"&gt;<br>
+												&lt;/figure&gt;<br>
+												&lt;figure class="galleryImg-2"&gt;<br>
+													&lt;img src="img/image 304.png" class="productGalImg" alt="Product Image 2"&gt;<br>
+												&lt;/figure&gt;<br>
+												&lt;figure class="galleryImg-3"&gt;<br>
+													&lt;img src="img/gallery3.jpg" class="productGalImg" alt="Product Image 3"&gt;<br>
+												&lt;/figure&gt;<br>
+												&lt;figure class="galleryImg-4"&gt;<br>
+													&lt;img src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4"&gt;<br>
+												&lt;/figure&gt;<br>
+									&lt;/div&gt;<br>
+								&lt;/div>
 							</code>
 						</div>
 						<div class="codeSnippetPattern">
 							<p class="codeSnippetTitle">CSS</p>
 							<code>
-								.
+								.productGalImg{<br>
+									width: 100%;<br>
+									height: 100%;<br>
+									object-fit: cover;<br>
+									display: block;<br>
+								}<br>
+
+								.cartTile{<br>
+									background-color: white;<br>
+									box-shadow: var(--dropShadow);<br>
+								}<br>
 							</code>
 						</div>
 					</div>
+				</div>
 				</div>
 
 				<!--User Submitted Module-->
@@ -2179,51 +2210,67 @@
 					<p class="note"> Listed Under Product Photo Gallery, on every product speficiations page</p>
 					<div class="patternOverview">
 						<h3>User Submitted Photos</h3>
-						<div class="scrollUser">
-							<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
-							<img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
-							<img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
-							<img src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
+						<div id="userSubImg">
+								<div class="scrollUser">
+									<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
+									<img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
+									<img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
+									<img src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
+									<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
+									<img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
+									<img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
+								</div>
+							<h4 id="userSub">User Submitted Photos</h4>
 						</div>
-					</div>
-					
+						
 					<div class="codeSnippetContainer">
 						<div class="codeSnippetPattern">
 							<p class="codeSnippetTitle">HTML</p>
 							<code>
-								&lt;h3&gt;User Submitted Photos&lt;/h3&gt;
-								&ltdiv class="scrollUser">
-									&ltimg src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
-									&ltimg src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2">
-									&ltimg src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3">
-									&ltimg src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4">
-								&lt/div>
-							</code>
-						</div>
-
-						<div class="codeSnippetPattern">
-							<p class="codeSnippetTitle">CSS</p>
-							<code>
-								.userGalImg{
-									width: 100%;
-									height: 100%;
-								}
-
-								.scrollUser{
-								  overflow: auto;
-								  white-space: nowrap;
-								}
-
-								.scrollUser img {
-								  display: inline-block;
-								  color: white;
-								  text-align: center;
-								  padding: 0.75rem;
-								  text-decoration: none;
-								}
+								&lt;div id="userSubImg"&gt;<br>
+										&lt;div class="scrollUser"&gt;<br>
+											&lt;img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1"&gt;<br>
+											&lt;img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2"&gt;<br>
+											&lt;img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3"&gt;<br>
+											&lt;img src="img/user4.png" class="userGalImg4" alt="User Submitted Image 4"&gt;<br>
+											&lt;img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1"&gt;<br>
+											&lt;img src="img/user2.png" class="userGalImg2" alt="User Submitted Image 2"&gt;<br>
+											&lt;img src="img/user3.png" class="userGalImg3" alt="User Submitted Image 3"&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;h4 id="userSub">User Submitted Photos&lt;/h4&gt;<br>
+								&lt;/div&gt;<br>
 
 							</code>
 						</div>
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.userGalImg1, .userGalImg2, .userGalImg3 , .userGalImg4{<br>
+										width: 20%;<br>
+										height: 50%;<br>
+									}<br>
+
+									.userGalImg5{<br>
+										width: 20%;<br>
+										height: 100%;<br>
+									}<br>
+
+									.scrollUser{<br>
+									  overflow: auto;<br><br>
+									  white-space: nowrap;<br>
+									}<br>
+
+									.scrollUser img {<br>
+									  display: inline-block;<br>
+									  color: white;<br>
+									  text-align: center;<br>
+									  padding-right: 0.7rem;<br>
+									  text-decoration: none;<br>
+									}<br>
+								</code>
+							</div>
+						
+					</div>
 					</div>
 				</div>
 	</body>
