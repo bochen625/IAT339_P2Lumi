@@ -11,14 +11,7 @@
 
 		<title>Lumi | Shop</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-		<script>
-		$(document).ready(function(){
-		  $(".shoppingCartButton").click(function(){
-		    $("#blackBackground").toggleClass("show");
-		  });
-		});
-		</script>
+		<script src="js/shoppingCartModule.js"></script>
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="temporaryGrid.css">
@@ -85,11 +78,12 @@
 			</ul>
 		</nav>
 
-<div class="hide" id="blackBackground">
+		<!-- shopping popup module -->
+		<div class="hide" id="blackBackground">
 		<div class="miniShoppingCartContainer">
 			<div class="shoppingcartContainer">
 				<div class="close">
-					<a href="#" class="material-icons">&#xe5cd;</a>
+					<a href="" class="material-icons">&#xe5cd;</a>
 				</div>
 				<h3>Your Cart</h3>
 					<div class="cart">
@@ -215,7 +209,7 @@
 										<span class="check"></span>
 									</label>
 								<div class="divide"></div>
-								<p>Light Temprature</p>
+								<p>Light Temperature</p>
 									<label class="boxContainer">Warm
 										<input type="checkbox" checked="checked">
 										<span class="check"></span>
@@ -232,7 +226,7 @@
 										<input type="checkbox">
 										<span class="check"></span>
 									</label>
-									<label class="boxContainer">Muli-Coloured
+									<label class="boxContainer">Multi-Coloured
 										<input type="checkbox">
 										<span class="check"></span>
 									</label>
