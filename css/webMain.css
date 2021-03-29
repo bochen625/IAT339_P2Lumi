@@ -361,6 +361,13 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 	object-position: bottom;
 }
 
+.subheading{
+	width:clamp(20ch, 80%, 28ch);
+	font-weight: 400;
+	margin-top: 0rem;
+	margin-bottom: 1.5rem;
+}
+
 .slideText {
 	position: absolute;
 	bottom: 100px;
