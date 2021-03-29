@@ -499,7 +499,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 	https://css-tricks.com/almanac/properties/o/object-position/*/
 	object-position: left bottom;
 	margin-top: -50rem;
-	filter: blur(0.2em);
+	filter: blur(0.3em);
 }
 
 .blogTitle{
@@ -676,7 +676,9 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 /*---------About Us----------*/
 .aboutCompanyImg{
 	width: 100%;
-	height: auto;
+	height: 30rem;
+	object-fit: cover;
+	object-position: 0% 25%;
 	background-color: gray;
 }
 

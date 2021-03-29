@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Lumi Home Page</title>
+		<title>Lumi Inspirations</title>
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/webMain.css">
@@ -17,111 +17,12 @@
 			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
 			<ul class="navButtons">
 				<li><a href="shop.html">Products</a></li>
-				<li><a href="inspirations.html">Inspiration</a></li>
+				<li><a href="#">Inspiration</a></li>
 				<li><a href="aboutCompany.html">About Us</a></li>
 				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
 				<li><a href="shoppingCartModule.html"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
 			</ul>
 		</nav>
-
-		<!--Hero-->
-		<div id="heroSlider">
-			<div class="slideImage">
-				<img src="./img/heroCeilingLight.png" alt="Metallic Ceiling Light">
-				<div class="slideText">
-					<h1>W42 Ceiling Light</h1>
-					<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-					<a href="shop.html" class="btnStyle">Shop Now</a>
-				</div>
-			</div>
-
-			<div class="slideImage">
-				<img src="./img/feature1.png">
-				<div class="slideText">
-					<h1>W43 Floor Light</h1>
-					<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-					<a href="shop.html" class="btnStyle">Shop Now</a>
-				</div>
-			</div>
-
-			<div class="slideImage">
-				<img src="./img/feature1.png">
-				<div class="slideText">
-					<h1>W44 Ambient Light</h1>
-					<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-					<a href="shop.html" class="btnStyle">Shop Now</a>
-				</div>
-			</div>
-
-			<div id="dots">
-				<span class="sliderDot"></span>
-				<span class="sliderDot"></span>
-				<span class="sliderDot"></span>
-			</div>
-		</div>
-
-		<script>
-			var slideIndex = 0;
-			showSlides();
-
-			function showSlides() {
-			  var i;
-			  var slides = document.getElementsByClassName("slideImage");
-			  var dots = document.getElementsByClassName("sliderDot");
-			  for (i = 0; i < slides.length; i++) {
-			    slides[i].style.display = "none";
-			  }
-			  slideIndex++;
-			  if (slideIndex > slides.length) {slideIndex = 1}
-			  for (i = 0; i < dots.length; i++) {
-			    dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";
-			  dots[slideIndex-1].className += " active";
-			  setTimeout(showSlides, 5000);
-			}
-		</script>
-
-		<!--New Arrivals Recommendation-->
-		<div class="productRecommendation">
-			<h3 class="moduleHeader"> New Arrivals</h3>
-			<div class="productCard">
-				<a href="ProductDetail.html"><img src="img/colbyCeilingLight.png" alt="black circular ceiling light"></a>
-				<div class="productDetails">
-					<p class="productCardPName">Ambient Floor Lamp</p>
-					<p class="productCardPPrice">$139</p>
-				</div>
-			</div>
-
-			<div class="productCard">
-				<a href="ProductDetail.html"><img src="img/coneCeilingLight.png" alt="blue coned-shape ceiling light"></a>
-				<div class="productDetails">
-					<p class="productCardPName">Hang-over Floor Lamp</p>
-					<p class="productCardPPrice">$129</p>
-				</div>
-			</div>
-
-			<div class="productCard">
-				<a href="ProductDetail.html"><img src="img/w42CeilingLight.png" alt="a white metallic ceiling light"></a>
-				<div class="productDetails">
-					<p class="productCardPName">Swinging Golf Wall Lamp</p>
-					<p class="productCardPPrice">$99</p>
-				</div>
-			</div>
-
-			<div class="productCard">
-				<h3 class="productCardText"> Explore our collections and find a light that is suitable for your needs.</h3>
-				<a href="shop.html" class="btnStyle" id="productCTA">View More</a>
-			</div>
-		</div>
-
-		<!--Quiz-->
-		<div class="quizCTABanner">
-			<div class="quizDescription">
-				<h2 class="quizBH">Unsure what you're looking for?</h2>
-				<a href="quiz.html" class="btnStyle" id="quizCTA">Take the Quiz!</a>
-			</div>
-		</div>
 
 		<!--Inspirations-->
 		<div class="sectionContainer">
@@ -151,8 +52,13 @@
 
 			<!--CTA for Blog Module-->
 			<div class="valueAndBlogCard">
-				<h3 class="blogCardText"> Explore our blogs to get more inspiration and ideas</h3>
-				<a href="inspirations.html" class="btnStyle" id="blogCTA">Discover More</a>
+				<a href="blogArticle.html"> <img src="img/blog3.png" class="blogImg" alt="Lamps hanging on a ceiling"> </a>
+				<a href="#"> <img src="img/blogDarkImg3.png" class="blogBlurredImgBg" alt="Low contrast of lamps hanging on a ceiling"> </a>
+				<div class="blogInfoBackground">
+					<h4 class="blogTitle"> Ambient Lighting Starter Guide</h4>
+					<p class="blogDescription"> Confused and unsure where to start? Here's a list of everything you need to know before you buy your ambient.</p>
+					<a href="#" class="inTextCTAStyle">read more</a>
+				</div>
 			</div>
 		</div>
 

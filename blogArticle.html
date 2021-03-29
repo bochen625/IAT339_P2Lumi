@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Lumi Home Page</title>
+		<title>Lumi Blog Article</title>
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/webMain.css">
@@ -27,110 +27,28 @@
 		<!--Hero-->
 		<div id="heroSlider">
 			<div class="slideImage">
-				<img src="./img/heroCeilingLight.png" alt="Metallic Ceiling Light">
+				<img src="./img/lightBulbs.png" alt="light bulbs">
 				<div class="slideText">
-					<h1>W42 Ceiling Light</h1>
-					<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-					<a href="shop.html" class="btnStyle">Shop Now</a>
+					<h1>Lighting Your Workspace</h1>
 				</div>
 			</div>
-
-			<div class="slideImage">
-				<img src="./img/feature1.png">
-				<div class="slideText">
-					<h1>W43 Floor Light</h1>
-					<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-					<a href="shop.html" class="btnStyle">Shop Now</a>
-				</div>
-			</div>
-
-			<div class="slideImage">
-				<img src="./img/feature1.png">
-				<div class="slideText">
-					<h1>W44 Ambient Light</h1>
-					<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-					<a href="shop.html" class="btnStyle">Shop Now</a>
-				</div>
-			</div>
-
-			<div id="dots">
-				<span class="sliderDot"></span>
-				<span class="sliderDot"></span>
-				<span class="sliderDot"></span>
-			</div>
-		</div>
-
-		<script>
-			var slideIndex = 0;
-			showSlides();
-
-			function showSlides() {
-			  var i;
-			  var slides = document.getElementsByClassName("slideImage");
-			  var dots = document.getElementsByClassName("sliderDot");
-			  for (i = 0; i < slides.length; i++) {
-			    slides[i].style.display = "none";
-			  }
-			  slideIndex++;
-			  if (slideIndex > slides.length) {slideIndex = 1}
-			  for (i = 0; i < dots.length; i++) {
-			    dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";
-			  dots[slideIndex-1].className += " active";
-			  setTimeout(showSlides, 5000);
-			}
-		</script>
 
 		<!--New Arrivals Recommendation-->
-		<div class="productRecommendation">
-			<h3 class="moduleHeader"> New Arrivals</h3>
-			<div class="productCard">
-				<a href="ProductDetail.html"><img src="img/colbyCeilingLight.png" alt="black circular ceiling light"></a>
-				<div class="productDetails">
-					<p class="productCardPName">Ambient Floor Lamp</p>
-					<p class="productCardPPrice">$139</p>
-				</div>
-			</div>
-
-			<div class="productCard">
-				<a href="ProductDetail.html"><img src="img/coneCeilingLight.png" alt="blue coned-shape ceiling light"></a>
-				<div class="productDetails">
-					<p class="productCardPName">Hang-over Floor Lamp</p>
-					<p class="productCardPPrice">$129</p>
-				</div>
-			</div>
-
-			<div class="productCard">
-				<a href="ProductDetail.html"><img src="img/w42CeilingLight.png" alt="a white metallic ceiling light"></a>
-				<div class="productDetails">
-					<p class="productCardPName">Swinging Golf Wall Lamp</p>
-					<p class="productCardPPrice">$99</p>
-				</div>
-			</div>
-
-			<div class="productCard">
-				<h3 class="productCardText"> Explore our collections and find a light that is suitable for your needs.</h3>
-				<a href="shop.html" class="btnStyle" id="productCTA">View More</a>
-			</div>
-		</div>
-
-		<!--Quiz-->
-		<div class="quizCTABanner">
-			<div class="quizDescription">
-				<h2 class="quizBH">Unsure what you're looking for?</h2>
-				<a href="quiz.html" class="btnStyle" id="quizCTA">Take the Quiz!</a>
-			</div>
-		</div>
+		<section class="article">
+			<h3>The type of lighting in your room can influence your productivity. Here’s a list of things to consider when setting up your ideal workspace.</h3>
+			<ul>
+				<li>blank</li>
+			</ul>
+		</section>
 
 		<!--Inspirations-->
 		<div class="sectionContainer">
-			<h3 class="moduleHeader"> Inspirations and Ideas</h3>
+			<h3 class="moduleHeader"> More Inspirations and Ideas</h3>
 
 			<!--Blog Post 1-->
 			<div class="valueAndBlogCard">
 				<a href="#"> <img src="img/blog1.png" class="blogImg" alt="light bulb"> </a>
-				<a href="blogArticle.html"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
+				<a href="#"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
 				<div class="blogInfoBackground">
 					<h4 class="blogTitle"> Lamp Set-up Inspirations</h4>
 					<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should look.</p>
@@ -141,7 +59,7 @@
 			<!--Blog Post 2-->
 			<div class="valueAndBlogCard">
 				<a href="#"> <img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"> </a>
-				<a href="blogArticle.html"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
+				<a href="#"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
 				<div class="blogInfoBackground">
 					<h4 class="blogTitle"> Lighting Your Workspace</h4>
 					<p class="blogDescription"> The type of lighting in your room can influence your productivity. Here’s a list of things to consider when setting up your ideal workspace.</p>
