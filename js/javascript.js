@@ -3,7 +3,7 @@
 console.log('Javascript is running');
 
 /*Get the modal*/
-var modal = document.getElementById("lightQuizModal");
+var modal = document.getElementById("quizPopUp");
 
 /*Search for quizCTA button*/
 var quizToggle = document.querySelector('#quizCTA');
@@ -13,6 +13,9 @@ quizToggle.addEventListener('click',
 
 	function(){
 		console.log('quizToggle has been clicked');
+
+		// if(modal==)
+
 
 		// if (menu.classList.contains('hidden')){
 		// 	console.log('Menu is hidden, showing the menu');

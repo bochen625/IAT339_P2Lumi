@@ -208,7 +208,6 @@ label{
   margin-left: 3em;
 }
 
-
 .featureBtn{
 	display: inline-block;
 	background-color: white;
@@ -255,20 +254,21 @@ label{
 }
 .productCard:last-of-type{
 	background-image: var(--gradientColour);
+	height: auto;
 }
 
-.productCardText{
+.productCardText, .blogCardText{
 	font-size: 1.5rem;
-	margin-top: 13rem;
-	margin-left: 3.5rem; /*roughly 55px*/
+	margin-top: 10rem;
+	margin-left: 3.5rem;
 	width:clamp(7ch, 80%, 13ch);
 }
 
-.productCardText a:hover{
+.productCardText a:hover, .blogCardText a:hover{
 	font-weight: bold;
 }
 
-.productCardText a{
+.productCardText a, .blogCardText a{
 	text-decoration: none;
 }
 
@@ -300,9 +300,11 @@ label{
 
 .blogBlurredImgBg{
 	width: 100%;
-	height: 15rem;
+	max-height: 15rem;
 	object-fit: cover;
-	object-position: 0% 50%;
+	/*Object fit:
+	https://css-tricks.com/almanac/properties/o/object-position/*/
+	object-position: left bottom;
 	margin-top: -50rem;
 	filter: blur(0.2em);
 }
@@ -317,6 +319,7 @@ label{
 	color: white;
 	padding-left: 3.5rem;
 	padding-right: 3.5rem;
+	width: 100%;
 }
 
 .inTextCTAStyle{
@@ -347,7 +350,7 @@ label{
 }
 
 /*styling*/
-.quizModal{
+.quizGrid{
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-column-gap: 1.5rem;
@@ -356,14 +359,8 @@ label{
 	margin-top: 4rem;
 }
 
-.quizContainer{
-	background-color: white;
-	height: 60vh;
-	z-index: 1;
-}
-
 .progressBarContainer{
-	width: 98%;
+	width: 100%;
 	height: 1.5rem;
 	background-color: white;
 	border-radius: 0.2rem;
@@ -381,26 +378,33 @@ label{
 
 /*grid*/
 .quizContainer{
-	grid-column: 2/span 10;
+	grid-column: 3/span 8;
 	display:grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-column-gap: 1.5rem;
 	grid-template-rows: 0.1fr 0.1fr 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-	margin-top: 10rem;
+	overflow: auto;
+	background-color: white;
+	height: 75vh;
+	z-index: 1;
 }
 
 .quizNavBar{
-	grid-column: 1/span 10;
-	grid-row: 1/span 1;
 	display:grid;
 	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 1fr;
 	grid-column-gap: 1.5rem;
+	grid-column: 1/span 10;
+	grid-row: 1;
 	background-color: white;
 	box-shadow: var(--dropShadow);
 }
 
 #close{
 	grid-column: 9;
+	grid-row: 1;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .progressBarContainer{
@@ -411,6 +415,14 @@ label{
 .question{
 	grid-column: 3/span 6;
 }
+
+.question a{
+	text-decoration: none;
+}
+
+/*.helpIcon: hover{
+	fill: red;
+}*/
 
 .quizBtnStyle:first-of-type{
 	grid-column: 3/span 3;
@@ -437,7 +449,7 @@ label{
 	grid-column: 5/span 2;
 	grid-row: 8/span 1;
 	width:100%;
-	height: 70%;
+	height: 100%;
 }
 
 .textBtnStyle{
@@ -451,13 +463,16 @@ label{
 /*No Preference*/
 #noPreference{
 	text-decoration: underline;
-	height: 70%;
-	margin-top: -1rem;
+	height: 100%;
+	margin: 0.5rem;
 }
 
 #back{
-	grid-column: 2;
-	font-weight: bold;
+	grid-column: 2/span 2;
+	grid-row: 1;
+	width: 75%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .progressBarProgress{
@@ -477,7 +492,7 @@ label{
 	background-color: white;
 	border-radius: 0.75rem;
 	border: 0.1rem solid var(--CTAColour);
-	width: 95%;
+	width: 100%;
 	font-weight: bold;
 	font-size:1rem;
 	color: var(--CTAColour);
@@ -487,7 +502,7 @@ label{
 	margin-bottom: 1.5rem;
 }
 
-.quizBtnStyle:hover{
+.quizBtnStyle:hover, .quizBtnStyle:focus{
 	border: 0.2rem solid var(--CTAColour);
 }
 
@@ -579,11 +594,51 @@ ul, ol{
 	grid-column: 9/span 3;
 }
 
+.socialMediaIcons a{
+	text-decoration: none;
+}
+
 /*Hero Slider*/
-.heroSlider {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-column-gap: 1.5rem;
+#heroSlider {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	margin: auto;
+	overflow-x: hidden;
+}
+
+.slideImage img {
+	width: auto;
+	height: 100%;
+	position: absolute;
+}
+
+.slideText {
+	position: absolute;
+	bottom: 100px;
+  	left: 10%;
+	width: 80%;
+	text-align: left;
+}
+
+.sliderDot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#dots {
+	position: absolute;
+  right: 10%;
+	bottom: 100px;
+}
+
+.active {
+  background-color: black;
 }
 
 .slideImage{
@@ -591,7 +646,7 @@ ul, ol{
 }
 
 .slideImage img {
-	width: 200%
+	width: 200%;
 	max-height: 42vh;
 	object-fit: cover;
 }
@@ -687,29 +742,32 @@ ul, ol{
 }
 
 /*-----------Quiz CTA Module-----------*/
-.quizBanner{
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-column-gap: 1.5rem;
-	margin-top: 5rem;
+/*Hero Image:
+https://www.w3schools.com/howto/howto_css_hero_image.asp*/
+.quizCTABanner{
+	margin-top: 4rem;
+	background-image: url('img/quizbanner.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 35rem;
+	background-size: cover;
+	margin-bottom: 4rem;
 }
-
 .quizBannerImg{
-	grid-column: 1/span 12;
-	width: 100%;
-	height: auto;
-	position: relative;
+	margin-top: 5rem;
+	max-width: 100%;
+	height: 75%;
 	object-fit: cover;
 }
 
 .quizDescription{
 	position: absolute;
-	text-align: left;
 	left: 8.5%;
-	margin-top: 5rem;
+	margin-top: 10rem;
 }
 
 .quizBH{
+	text-align: left;
 	width:clamp(7ch, 80%, 15ch);
 }
 
@@ -745,11 +803,12 @@ ul, ol{
 }
 .aboutCompany{
 	grid-column: 1/span 4;
+	grid-row: 1;
 }
 
-.placeHolder{
+.aboutCompanyImg{
 	width: 100%;
-	height: 35rem;
+	height: auto;
 	background-color: gray;
 	grid-column: 5/span 8;
 }
@@ -763,7 +822,7 @@ ul, ol{
 }
 
 .moduleHeader{
-	grid-column: 1/span 4;
+	grid-column: 1/span 5;
 }
 
 .valueAndBlogCard:first-of-type{
@@ -818,51 +877,35 @@ ul, ol{
 	grid-column: 1/span 12;
 }
 
-/* devices 1200px and down */
-@media screen and (max-width: 75em){
-/*	.productCardText{
-		font-size: 1.5rem;
+/*Breaking point: 1686px (aka 105.375rem)*/
+@media screen and (max-width: 105.375em){
+	.productCardText, .blogCardText{
+		margin-top: 7rem;
+	}
+}
+
+/*Breaking point: 1538px (aka 96.125rem)*/
+@media screen and (max-width: 96.125em){
+	.productCardText, .blogCardText{
+		margin-top: 4rem;
+	}
+}
+
+/*Breaking point: 1395px (aka 87.188rem)*/
+@media screen and (max-width: 87.188em){
+	.productCardText, .blogCardText{
 		margin-top: 2rem;
 		margin-left: 2rem;
 		width:clamp(7ch, 80%, 13ch);
 	}
 
-	#productCTA{
-		margin-left: 1rem;
-	}*/
+	#productCTA, #blogCTA{
+		margin-left: 2rem;
+	}
 }
 
-/*About 1772 px*/
-/*@media screen and (max-width: 111em){
-
-	.iconFb, .iconTwitter, .iconLinkedIn{
-	margin-right: 1.5rem;
-	}
-}*/
-
-/*About 1605 px*/
-/*@media screen and (max-width: 101em){
-	.valueAndBlogCard{
-		max-height: 30rem;
-	}
-
-	.iconFb, .iconTwitter, .iconLinkedIn{
-	margin-right: 1.5rem;
-	}
-}*/
-
-/*@media screen and (max-width: 101em){
-	.valueAndBlogCard{
-		max-height: 30rem;
-	}
-
-	.iconFb, .iconTwitter, .iconLinkedIn{
-	margin-right: 1.5rem;
-	}
-}*/
-
-/*Tablet (size 992 and down)*/
-@media screen and (max-width:62em){
+/*Tablet (size ~1220px and down)*/
+@media screen and (max-width:76em){
 
 	/*Nav Bar*/
 	.navContainer{
@@ -904,17 +947,22 @@ ul, ol{
 		grid-column: 3/span 2;
 	}
 
-	.quizBanner{
-	grid-template-columns: repeat(4, 1fr);
-	grid-column-gap: 1.25rem;
+	.productCardText{
+		font-size: 2rem;
+		margin-top: 15rem;
+		margin-left: 5rem;
 	}
 
-	.quizBannerImg{
-		grid-column: 1/span 4;
+	#productCTA{
+		margin-left: 5rem;
 	}
 
-	.quizDescription{
-		margin-top: 3rem;
+	.blogCardText{
+		margin-top: 7rem;
+	}
+
+	#blogCTA{
+		margin-bottom: 5rem;
 	}
 
 	/*About Us Section*/
@@ -923,7 +971,7 @@ ul, ol{
 		grid-column-gap: 1.5rem;
 		padding-left: 1.35rem;
 		padding-right: 1.35rem;
-		margin-top: 0rem;
+		margin-top: 2rem;
 	}
 
 	.moduleHeader{
@@ -931,9 +979,14 @@ ul, ol{
 		margin-bottom: 1rem;
 	}
 
-	.placeHolder{
+	.aboutCompanyImg{
 		grid-column: 1/span 4;
 		margin-top: 2rem;
+	}
+
+	/*Quiz Popup*/
+	.quizContainer{
+		grid-column: 2/span 10;
 	}
 
 	/*Our Values Module*/
@@ -956,22 +1009,24 @@ ul, ol{
 	}
 
 	.valueAndBlogCard:first-of-type{
-		grid-column: 1/span 4;
+		grid-column: 1/span 2;
 		margin-top: 0rem;
 	}
 
 	.valueAndBlogCard:nth-of-type(2){
-		grid-column: 1/span 4;
+		grid-column: 3/span 2;
+		margin-top: 0rem;
 	}
 
 	.valueAndBlogCard:last-of-type{
-		grid-column: 1/span 4;
+		grid-column: 1/span 2;
+	/*	height: 22.729rem;*/
 	}
 
 	/*Footer*/
 	.footBarContainer{
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 1fr, 0.25fr, 0.25fr;
+		grid-template-rows: 1fr 0.25fr 0.25fr;
 		grid-column-gap: 1.5rem;
 		padding-left: 1.35rem;
 		padding-right: 1.35rem;
@@ -1020,8 +1075,40 @@ ul, ol{
 		margin-left: -0.5rem;
 	}
 
-/*Phone*/
-@media screen and (max-width:31.25em){
+/*Breaking point: 1024px*/
+@media screen and (max-width: 64em){
+	.productCardText{
+		margin-top: 10rem;
+	}
+
+	.blogCardText{
+		margin-top: 4rem;
+	}
+	#blogCTA{
+		margin-bottom: 4rem;
+	}
+
+}
+
+/*Breaking point: 892px*/
+@media screen and (max-width: 55.75em){
+	.productCardText{
+		margin-top: 5rem;
+		margin-left: 2.5rem;
+	}
+
+	#productCTA{
+		margin-left: 2.5rem;
+	}
+
+	/*Pop-up quiz*/
+	.quizContainer{
+		grid-column: 1/span 12;
+	}
+}
+
+/*Phone: 768px*/
+@media screen and (max-width:48em){
 	/*home page*/
 	/*Hero Slider*/
 	.heroSlider {
@@ -1050,16 +1137,121 @@ ul, ol{
 	}
 
 	.productDetails{
+		font-size: 1.25rem;
 		margin-bottom: 1rem;
 	}
-	.productCardText{
+
+	.productCardText, .blogCardText{
 		margin-top: 6rem;
 		margin-left: 3rem;
 	}
 
-	#productCTA{
+	#productCTA, #blogCTA{
 		margin-left: 2.5rem;
+		margin-bottom: 5rem;
+	}
+
+	/*Quiz*/
+	.quizGrid{
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 1.25rem;
+		margin: 0rem;
+		padding: 0rem;
+	}
+
+	.quizContainer{
+		grid-column: 1/span 4;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(11, 0.1fr);
+		grid-column-gap: 1.25rem;
+	}
+
+	.quizNavBar{
+		grid-column: 1/span 4;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 1.25rem;
+	}
+
+	.question{
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	.quizQuestion{
+		font-size: 1.75rem;
 		margin-bottom: 2rem;
+	}
+
+	#back{
+		grid-column: 1/span 2;
+		width: 75%;
+	}
+
+	#close{
+		grid-column: 4;
+	}
+
+	.progressBarContainer{
+		grid-column: 1/span 4;
+		grid-row: 2;
+		margin-top: 2rem;
+		width: 92%;
+		margin-left: 1.25rem;
+		margin-right: 1.25rem;
+	}
+
+	.question{
+		grid-column: 1/span 4;
+	}
+
+	.quizBtnStyle:first-of-type{
+		grid-column: 2/span 2;
+		grid-row: 4;
+	}
+
+	.quizBtnStyle:nth-of-type(2){
+		grid-column: 2/span 2;
+		grid-row: 5;
+	}
+
+	.quizBtnStyle:nth-of-type(3){
+		grid-column: 2/span 2;
+		grid-row: 6;
+	}
+
+	.quizBtnStyle:nth-of-type(4){
+		grid-column: 2/span 2;
+		grid-row: 7;
+	}
+
+	/*Continue*/
+	#continue{
+		grid-column: 2/span 2;
+		grid-row: 10;
+		width:100%;
+		height: 100%;
+	}
+
+	#noPreference{
+		grid-column: 2/span 2;
+		grid-row: 11;
+	}
+
+	/*Blog*/
+	.valueAndBlogCard:first-of-type{
+		grid-column: 1/span 4;
+	}
+
+	.valueAndBlogCard:nth-of-type(2){
+		grid-column: 1/span 4;
+		margin-top: 2rem;
+	}
+
+	.valueAndBlogCard:last-of-type{
+		grid-column: 1/span 4;
+		height: auto;
+		margin-bottom: 4rem;
 	}
 
 	/*footer*/
@@ -1094,3 +1286,23 @@ ul, ol{
 	.iconFb{
 		margin-left: -0.5rem;
 	}
+
+}
+
+/*Phone: 320px*/
+@media screen and (max-width:20em){
+	.blogCardText{
+		font-size: 1.25rem;
+		width:clamp(7ch, 80%, 14ch);
+		margin-top: 3rem;
+	}
+
+	#blogCTA{
+		margin-bottom: 2rem;
+	}
+
+	/*Quiz: Pop-up*/
+	.progressBarContainer{
+		width: 85%;
+	}
+}
