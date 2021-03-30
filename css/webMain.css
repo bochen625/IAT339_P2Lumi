@@ -562,7 +562,7 @@ section h4{
 /*-----------Quiz Banner-----------*/
 .quizCTABanner{
 	margin-top: 4rem;
-	background-image: url('..img/quizbanner.png');
+	background: url('../img/quizbanner.png') repeat 0 0;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 35rem;
