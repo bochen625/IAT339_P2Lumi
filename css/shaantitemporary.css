@@ -921,7 +921,7 @@ span.price {
     height: 30vh;
   }
 
-  #blackBackground.light-name, .light-price, .light-offer, .light-qauntity, .light-remove {
+  #blackBackground .light-name, .light-price, .light-offer, .light-qauntity,  #blackBackground .light-remove {
   	display: block;
     width: 100%;
   }
