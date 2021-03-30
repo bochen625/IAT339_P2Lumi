@@ -313,27 +313,33 @@ label{
 	opacity: 75%;
 }
 
-
 /*Recommendation Module*/
 .productCard img{
-	width: 25rem;
+	width: 100%;
 }
+
 .productCard:last-of-type{
 	background-image: var(--gradientColour);
 }
 
-.productCardText{
-	margin-top: 2rem;
-	margin-left: 3rem;
+.productCardText, .blogCardText{
+	font-size: 1.5rem;
+	margin-top: 10rem;
+	margin-left: 3.5rem;
 	width:clamp(7ch, 80%, 13ch);
 }
 
-.productCardText a:hover{
+.productCardText a:hover, .blogCardText a:hover{
 	font-weight: bold;
 }
 
-.productCardText a{
+.productCardText a, .blogCardText a{
 	text-decoration: none;
+}
+
+#productCTA{
+	margin-top: 0.5rem;
+	margin-left: 3rem;
 }
 
 .colourSwatch{
@@ -348,13 +354,13 @@ label{
 /*-----------Value Module-----------*/
 .valueAndBlogCard{
 	background-image: var(--gradientColour);
-	min-height: 31.5rem;
+	min-height: 18rem;
 	position: relative;
 }
 
 .companyValues{
 	text-align: center;
-	padding-top: 13rem;
+	padding-top: 6rem;
 	font-size: 1.25rem;
 }
 
@@ -370,9 +376,9 @@ label{
 	width: 100%;
 	height: 15rem;
 	object-fit: cover;
-	object-position: 0% 50%;
+	object-position: left bottom;
 	margin-top: -50rem;
-	filter: blur(0.2em);
+	filter: blur(0.3em);
 }
 
 .blogTitle{
@@ -385,6 +391,7 @@ label{
 	color: white;
 	padding-left: 3.5rem;
 	padding-right: 3.5rem;
+	width: 100%;
 }
 
 .inTextCTAStyle{
@@ -486,18 +493,24 @@ ul, ol{
 
 /*Hero Slider*/
 #heroSlider {
-	height: 100vh;
 	width: 100%;
 	position: relative;
 	margin: auto;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .slideImage img {
-	height: 100%;
-	width: auto;
-	position: absolute;
-	object-fit: fill;
+	width: 100%;
+	height: 45rem;
+	object-fit: cover;
+	object-position: bottom;
+}
+
+.subheading{
+	width:clamp(20ch, 80%, 28ch);
+	font-weight: 400;
+	margin-top: 0rem;
+	margin-bottom: 1.5rem;
 }
 
 .slideText {
@@ -601,7 +614,6 @@ ul, ol{
 	margin-top: 20%;
 }
 
-<<<<<<< Updated upstream
 /*-----------Footer Module-----------*/
 .footBarContainer{
 	background-color: white;
@@ -632,42 +644,77 @@ ul, ol{
 	margin-top: 0.25rem;
 }
 
-.footerLogo{
-	margin: 0.5rem;
-	margin-top: 13rem;
+.footerResources li, .footerAbout li{
+	list-style-type: none;
+	text-align: left;
+	margin-left: -2.5rem;
+}
+
+.footerResources a, .footerAbout a{
+	display: block;
+	font-size: 0.75rem;
+	text-decoration: none;
+	color: var(--textColour);
+	margin-top: 0.25rem;
+}
+
+.footerLogo img{
+	width: 130%;
+	height: auto;
+	margin-left: -0.5rem;
 }
 
 .copyRight{
-	margin: 0.5rem;
-	margin-top: 15.5rem;
-}
-
-.iconF, .iconT, .iconL{
+	text-align: center;
 	margin: 0.5rem;
 	margin-top: 15rem;
 }
 
+.socialMediaIcons a{
+	text-decoration: none;
+}
+
+.iconFb, .iconTwitter, .iconLinkedIn{
+	margin-right: 1.5rem;
+}
+
+.iconFb{
+	margin-left: -0.5rem;
+}
+
+.iconIG{
+	margin-right: 0rem;
+}
+
 /*-----------Quiz CTA Module-----------*/
-.quizBannerContainer{
-	background-image: url('../img/quizbanner.png');
+.quizCTABanner{
+	margin-top: 4rem;
+	background: url('../img/quizbanner.png') repeat 0 0;
+	background-position: center;
 	background-repeat: no-repeat;
-	height: 30rem;
+	height: 35rem;
 	background-size: cover;
-	box-shadow: var(--dropShadow);
+	margin-bottom: 4rem;
+}
+.quizBannerImg{
+	margin-top: 5rem;
+	max-width: 100%;
+	height: 75%;
+	object-fit: cover;
+}
+
+.quizDescription{
+	position: absolute;
+	left: 15%;
+	margin-top: 10rem;
 }
 
 .quizBH{
-	margin: 0.5rem;
-	margin-top: 7rem;
-}
-
-.quizCTA{
-	margin: 0.5rem;
-	min-height: 20rem;
+	text-align: left;
+	width:clamp(7ch, 80%, 15ch);
 }
 
 /*-----------Product Image Gallery Module-----------*/
-
 .productGalImg{
 	width: 100%;
 	height: 100%;
@@ -689,7 +736,7 @@ ul, ol{
 .checkoutButton{
 	margin: 0.5rem;
 }
-<<<<<<< HEAD
+
 .productOne{
 }
 

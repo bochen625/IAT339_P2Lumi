@@ -25,197 +25,6 @@
 				</ul>
 			</nav>
 
-			<div class="sectionContainer" id="interactiveElements">
-				<h2>Interactive elements</h2>
-				<div class="patternContainer">
-					<h4>In-text Link</h4>
-					<p class="note">Description: Used as an interactive. Created and maintained by Bonnie</p>
-
-					<div class="patternOverview">
-						<p>Visit our <a href="https://www.lumens.com/">desk lamp</a> collection.</p>
-
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>&lt;p&gt;Visit our &lt;a href="#"&gt;desk lamp&lt;/a&gt; collection.&lt;/p&gt;</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									p a{<br>
-										font-weight: bold;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-
-
-					<!--CTA-->
-					<h4>CTA Button</h4>
-					<p class="note">Description: Used as an interactive. Created and maintained by Bonnie</p>
-
-					<div class="patternOverview">
-						<a href="#" class="btnStyle">Default Button</a>
-
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>&lt;a href="#" class="btnStyle"&gt;Default Button&lt;/a&gt;</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									.btnStyle{<br>
-										display: inline-block;<br>
-										background-color: #468CFF;<br>
-										border-radius: 0.75rem;<br>
-										width: 12rem;<br>
-										font-size:1rem;<br>
-										color: white;<br>
-										text-align: center;<br>
-										text-decoration:none;<br>
-										padding: 0.75em;<br>
-									}<br>
-
-									.btnStyle:hover{<br>
-										font-weight: bold;<br>
-										background-color: #2678ff;<br>
-									}<br>
-
-									.btnStyle:focus, .btnStyle:active{<br>
-										color: #212429;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-
-					<!--Form Buttons-->
-					<h4>Form Buttons</h4>
-					<p class="note">Description: Used to submit information or reset a form field (ie: Filters, contact us). Maintained by Bonnie</p>
-
-					<div class="patternOverview">
-						<button class="btnStyle">Submit</button>
-						<button class="btnStyleDisabled">Submit Disabled</button>
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>&lt;button class="btnStyleDisabled"&gt;Submit Disabled&lt;/button&gt;</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									.btnStyleDisabled{<br>
-										display: inline-block;<br>
-										background-color: #468CFF;<br>
-										border-radius: 0.75rem;<br>
-										border-style: none;<br>
-										width: 12rem;<br>
-										font-size: 1rem;<br>
-										color: white;<br>
-										text-align: center;<br>
-										text-decoration: none;<br>
-										padding: 0.75em;<br>
-										opacity: 50%;<br>
-										cursor: not-allowed;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-
-					<h4>Form Fields</h4>
-					<p class="note">Description: Used as a text-input. Maintained by Johnathan</p>
-
-					<div class="patternOverview">
-						<div class="patternStyleContainer">
-							<form action="/action_page.php" method="get">
-								<div class="patternStyle">
-									<label for="fName">First Name:</label>
-									<input type="text" id="fName" name="fName">
-								</div>
-
-								<div class="patternStyle">
-									<label for="email">E-mail:</label>
-									<input type="text" id="email" name="email">
-									<button class ="btnStyle" type="submit" value="Submit">Submit</button>
-									<button class ="btnReset" type="reset" value="Reset">Reset</button>
-								</div>
-							</form>
-						</div>
-
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>
-									&lt;form action="/action_page.php" method="get"&gt;<br>
-										&lt;label for="fName"&gt;First Name:&lt;/label&gt;<br>
-										&lt;input type="text" id="fName" name="fName"&gt;<br>
-										&lt;label for="email"&gt;E-mail:&lt;/label&gt;<br>
-										&lt;input type="text" id="email" name="email"&gt;<br>
-										&lt;button class ="btnStyle" type="submit" value="Submit"&gt;Submit&lt;/button&gt;<br>
-										&lt;button class ="btnReset" type="reset" value="Reset"&gt;Reset&lt;/button&gt;<br>
-									&lt;/form&gt;
-								</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									input{<br>
-										margin: 0.2rem;<br>
-										width: 28em;<br>
-										background-color: white;<br>
-										box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.05);<br>
-									}<br>
-
-									label{<br>
-										color: #212429;<br>
-										font-weight: bold;<br>
-									}<br>
-
-									.btnReset{<br>
-										display: inline-block;<br>
-										background-color: white;<br>
-										border-radius: 0.75rem;<br>
-										border: 0.15rem solid #468CFF;<br>
-										width: 12rem;<br>
-										font-size:1rem;<br>
-										color: #468CFF;<br>
-										text-align: center;<br>
-										text-decoration:none;<br>
-										padding: 0.75em;<br>
-										opacity: 50%;<br>
-										margin-top: 2rem;<br>
-										margin-left: 1rem;<br>
-									}<br>
-
-									.btnReset:hover{<br>
-										background-color: #468CFF;<br>
-										font-weight: bold;<br>
-										color:white;<br>
-										opacity: 100%;<br>
-									}<br>
-
-									button.btnStyle, input.btnStyle{<br>
-										border-style: none;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
 			<div class="sectionContainer" id="modularPatterns">
 				<h2>Modular Patterns</h2>
 
@@ -235,7 +44,6 @@
 								<li><a href="#"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
 							</ul>
 						</nav>
-
 
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
@@ -560,7 +368,7 @@
 							<h2 class="descriptionTitle">Similar Products</h2>
 
 							<div class="productCard">
-								<a href="#"><img src="img/light1.png" alt="metal floor lamp with a circular bulb"></a>
+								<a href="ProductDetail.html"><img src="img/colbyCeilingLight.png" alt="black circular ceiling light"></a>
 								<div class="productDetails">
 									<p class="productCardPName">Ambient Floor Lamp</p>
 									<p class="productCardPPrice">$139</p>
@@ -568,7 +376,7 @@
 							</div>
 
 							<div class="productCard">
-								<a href="#"><img src="img/light2.png" alt="black metal lamp"></a>
+								<a href="ProductDetail.html"><img src="img/coneCeilingLight.png" alt="blue coned-shape ceiling light"></a>
 								<div class="productDetails">
 									<p class="productCardPName">Hang-over Floor Lamp</p>
 									<p class="productCardPPrice">$129</p>
@@ -576,7 +384,7 @@
 							</div>
 
 							<div class="productCard">
-								<a href="#"><img src="img/light3.png" alt="a black metal wall lamp"></a>
+								<a href="ProductDetail.html"><img src="img/w42CeilingLight.png" alt="a white metallic ceiling light"></a>
 								<div class="productDetails">
 									<p class="productCardPName">Swinging Golf Wall Lamp</p>
 									<p class="productCardPPrice">$99</p>
@@ -585,7 +393,7 @@
 
 							<div class="productCard">
 								<h3 class="productCardText"> Explore our collections and find a light that is suitable for your needs.</h3>
-								<a href="#" class="btnStyle" id="productCTA">View More</a>
+								<a href="shop.html" class="btnStyle" id="productCTA">View More</a>
 							</div>
 						</div>
 
@@ -801,30 +609,30 @@
 
 							<!--Blog Post 1-->
 							<div class="valueAndBlogCard">
-								<a href="#"> <img src="img/blog1.png" class="blogImg" alt="light bulb"> </a>
-								<a href="#"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
+								<a href="blogArticle.html"> <img src="img/blog1.png" class="blogImg" alt="light bulb"> </a>
+								<a href="blogArticle.html"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
 								<div class="blogInfoBackground">
 									<h4 class="blogTitle"> Lamp Set-up Inspirations</h4>
-									<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should...</p>
-									<a href="#" class="inTextCTAStyle">read more</a>
+									<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should look.</p>
+									<a href="blogArticle.html" class="inTextCTAStyle">read more</a>
 								</div>
 							</div>
 
 							<!--Blog Post 2-->
 							<div class="valueAndBlogCard">
-								<a href="#"> <img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"> </a>
-								<a href="#"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
+								<a href="blogArticle.html"> <img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"> </a>
+								<a href="blogArticle.html"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
 								<div class="blogInfoBackground">
 									<h4 class="blogTitle"> Lighting Your Workspace</h4>
 									<p class="blogDescription"> The type of lighting in your room can influence your productivity. Here’s a list of things to consider when setting up your ideal workspace.</p>
-									<a href="#" class="inTextCTAStyle">read more</a>
+									<a href="blogArticle.html" class="inTextCTAStyle">read more</a>
 								</div>
 							</div>
 
 							<!--CTA for Blog Module-->
 							<div class="valueAndBlogCard">
-								<h3 class="productCardText"> Explore our blogs to get more inspiration and ideas</h3>
-								<a href="#" class="btnStyle" id="blogCTA">Discover More</a>
+								<h3 class="blogCardText"> Explore our blogs to get more inspiration and ideas</h3>
+								<a href="inspirations.html" class="btnStyle" id="blogCTA">Discover More</a>
 							</div>
 						</div>
 
@@ -1889,47 +1697,6 @@
 						</div>
 					</div>
 				</div>
-				
-				<!-- FooterModule-->
-				<div class="patternContainer">
-					<h4>Footer</h4>
-					<p class="note"> Footer will include citations, about designers, style guide, and social media links</p>
-					
-					<div class="patternOverview">
-						<footer class="footBarContainer">
-							<ul class="footerButtons">
-								<li><h5>RESCOURCES</h5></li>
-								<li><a href="index.html">Style Guide</a></li>
-								<li><a href="patternLibrary.html">Pattern Library</a></li>
-								<li><a href="wireframes.html">Wireframes</a></li>
-								<li><a href="citations.html">Citations</a></li>
-							</ul>
-							<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
-
-							<a href="#" class="iconF"> <img src="img/facebook.png" alt="facebook icon"> </a>
-							<a href="#" class="iconT"> <img src="img/twitter.png" alt="twitter icon"> </a>
-							<a href="#" class="iconL"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
-							<a href="#" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
-
-						</footer>
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>
-									Lorem ipsum
-								</code>
-							</div>
-							
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									Lorem ipsum
-								</code>
-							</div>
-						</div>
-					</div>
-				</div>	
 
 				<!--Quiz CTA Module-->
 				<div class="patternContainer">
@@ -2483,5 +2250,86 @@
 					</div>
 					</div>
 				</div>
+			</div>
+
+				<!--Footer-->
+		
+
+		<!--Quiz-->
+		<div class="quizCTABanner">
+			<div class="quizDescription">
+				<h2 class="quizBH">Unsure what you're looking for?</h2>
+				<!-- <a href="quiz.html" class="btnStyle" id="quizCTA">Take the Quiz!</a> -->
+				<a href="quiz.html" class="btnStyle" id="quizCTA">Take the Quiz!</a>
+			</div>
+		</div>
+
+
+		<!--Inspirations-->
+		<div class="sectionContainer">
+			<h3 class="moduleHeader"> Inspirations and Ideas</h3>
+
+			<!--Blog Post 1-->
+			<div class="valueAndBlogCard">
+				<a href="blogArticle.html"> <img src="img/blog1.png" class="blogImg" alt="light bulb"> </a>
+				<a href="blogArticle.html"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
+				<div class="blogInfoBackground">
+					<h4 class="blogTitle"> Lamp Set-up Inspirations</h4>
+					<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should look.</p>
+					<a href="blogArticle.html" class="inTextCTAStyle">read more</a>
+				</div>
+			</div>
+
+			<!--Blog Post 2-->
+			<div class="valueAndBlogCard">
+				<a href="blogArticle.html"> <img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"> </a>
+				<a href="blogArticle.html"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
+				<div class="blogInfoBackground">
+					<h4 class="blogTitle"> Lighting Your Workspace</h4>
+					<p class="blogDescription"> The type of lighting in your room can influence your productivity. Here’s a list of things to consider when setting up your ideal workspace.</p>
+					<a href="blogArticle.html" class="inTextCTAStyle">read more</a>
+				</div>
+			</div>
+
+			<!--CTA for Blog Module-->
+			<div class="valueAndBlogCard">
+				<h3 class="blogCardText"> Explore our blogs to get more inspiration and ideas</h3>
+				<a href="inspirations.html" class="btnStyle" id="blogCTA">Discover More</a>
+			</div>
+		</div>
+
+		<footer class="footBarContainer">
+			<!--Resources-->
+			<ul class="footerResources">
+				<li><h5>RESOURCES</h5></li>
+				<li><a href="aboutUs.html">About the Designers</a></li>
+				<li><a href="https://github.com/bochen625/IAT339_P2Lumi">GitHub</a></li>
+				<li><a href="index.html">Style Guide</a></li>
+				<li><a href="patternLibrary.html">Pattern Library</a></li>
+				<li><a href="wireframes.html">Wireframes</a></li>
+				<li><a href="citations.html">Citations</a></li>
+			</ul>
+
+			<!--Company-->
+			<ul class="footerAbout">
+				<li><h5>COMPANY</h5></li>
+				<li><a href="aboutCompany.html">About Lumi</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+			</ul>
+
+			<!--Copyright-->
+			<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
+
+			<!--Social Media-->
+			<div class="socialMediaIcons">
+				<a href="#" class="iconFb"> <img src="img/facebook.png" alt="facebook icon"> </a>
+				<a href="#" class="iconTwitter"> <img src="img/twitter.png" alt="twitter icon"> </a>
+				<a href="#" class="iconLinkedIn"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+				<a href="#" class="iconIG"> <img src="img/instagram.png" alt="linkedin icon"> </a>
+			</div>
+			
+			<!--Lumi Logo-->
+			<a href="home.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+		</footer>
 	</body>
 </html>
