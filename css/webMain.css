@@ -175,7 +175,8 @@ label{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  z-index: -1;
+  position: absolute;
+/*  z-index: -1;*/
   background-color: white;
 }
 
@@ -387,7 +388,7 @@ label{
 https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 #heroSlider {
 	width: 100%;
-	position: absolute;
+	position: relative;
 /*	z-index: -1;*/
 	margin: auto;
 	overflow: hidden;
