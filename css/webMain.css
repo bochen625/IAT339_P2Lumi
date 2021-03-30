@@ -641,6 +641,7 @@ section h4{
 	background-color: white;
 	overflow: auto;
 	min-height: 75vh;
+	margin-bottom: 15rem;
 	z-index: 1;
 }
 

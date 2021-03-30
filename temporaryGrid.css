@@ -682,8 +682,9 @@ section p{
 	.iconFb{
 		margin-left: -0.5rem;
 	}
+}
 
-/*Breaking point: 1212px*/;
+/*Breaking point: 1212px*/
 @media screen and (max-width: 75.75em){
 	.blogDescription{
 		width:clamp(20ch, 100%, 100ch);
@@ -778,7 +779,7 @@ section p{
 	}
 
 	.light-price {
-		margin-bottom: 0;
+		margin-bottom: 1.25rem;
 	}
 
 	.light-qauntity {
