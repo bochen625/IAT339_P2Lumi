@@ -756,7 +756,7 @@ section p{
 		height: 30vh;
 	}
 
-	.light-name, .light-price, .light-offer, .light-qauntity {
+	.light-name, .light-price, .light-offer, .light-qauntity, #blackBackground .light-remove{
 		display: block;
 		width: 100%;
 	}
@@ -775,11 +775,11 @@ section p{
 		margin-top: -15px;
 	}
 
-/*	.light-remove{
+	#blackBackground .light-remove{
 		bottom: -.5rem;
 		right: 1.25rem;
 		width: 80%;
-	}*/
+	}
 
 	.light-price {
 		margin-bottom: 1.25rem;
