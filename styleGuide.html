@@ -17,18 +17,19 @@
 	</head>
 
 	<body>
+		<!-- Nav -->
+		<nav class="navContainer">
+			<a href="index.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+			<ul class="navButtons">
+				<li><a href="shop.html">Products</a></li>
+				<li><a href="inspirations.html">Inspiration</a></li>
+				<li><a href="aboutCompany.html">About Us</a></li>
+				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
+				<li><a href="#" class="shoppingCartButton"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+			</ul>
+		</nav>
+		
 		<div class="gridContainer">
-			<nav class="navContainer">
-				<h1>Style Guide</h1>
-
-				<ul class="navButtons">
-					<li><a href="index.html">Style Guide</a></li>
-					<li><a href="patternLibrary.html">Pattern Library</a></li>
-					<li><a href="wireframes.html">Wireframes</a></li>
-					<li><a href="citations.html">Citations</a></li>
-				</ul>
-			</nav>
-
 			<!------------------Colour Palette------------------>
 			<div class="sectionContainer" id="colourSection">
 				<h2>Colour Palette</h2>
@@ -276,196 +277,42 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="sectionContainer" id="interactiveElements">
-				<h2>Interactive elements</h2>
-				<div class="patternContainer">
-					<h4>In-text Link</h4>
-					<p class="note">Description: Used as an interactive. Created and maintained by Bonnie</p>
-
-					<div class="patternOverview">
-						<p>Visit our <a href="https://www.lumens.com/">desk lamp</a> collection.</p>
-
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>&lt;p&gt;Visit our &lt;a href="#"&gt;desk lamp&lt;/a&gt; collection.&lt;/p&gt;</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									p a{<br>
-										font-weight: bold;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-
-
-					<!--CTA-->
-					<h4>CTA Button</h4>
-					<p class="note">Description: Used as an interactive. Created and maintained by Bonnie</p>
-
-					<div class="patternOverview">
-						<a href="#" class="btnStyle">Default Button</a>
-
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>&lt;a href="#" class="btnStyle"&gt;Default Button&lt;/a&gt;</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									.btnStyle{<br>
-										display: inline-block;<br>
-										background-color: #468CFF;<br>
-										border-radius: 0.75rem;<br>
-										width: 12rem;<br>
-										font-size:1rem;<br>
-										color: white;<br>
-										text-align: center;<br>
-										text-decoration:none;<br>
-										padding: 0.75em;<br>
-									}<br>
-
-									.btnStyle:hover{<br>
-										font-weight: bold;<br>
-										background-color: #2678ff;<br>
-									}<br>
-
-									.btnStyle:focus, .btnStyle:active{<br>
-										color: #212429;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-
-					<!--Form Buttons-->
-					<h4>Form Buttons</h4>
-					<p class="note">Description: Used to submit information or reset a form field (ie: Filters, contact us). Maintained by Bonnie</p>
-
-					<div class="patternOverview">
-						<button class="btnStyle">Submit</button>
-						<button class="btnStyleDisabled">Submit Disabled</button>
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>&lt;button class="btnStyleDisabled"&gt;Submit Disabled&lt;/button&gt;</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									.btnStyleDisabled{<br>
-										display: inline-block;<br>
-										background-color: #468CFF;<br>
-										border-radius: 0.75rem;<br>
-										border-style: none;<br>
-										width: 12rem;<br>
-										font-size: 1rem;<br>
-										color: white;<br>
-										text-align: center;<br>
-										text-decoration: none;<br>
-										padding: 0.75em;<br>
-										opacity: 50%;<br>
-										cursor: not-allowed;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-
-					<h4>Form Fields</h4>
-					<p class="note">Description: Used as a text-input. Maintained by Johnathan</p>
-
-					<div class="patternOverview">
-						<div class="patternStyleContainer">
-							<form action="/action_page.php" method="get">
-								<div class="patternStyle">
-									<label for="fName">First Name:</label>
-									<input type="text" id="fName" name="fName">
-								</div>
-
-								<div class="patternStyle">
-									<label for="email">E-mail:</label>
-									<input type="text" id="email" name="email">
-									<button class ="btnStyle" type="submit" value="Submit">Submit</button>
-									<button class ="btnReset" type="reset" value="Reset">Reset</button>
-								</div>
-							</form>
-						</div>
-
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>
-									&lt;form action="/action_page.php" method="get"&gt;<br>
-										&lt;label for="fName"&gt;First Name:&lt;/label&gt;<br>
-										&lt;input type="text" id="fName" name="fName"&gt;<br>
-										&lt;label for="email"&gt;E-mail:&lt;/label&gt;<br>
-										&lt;input type="text" id="email" name="email"&gt;<br>
-										&lt;button class ="btnStyle" type="submit" value="Submit"&gt;Submit&lt;/button&gt;<br>
-										&lt;button class ="btnReset" type="reset" value="Reset"&gt;Reset&lt;/button&gt;<br>
-									&lt;/form&gt;
-								</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									input{<br>
-										margin: 0.2rem;<br>
-										width: 28em;<br>
-										background-color: white;<br>
-										box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.05);<br>
-									}<br>
-
-									label{<br>
-										color: #212429;<br>
-										font-weight: bold;<br>
-									}<br>
-
-									.btnReset{<br>
-										display: inline-block;<br>
-										background-color: white;<br>
-										border-radius: 0.75rem;<br>
-										border: 0.15rem solid #468CFF;<br>
-										width: 12rem;<br>
-										font-size:1rem;<br>
-										color: #468CFF;<br>
-										text-align: center;<br>
-										text-decoration:none;<br>
-										padding: 0.75em;<br>
-										opacity: 50%;<br>
-										margin-top: 2rem;<br>
-										margin-left: 1rem;<br>
-									}<br>
-
-									.btnReset:hover{<br>
-										background-color: #468CFF;<br>
-										font-weight: bold;<br>
-										color:white;<br>
-										opacity: 100%;<br>
-									}<br>
-
-									button.btnStyle, input.btnStyle{<br>
-										border-style: none;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
+
+		<!--Footer-->
+		<footer class="footBarContainer">
+			<!--Resources-->
+			<ul class="footerResources">
+				<li><h5>RESOURCES</h5></li>
+				<li><a href="aboutUs.html">About the Designers</a></li>
+				<li><a href="https://github.com/bochen625/IAT339_P2Lumi">GitHub</a></li>
+				<li><a href="styleGuide.html">Style Guide</a></li>
+				<li><a href="patternLibrary.html">Pattern Library</a></li>
+				<li><a href="wireframes.html">Wireframes</a></li>
+				<li><a href="fileStructure.html">File Structure</a></li>
+				<li><a href="citations.html">Citations</a></li>
+			</ul>
+
+			<!--Company-->
+			<ul class="footerAbout">
+				<li><h5>COMPANY</h5></li>
+				<li><a href="aboutCompany.html">About Lumi</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+			</ul>
+
+			<!--Copyright-->
+			<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
+
+			<!--Social Media-->
+			<div class="socialMediaIcons">
+				<a href="#" class="iconFb"> <img src="img/facebook.png" alt="facebook icon"> </a>
+				<a href="#" class="iconTwitter"> <img src="img/twitter.png" alt="twitter icon"> </a>
+				<a href="#" class="iconLinkedIn"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+				<a href="#" class="iconIG"> <img src="img/instagram.png" alt="linkedin icon"> </a>
+			</div>
+			
+			<!--Lumi Logo-->
+			<a href="index.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+		</footer>
 	</body>
 </html>

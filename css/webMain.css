@@ -468,7 +468,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 
 /*image*/
 .featureImg{ /*https://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css*/
-	width: 100%
+	width: 100%;
 	height: 100%;
 }
 

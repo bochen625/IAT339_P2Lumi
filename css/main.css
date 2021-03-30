@@ -957,7 +957,7 @@ ul, ol{
 }
 
 .onTop {
-	z-index: 9999px;
+	z-index: 9999;
 	position: absolute;
 	width: 100vw;
 	margin-left: 0;
@@ -965,18 +965,10 @@ ul, ol{
 	position: fixed;
 }
 
-
-
-
-
-=======
 .subNavIMG {
-	width: 1fr;
+	width: 100%;
 }
 
 .subNavIMG img {
 	width: 100%;
 }
->>>>>>> Stashed changes
-=======
->>>>>>> parent of 16adabc... Adding Filter and User Submitted Modules with code Snippets

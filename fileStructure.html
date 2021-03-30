@@ -13,87 +13,141 @@
     </head>
 
     <body>
+        <!-- Nav -->
+        <nav class="navContainer">
+            <a href="index.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+            <ul class="navButtons">
+                <li><a href="shop.html">Products</a></li>
+                <li><a href="inspirations.html">Inspiration</a></li>
+                <li><a href="aboutCompany.html">About Us</a></li>
+                <li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
+                <li><a href="#" class="shoppingCartButton"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
+            </ul>
+        </nav>
+
         <div class="gridContainer">
-            <nav class="navContainer">
-                <h1>File Structure, Conventions, and Rules</h1>
-
-                <ul class="navButtons">
-                    <li><a href="index.html">Style Guide</a></li>
-                    <li><a href="patternLibrary.html">Pattern Library</a></li>
-                    <li><a href="wireframes.html">Wireframes</a></li>
-                    <li><a href="citations.html">Citations</a></li>
-                </ul>
-            </nav>
-
             <div class="sectionContainer">
                 <h2> Naming Convention </h2>
-                <ul>
+                <ol>
                     <li> camelCase (ie: featureModule)</li>
                     <li> The name should be descriptive and the individual should be able to understand what it is by reading the name.</li>
-                </ul>
+                </ol>
 
                 <h2> Structure</h2>
                 <ul>
                     <li>Section header and description (See below for example)</li>
                     <li>Pattern overview container (Encapsulates everything BUT the title/description)</li>
-                    <li>Example:
-                        <ul class="codeSnippetExample">
-                            <li>&lt;h4&gt; Title of Module &lt;/h4&gt;</li>
-                            <li>&lt;p class="note"&gt;Description: What it's used for, who created it, and who is responsible for maintaining it.&lt;/p&gt;</li>
-                            <li>&lt;div class="patternOverview"&gt;</li>
-                            <li>&lt;!-- Code for module --&gt;</li>
-                            <li>&lt;!-- Code snippet for module --&gt;</li>
-                            <li>&lt;/div&gt;</li>
-                        </ul>
+                </ul>
+                <div class="codeSnippetContainer">
+                    <div class="codeSnippetPattern">
+                        <p class="codeSnippetTitle">Example</p>
+                        <code>
+                            &lt;h4&gt; Title of Module &lt;/h4&gt;<br>
+                            &lt;p class="note"&gt;Description: What it's used for, who created it, and who is responsible for maintaining it.&lt;/p&gt;<br>
+                            &lt;div class="patternOverview"&gt;<br>
+                            &lt;!-- Code for module --&gt;<br>
+                            &lt;!-- Code snippet for module --&gt;<br>
+                            &lt;/div&gt;<br>
+                        </code>
+                    </div>
+                </div>
+
+                 <ul>
+                    <li>Code snippet container (contains the code)</li>
+                </ul>
+
+                <div class="codeSnippetContainer">
+                    <div class="codeSnippetPattern">
+                        <p class="codeSnippetTitle">Example</p>
+                        <code>
+                            &lt;div class="codeSnippetContainer"&gt;<br>
+                            &lt;div class="codeSnippetPattern"&gt;<br>
+                            &lt;p class="codeSnippetTitle"&gt;HTML&lt;/p&gt;<br>
+                            &lt;code&gt;<br>
+                            &lt;!--HTML Code--&gt;<br>
+                            &lt;/code&gt;<br>
+                            &lt;/div&gt;<br>
+                            
+                            &lt;div class="codeSnippetPattern"&gt;<br>
+                            &lt;p class="codeSnippetTitle"&gt;CSS&lt;/p&gt;<br>
+                            &lt;code&gt;<br>                                    
+                            &lt;!--CSS Code--&gt;<br>
+                            &lt;/code&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                        </code>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>Global CSS variables (These variables allow you to call a colour WITHOUT specifying the hexcode):</li>
+                    <li class="showNoDot">
+                        <div class="codeSnippetExample">
+                            <ul>
+                                <li>&lt;!--Blue--&gt;</li>
+                                <li>--CTAColour</li>
+                                <li>&lt;!--Gray--&gt;</li>
+                                <li>--textColour</li>
+                                <li>&lt;!--Off white--&gt;</li>
+                                <li>--bgColour</li>
+                                <li>&lt;!--gradient--&gt;</li>
+                                <li>--gradientColour</li>
+                                <li>&lt;!--drop shadow--&gt;</li>
+                                <li>--dropShadow</li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>Code snippet container (contains the code)
-                        <ul>
-                            <li>Example:
-                                <ul class="codeSnippetExample">
-                                    <li>&lt;div class="codeSnippetContainer"&gt;</li>
-                                    <li>&lt;div class="codeSnippetPattern"&gt;</li>
-                                    <li>&lt;p class="codeSnippetTitle"&gt;HTML&lt;/p&gt;</li>
-                                    <li>&lt;code&gt;</li>
-                                    <li>&lt;!--HTML Code--&gt;</li>
-                                    <li>&lt;/code&gt;</li>
-                                    <li>&lt;/div&gt;</li>
-                                    <li></li>
-                                    <li>&lt;div class="codeSnippetPattern"&gt;</li>
-                                    <li>&lt;p class="codeSnippetTitle"&gt;CSS&lt;/p&gt;</li>
-                                    <li>&lt;code&gt;</li>
-                                    <li>&lt;!--CSS Code--&gt;</li>
-                                    <li>&lt;/code&gt;</li>
-                                    <li>&lt;/div&gt;</li>
-                                    <li>&lt;/div&gt;</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Global CSS variables (These variables allow you to call a colour WITHOUT specifying the hexcode):
-                        <ul class="codeSnippetExample">
-                            <li>&lt;!--Blue--&gt;</li>
-                            <li>--CTAColour</li>
-                            <li>&lt;!--Gray--&gt;</li>
-                            <li>--textColour</li>
-                            <li>&lt;!--Off white--&gt;</li>
-                            <li>--bgColour</li>
-                            <li>&lt;!--gradient--&gt;</li>
-                            <li>--gradientColour</li>
-                            <li>&lt;!--drop shadow--&gt;</li>
-                            <li>--dropShadow</li>
-                        </ul>
-                    </li>
+                    
                     <li> Examples of how these global variables are used in CSS:</li>
-                        <ul>
-                            <li>color: var(--textColour); &lt;!--This will make the text gray--&gt;</li>
-                            <li>background-color: var(--bgColour); &lt;!--This will make the background off-white--&gt;</li>
-                            <li>background-color: var(--CTAColour); &lt;!--This will make the background blue--&gt;</li>
-                            <li>background-image: var(--gradientColour); &lt;!--This will create a gradient background using Lumi's brand colours--&gt;</li>
-                            <li>box-shadow: var(--dropShadow); &lt;!--This will create a light drop shadow around a box --&gt;</li>
-                        </ul>
-                    </ul>
+                    <li class="showNoDot">
+                        <div class="codeSnippetExample">
+                            <ul>
+                                <li>color: var(--textColour); &lt;!--This will make the text gray--&gt;</li>
+                                <li>background-color: var(--bgColour); &lt;!--This will make the background off-white--&gt;</li>
+                                <li>background-color: var(--CTAColour); &lt;!--This will make the background blue--&gt;</li>
+                                <li>background-image: var(--gradientColour); &lt;!--This will create a gradient background using Lumi's brand colours--&gt;</li>
+                                <li>box-shadow: var(--dropShadow); &lt;!--This will create a light drop shadow around a box --&gt;</li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
+
+        <!--Footer-->
+        <footer class="footBarContainer">
+            <!--Resources-->
+            <ul class="footerResources">
+                <li><h5>RESOURCES</h5></li>
+                <li><a href="aboutUs.html">About the Designers</a></li>
+                <li><a href="https://github.com/bochen625/IAT339_P2Lumi">GitHub</a></li>
+                <li><a href="styleGuide.html">Style Guide</a></li>
+                <li><a href="patternLibrary.html">Pattern Library</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+                <li><a href="fileStructure.html">File Structure</a></li>
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+
+            <!--Company-->
+            <ul class="footerAbout">
+                <li><h5>COMPANY</h5></li>
+                <li><a href="aboutCompany.html">About Lumi</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+
+            <!--Copyright-->
+            <h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
+
+            <!--Social Media-->
+            <div class="socialMediaIcons">
+                <a href="#" class="iconFb"> <img src="img/facebook.png" alt="facebook icon"> </a>
+                <a href="#" class="iconTwitter"> <img src="img/twitter.png" alt="twitter icon"> </a>
+                <a href="#" class="iconLinkedIn"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+                <a href="#" class="iconIG"> <img src="img/instagram.png" alt="linkedin icon"> </a>
+            </div>
+            
+            <!--Lumi Logo-->
+            <a href="index.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+        </footer>
     </body>
 </html>

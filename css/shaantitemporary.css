@@ -489,7 +489,6 @@ span.price {
 }
 
 /*------ Order Confirmation Page -------*/
-
 .confirmContainer{
 	display:grid;
 	grid-template-columns:repeat(12, 1fr);
@@ -497,7 +496,9 @@ span.price {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	margin: 0 auto;
+	height: 60vh;
 }
+
 .confirm-info {
 	margin-top: 10rem;
 	margin-bottom: 2rem;
@@ -727,16 +728,16 @@ span.price {
 
 /* Subnav Animation */
 #hoverable {
-
-  z-index: -1000px;
+  z-index: -1000;
 }
+
 #hoverable:hover .subNavigation {
   display: block;
   position: absolute;
 }
 
 .navContainer{
-	z-index: 1000px;
+	z-index: 1000;
 }
 
 .navContainer {
@@ -966,7 +967,7 @@ span.price {
 
 #blackBackground .miniShoppingCartContainer {
   min-width: 30vw;
-  z-index: 1000px;
+  z-index: 1000;
   position: fixed;
   right: 0;
   background-color: white;
@@ -1004,7 +1005,7 @@ span.price {
   height: 100vh;
   background-color: rgba(0, 0, 0, .2);
   position: fixed;
-  z-index: 1000px;
+  z-index: 1000;
 }
 
 .hide {
