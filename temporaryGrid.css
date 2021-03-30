@@ -16,6 +16,23 @@
 	grid-column: 1/span 2;
 }
 
+.navContainer {
+	  display: flex;
+  justify-content: space-between;
+    align-items: center;
+    grid-column: 1/span 12;
+}
+
+.navButtons {
+	list-style-type: none;
+  /* background-color: red; */
+  min-width: 520px;
+}
+
+.navButtons li{
+/* float: right; */
+}
+
 /* Sub Navigation */
 .subNavContainer {
   width: 80%;
