@@ -17,16 +17,15 @@
 }
 
 .navContainer {
-	  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
     align-items: center;
     grid-column: 1/span 12;
 }
 
 .navButtons {
 	list-style-type: none;
-  /* background-color: red; */
-  min-width: 520px;
+  	min-width: 520px;
 }
 
 .navButtons li{
@@ -676,7 +675,7 @@ section p{
 	}
 
 	.iconFb, .iconTwitter, .iconLinkedIn{
-	margin-right: 1.25rem;
+		margin-right: 1.25rem;
 	}
 
 	.iconFb{
@@ -688,6 +687,10 @@ section p{
 @media screen and (max-width: 75.75em){
 	.blogDescription{
 		width:clamp(20ch, 100%, 100ch);
+	}
+
+	#firstBlog{
+		width:clamp(20ch, 55%, 100ch);
 	}
 }
 /*Breaking Point: 1120px*/
@@ -798,6 +801,10 @@ section p{
 	}
 	#blogCTA{
 		margin-bottom: 4rem;
+	}
+
+	#firstBlog{
+		width:clamp(20ch, 50%, 80ch);
 	}
 
 }
@@ -974,6 +981,10 @@ section p{
 		width: 100%;
 		height: auto;
 		object-fit: cover;
+	}
+
+	#firstBlog{
+		width:clamp(20ch, 100%, 80ch);
 	}
 
 	
