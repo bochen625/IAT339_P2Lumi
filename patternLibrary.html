@@ -49,16 +49,57 @@
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">HTML</p>
 								<code>
-									&lt;nav class="navBarContainer"&gt;<br>
-										&lt;a href="#" class="logo"&gt; &lt;img src="img/lumiLogo.svg" alt="logo of Lumi"&gt; &lt;/a&gt;<br>
+									&lt;nav class="navContainer"&gt;<br>
+										&lt;a href="home.html" class="logo"&gt; &lt;img src="img/lumiLogo.svg" alt="logo of Lumi"&gt; &lt;/a&gt;<br>
 										&lt;ul class="navButtons"&gt;<br>
-											&lt;li&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;<br>
-											&lt;li&gt;&lt;a href="#"&gt;Inspiration&lt;/a&gt;&lt;/li&gt;<br>
-											&lt;li&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;<br>
-											&lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/searchIcon.svg" alt="search icon"&gt;&lt;/a&gt;&lt;/li&gt;<br>
-											&lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/cartIcon.svg" alt="shopping cart icon"&gt;&lt;/a&gt;&lt;/li&gt;<br>
+											&lt;div id="hoverable"&gt;<br>
+												&lt;li&gt;&lt;a href="shop.html">Products&lt;/a&gt;&lt;/li&gt;<br>
+												<!-- Sub-Nav -->
+												&lt;div class="subNavigation"&gt;<br>
+													&lt;div class="subNavContainer"&gt;<br>
+
+														&lt;div class="subNavCategory"&gt;<br>
+															&lt;div class="subNavCategoryCollum1"&gt;<br>
+																&lt;h5>Category&lt;/h5&gt;<br>
+																&lt;a href=""&gt;Desk Lamp&lt;/a&gt;<br>
+																&lt;a href=""&gt;Table Lamp&lt;/a&gt;<br>
+																&lt;a href=""&gt;Floor Lamp&lt;/a&gt;<br>
+															&lt;/div&gt;<br>
+															&lt;div class="subNavCategoryCollum2"&gt;<br>
+																&lt;a href=""&gt;Wall Lamp&lt;/a&gt;<br>
+																&lt;a href=""&gt;Ceiling Lights&lt;/a&gt;<br>
+																&lt;a href=""&gt;Ceiling Lights&lt;/a&gt;<br>
+															&lt;/div&gt;<br>
+														&lt;/div&gt;<br>
+
+														&lt;div class="subNavLightingTypes"&gt;<br>
+															&lt;div class="subNavLightingTypesCollum1"&gt;<br>
+																&lt;h5&gt;Types of Lighting&lt;/h5&gt;<br>
+																&lt;a href=""&gt;Task Lighting&lt;/a&gt;<br>
+																&lt;a href=""&gt;Ambient Lighting&lt;/a&gt;<br>
+																&lt;a href=""&gt;Accent Lighting&lt;/a&gt;<br>
+															&lt;/div&gt;<br>
+														&lt;/div&gt;<br>
+
+														&lt;div class="subNavFeatures"&gt;<br>
+															&lt;div class="subFeaturesCollum1"&gt;<br>
+																&lt;h5>Features&lt;/h5&gt;<br>
+																&lt;a href="">Lighting Quiz&lt;/a&gt;<br>
+															&lt;/div&gt;<br>
+														&lt;/div&gt;<br>
+
+														&lt;div class="subNavIMG"&gt;<br>
+															&lt;img src="./img/navImg.png"&gt;<br>
+														&lt;/div&gt;<br>
+													&lt;/div&gt;<br>
+												&lt;/div&gt;<br>
+											&lt;/div&gt;<br>
+											&lt;li&gt;&lt;a href="#">Inspiration&lt;/a&gt;&lt;/li&gt;<br>
+											&lt;li&gt;&lt;a href="aboutCompany.html"&gt;About Us&lt;/a&gt;&lt;/li&gt;<br>
+											&lt;li&gt;&lt;a href="#"&gt; &lt;img src="img/searchIcon.svg" alt="search icon"&gt;&lt;/a&gt;&lt;/li&gt;<br>
+											&lt;li&gt;&lt;a href="#" class="shoppingCartButton"&gt; &lt;img src="img/cartIcon.svg" alt="shopping cart icon"&gt;&lt;/a&gt;&lt;/li&gt;<br>
 										&lt;/ul&gt;<br>
-									&lt;/nav&gt;
+									&lt;/nav&gt;<br>
 								</code>
 							</div>
 
@@ -113,6 +154,31 @@
 									.navButtons a:focus, a:active{<br>
 										text-decoration: underline;<br>
 									}
+
+									.navContainer {<br>
+									  display: flex;<br>
+									  justify-content: space-between;<br>
+									    align-items: center;<br>
+									    grid-column: 1/span 12;<br>
+									}<br>
+									<br>
+									.navButtons {<br>
+										list-style-type: none;<br>
+									  min-width: 520px;<br>
+									}<br>
+
+									  .navContainer{<br>
+									  	grid-template-rows: 2fr;<br>
+									    display: grid;<br>
+										z-index: 1000;<br>
+									}<br>
+
+									.navButtons{<br>
+										grid-row: 2;<br>
+									  grid-column: 1/span 12;<br>
+									  min-width: 100vw;<br>
+									}<br>
+
 								</code>
 							</div>
 						</div>
@@ -1929,7 +1995,83 @@
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">CSS</p>
 								<code>
-									.
+.filterContainer{<br>
+	display:grid;<br>
+	grid-column: 1;<br>
+	grid-template-rows: 1fr;<br>
+	grid-column-gap: 0.5rem;<br>
+	padding-left: 2rem;<br>
+	padding-right: 2rem;<br>
+}<br>
+<br>
+.filterBlock{<br>
+	grid-column: 1/span 4;<br>
+}<br>
+<br>
+.filterContent{<br>
+	padding: 4rem;<br>
+	padding-left: 7rem;<br>
+	padding-right: 6rem;<br>
+}<br>
+<br>
+.filterContainer{<br>
+	display:grid;<br>
+	grid-column: 1;<br>
+	grid-template-rows: 1fr;<br>
+	grid-column-gap: 0.5rem;<br>
+	padding-right: 2rem;<br>
+}<br>
+<br>
+.filterBlock{<br>
+	grid-column: 1/span 4;<br>
+}<br>
+<br>
+.filterContent{<br>
+	padding: 4rem;<br>
+	padding-left: 7rem;<br>
+	padding-right: 6rem;<br>
+}<br>
+<br>
+<br>
+
+.filterBlock{<br>
+	background-color: white;<br>
+	box-shadow: var(--dropShadow);<br>
+}<br>
+<br>
+.check {<br>
+  position: absolute;<br>
+ 	top: 0;<br>
+ 	left: 0;<br>
+ 	height: 0.875rem;<br>
+	width: 0.875rem;<br>
+	border-style: solid;<br>
+	border-color: grey;<br>
+	border-width: 0.01em;<br>
+	border-radius: 0.25em;<br>
+}<br>
+<br>
+.boxContainer {<br>
+  display: block;<br>
+  position: relative;<br>
+  padding-left: 2rem;<br>
+  margin-bottom: 0.8rem;<br>
+  cursor: pointer;<br>
+  font-size: 0.875rem;<br>
+  font-weight: 200;<br>
+  -webkit-user-select: none;<br>
+  -moz-user-select: none;<br>
+  -ms-user-select: none;<br>
+  user-select: none;<br>
+}<br>
+<br>
+.boxContainer input {<br>
+  position: absolute;<br>
+  opacity: 0;<br>
+  cursor: pointer;<br>
+  height: 0;<br>
+  width: 0;<br>
+}<br>
 								</code>
 							</div>
 						</div>
@@ -1949,7 +2091,7 @@
 												<h4 class="light-name"> Colby Ceiling Lamp</h4>
 												<h5 class="light-price">$84</h5>
 												<h5 class="light-offer"></h5>
-												<p class="light-qauntity"> Qnt: <input value="1" name=""> 
+												<p class="light-qauntity"> Qnt: <input value="1" name="">
 												</p>
 												<p class="light-remove">
 													<span class="remove">Remove</span>
@@ -1962,7 +2104,7 @@
 												<h4 class="light-name">W42 Ceiling Light</h4>
 												<h5 class="light-price">$84</h5>
 												<h5 class="light-offer"></h5>
-												<p class="light-qauntity"> Qnt: <input value="1" name=""> 
+												<p class="light-qauntity"> Qnt: <input value="1" name="">
 												</p>
 												<p class="light-remove">
 													<span class="remove">Remove</span>
@@ -1976,7 +2118,7 @@
 								<span>Number of Items</span>
 								<span>2</span>
 							</p>
-							<p>	
+							<p>
 								<span>Sub-total</span>
 								<span>$168</span>
 							</p>
@@ -1994,7 +2136,7 @@
 							<div class="codeSnippetPattern">
 									<p class="codeSnippetTitle">HTML</p>
 									<code>
-										
+
 										&lt;div class="cart"&gt;<br>
 											&lt;div class="lightproducts"&gt;<br>
 												&lt;div class="light"&gt;<br>
@@ -2016,7 +2158,7 @@
 																&lt;h4 class="light-name">W42 Ceiling Light&lt;/h4&gt;<br>
 																&lt;h5 class="light-price">$84&lt;/h5&gt;<br>
 																&lt;h5 class="light-offer">&lt;/h5&gt;<br>
-																&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name=""> 
+																&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name="">
 																&lt;/p&gt;<br>
 																&lt;p class="light-remove"&gt;<br>
 																	&lt;span class="remove">Remove&lt;/span&gt;<br>
@@ -2139,7 +2281,7 @@
 										<img src="img/gallery4.jpg" class="productGalImg" alt="Product Image 4">
 									</figure>
 							</div>
-						</div>					
+						</div>
 					<div class="codeSnippetContainer">
 						<div class="codeSnippetPattern">
 							<p class="codeSnippetTitle">HTML</p>
@@ -2186,7 +2328,7 @@
 				<div class="patternContainer">
 					<h4>User Submitted Module</h4>
 					<p class="note"> Listed Under Product Photo Gallery, on every product speficiations page</p>
-					<div class="patternOverview">					
+					<div class="patternOverview">
 						<div id="userSubImg">
 								<div class="scrollUser">
 									<img src="img/user1.png" class="userGalImg1" alt="User Submitted Image 1">
@@ -2199,7 +2341,7 @@
 								</div>
 							<h4 id="userSub">User Submitted Photos</h4>
 						</div>
-						
+
 					<div class="codeSnippetContainer">
 						<div class="codeSnippetPattern">
 							<p class="codeSnippetTitle">HTML</p>
@@ -2246,7 +2388,7 @@
 									}<br>
 								</code>
 							</div>
-						
+
 					</div>
 					</div>
 				</div>
@@ -2282,7 +2424,7 @@
 				<a href="#" class="iconLinkedIn"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
 				<a href="#" class="iconIG"> <img src="img/instagram.png" alt="linkedin icon"> </a>
 			</div>
-			
+
 			<!--Lumi Logo-->
 			<a href="home.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
 		</footer>
