@@ -648,22 +648,31 @@ ul, ol{
 }
 
 /*-----------Quiz CTA Module-----------*/
-.quizBannerContainer{
-	background-image: url('../img/quizbanner.png');
+.quizCTABanner{
+	margin-top: 4rem;
+	background-image: url('...img/quizbanner.png') repeat 0 0;
+	background-position: center;
 	background-repeat: no-repeat;
-	height: 30rem;
+	height: 35rem;
 	background-size: cover;
-	box-shadow: var(--dropShadow);
+	margin-bottom: 4rem;
+}
+.quizBannerImg{
+	margin-top: 5rem;
+	max-width: 100%;
+	height: 75%;
+	object-fit: cover;
+}
+
+.quizDescription{
+	position: absolute;
+	left: 8.5%;
+	margin-top: 10rem;
 }
 
 .quizBH{
-	margin: 0.5rem;
-	margin-top: 7rem;
-}
-
-.quizCTA{
-	margin: 0.5rem;
-	min-height: 20rem;
+	text-align: left;
+	width:clamp(7ch, 80%, 15ch);
 }
 
 /*-----------Product Image Gallery Module-----------*/
