@@ -15,14 +15,14 @@
 	<body>
 		<!-- Nav -->
 		<nav class="navContainer">
-			<a href="home.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+			<a href="index.html" class="logo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
 			<ul class="navButtons">
 				<div id="hoverable">
 					<li><a href="shop.html">Products</a></li>
-					
 					<!-- Sub-Nav -->
 					<div class="subNavigation">
 						<div class="subNavContainer">
+
 							<div class="subNavCategory">
 								<div class="subNavCategoryCollum1">
 									<h5>Category</h5>
@@ -54,14 +54,13 @@
 							</div>
 
 							<div class="subNavIMG">
-								<img src="./img/navImg.png">
+								<img src="./img/navImg.png" alt="nav image">
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<!--Nav (Main)-->
-				<li><a href="inspirations.html">Inspiration</a></li>
+				<li><a href="#">Inspiration</a></li>
 				<li><a href="aboutCompany.html">About Us</a></li>
 				<li><a href="#"> <img src="img/searchIcon.svg" alt="search icon"></a></li>
 				<li><a href="#" class="shoppingCartButton"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
@@ -84,20 +83,21 @@
 									<h4 class="light-name"> Colby Ceiling Lamp</h4>
 									<h5 class="light-price">$84</h5>
 									<h5 class="light-offer"></h5>
-									<p class="light-qauntity"> Qnt: <input value="1" name="">
+									<p class="light-qauntity"> Qnt: <input value="1" name="quantity">
 									</p>
 									<p class="light-remove">
 										<span class="remove">Remove</span>
 									</p>
 								</div>
 							</div>
+
 							<div class="light">
 								<img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light">
 								<div class="light-info">
 									<h4 class="light-name">W42 Ceiling Light</h4>
 									<h5 class="light-price">$84</h5>
 									<h5 class="light-offer"></h5>
-									<p class="light-qauntity"> Qnt: <input value="1" name="">
+									<p class="light-qauntity"> Qnt: <input value="1" name="quantity">
 									</p>
 									<p class="light-remove">
 										<span class="remove">Remove</span>
@@ -106,6 +106,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="cart-total">
 						<p>
 							<span>Number of Items</span>
@@ -137,8 +138,6 @@
 				<h3 class="moduleHeader">A lighting company designed to illuminate your space.</h3>
 				<p class="aboutCompanyText">At Lumi, we believe that your productivity and comfort is greatly influenced by what surrounds you. The light used in your area can create an atmosphere that will motivate you, help you focus, or make you fall asleep. Our expertise can guide you in finding the right lighting for your needs.</p>
 			</div>
-
-			
 
 			<div class="ourValues">
 				<h3 class="moduleHeader"> We aim to help:</h3>
@@ -192,5 +191,7 @@
 			<a href="home.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
 		</footer>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/shoppingCartModule.js"></script>
 	</body>
 </html>

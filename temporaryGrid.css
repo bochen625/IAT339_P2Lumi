@@ -16,6 +16,23 @@
 	grid-column: 1/span 2;
 }
 
+.navContainer {
+	  display: flex;
+  justify-content: space-between;
+    align-items: center;
+    grid-column: 1/span 12;
+}
+
+.navButtons {
+	list-style-type: none;
+  /* background-color: red; */
+  min-width: 520px;
+}
+
+.navButtons li{
+/* float: right; */
+}
+
 /* Sub Navigation */
 .subNavContainer {
   width: 80%;
@@ -23,7 +40,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  z-index: -1px;
+  z-index: -1;
   background-color: white;
 }
 
@@ -84,33 +101,32 @@
 
 /* Subnav Animation */
 #hoverable {
-
-  z-index: -1000px;
+  z-index: -1000;
 }
+
 #hoverable:hover .subNavigation {
   display: block;
   position: absolute;
 }
 
 .navContainer{
-	z-index: 1000px;
+	z-index: 1000;
 }
 
 /*-----Mini Shopping Cart Container----*/
-
 .close{
 	margin-top: 2.5rem;
 	grid-column: 12/span 1;
 }
 
 .miniShoppingCartContainer {
-  min-width: 30vw;
-  z-index: 1000px;
-  position: fixed;
-  right: 0;
-  background-color: white;
-  height: 100vh;
-  overflow-y: scroll;
+	min-width: 30vw;
+	z-index: 1000;
+	position: fixed;
+	right: 0;
+	background-color: white;
+	height: 100vh;
+	overflow-y: scroll;
 }
 
 .miniShoppingCartContainer .shoppingcartContainer{
@@ -128,7 +144,7 @@
 }
 
 .miniShoppingCartContainer .shoppingcartContainer h3 {
-  margin-top: -50px;
+	margin-top: -50px;
 }
 .cart{
 	grid-column: 1/span 12;
@@ -143,7 +159,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, .2);
   position: fixed;
-  z-index: 1000px;
+  z-index: 1000;
 }
 
 .hide {
@@ -155,7 +171,6 @@
 }
 
 /* Checkout Order Summary */
-
 #summary.cart{
 	grid-column: 1/span end;
 }
@@ -466,10 +481,10 @@ section p{
 @media screen and (max-width:76em){
 
 	/*Nav Bar*/
-	.navContainer{
+/*	.navContainer{
 		grid-template-columns: repeat(4, 1fr);
-		grid-column-gap: 1.25rem; /*roughly 20px*/
-		padding-left: 1.35rem; /*roughly 22px*/
+		grid-column-gap: 1.25rem;
+		padding-left: 1.35rem;
 		padding-right: 1.35rem;
 	}
 
@@ -479,7 +494,7 @@ section p{
 
 	.navButtons{
 		grid-column: 1/span 4;
-	}
+	}*/
 
 	/*Home page*/
 	.productRecommendation{
@@ -665,7 +680,6 @@ section p{
 
 /*Breaking Point: 1120px*/
 @media screen and (max-width: 70em){
-
   	.navContainer{
 	  	grid-template-rows: 2fr;
 	    display: grid;
@@ -680,7 +694,6 @@ section p{
 	/* Sub Navigation */
 	.subNavContainer {
 		width: 80%;
-		/* margin-left: 0; */
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: 1fr;
@@ -706,6 +719,10 @@ section p{
 		display: none;
 	}
 
+	#blackBackground {
+		position: static;
+	}
+	
 	/* shopping module */
 	.miniShoppingCartContainer {
 		left: 0;
@@ -1040,5 +1057,4 @@ section p{
 		object-fit: cover;
 		object-position: center;
 	}
-
 }
