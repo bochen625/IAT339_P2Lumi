@@ -154,6 +154,31 @@
 									.navButtons a:focus, a:active{<br>
 										text-decoration: underline;<br>
 									}
+
+									.navContainer {<br>
+									  display: flex;<br>
+									  justify-content: space-between;<br>
+									    align-items: center;<br>
+									    grid-column: 1/span 12;<br>
+									}<br>
+									<br>
+									.navButtons {<br>
+										list-style-type: none;<br>
+									  min-width: 520px;<br>
+									}<br>
+
+									  .navContainer{<br>
+									  	grid-template-rows: 2fr;<br>
+									    display: grid;<br>
+										z-index: 1000;<br>
+									}<br>
+
+									.navButtons{<br>
+										grid-row: 2;<br>
+									  grid-column: 1/span 12;<br>
+									  min-width: 100vw;<br>
+									}<br>
+
 								</code>
 							</div>
 						</div>
