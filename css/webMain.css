@@ -478,15 +478,23 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 
 /*-----------Value Module-----------*/
 .valueAndBlogCard{
-	background-image: var(--gradientColour);
+	background-image: url("IAT339_P2Lumi/img/officeWork.png");
 	min-height: 18rem; /*31.5rem for 1920px*/
 	position: relative;
+	z-index: 0;
 }
 
 .companyValues{
 	text-align: center;
 	padding-top: 7rem;
 	font-size: 1.25rem;
+	z-index: 2;
+}
+
+/*Hover img change:
+https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php*/;
+.valueAndBlogCard:hover {
+    background: url("img/officeWork.png") no-repeat;
 }
 
 /*-----------Blog Module-----------*/
