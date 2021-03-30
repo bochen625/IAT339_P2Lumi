@@ -226,6 +226,16 @@ h1{
 	grid-column: 9/span 4;
 }
 
+/*------Blog-----*/
+.inspoContainer{
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 1.5rem;
+	padding-left: 6.25rem; /*roughly 100px*/
+	padding-right: 6.25rem;
+	margin-top: 4rem;
+}
+
 /*Quiz Text Multiple Choice*/
 .quizContainer{
 	display:grid;
