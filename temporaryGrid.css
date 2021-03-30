@@ -4,7 +4,7 @@
 	grid-template-columns: repeat(12, 1fr);
 	grid-column: 1/span 12;
 	grid-column-gap: 1.5rem;
-	padding-left: 6.25rem; /*roughly 100px*/
+	padding-left: 6.25rem;
 	padding-right: 6.25rem;
 }
 
@@ -14,6 +14,86 @@
 
 .logo{
 	grid-column: 1/span 2;
+}
+
+/* Sub Navigation */
+.subNavContainer {
+  width: 80%;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  z-index: -1px;
+  background-color: white;
+}
+
+.subNavCategory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.subNavIMG {
+
+}
+
+/* Sub Navigation */
+.subNavigation {
+  display: none;
+  width: 100vw;
+  margin-top: 5em;
+  background-color: white;
+  left: 0;
+
+}
+
+.subNavContainer {
+
+}
+
+.subNavigation a {
+	text-decoration: none;
+	margin-bottom: 10px;
+  text-align: left;
+  margin-left: 0;
+}
+
+.subNavCategory {
+	display: grid;
+}
+
+.subNavigation h5 {
+	margin-top: 0;
+}
+
+.subNavCategoryCollum2 {
+	padding-top: 25px;
+}
+
+.subNavCategoryCollum1 {
+
+}
+
+.subNavContainer {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.subNavCategory, .subNavLightingTypes, .subNavFeatures {
+	margin-top: 20%;
+}
+
+/* Subnav Animation */
+#hoverable {
+
+  z-index: -1000px;
+}
+#hoverable:hover .subNavigation {
+  display: block;
+  position: absolute;
+}
+
+.navContainer{
+	z-index: 1000px;
 }
 
 /*---------About Company--------*/
