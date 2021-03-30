@@ -612,6 +612,35 @@ section p{
 	  	grid-column: 1/span 12;
 	  	min-width: 100vw;
 	}
+
+	/* Sub Navigation */
+	.subNavContainer {
+		width: 80%;
+		/* margin-left: 0; */
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	/* Sub Navigation */
+	.subNavigation {
+		display: none;
+		margin-left: -66vw;
+		width: 100vw;
+		margin-left: 0vw;
+		float: left;
+		margin-top: 5em;
+		background-color: white;
+	}
+
+	.subNavCategory {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.subNavIMG {
+		display: none;
+	}
 }
 
 /*Breaking point: 1024px*/
