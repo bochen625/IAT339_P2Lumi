@@ -22,200 +22,8 @@
 					<li><a href="patternLibrary.html">Pattern Library</a></li>
 					<li><a href="wireframes.html">Wireframes</a></li>
 					<li><a href="citations.html">Citations</a></li>
-					<li><a href="fileStructure.html">Rules</a></li>
 				</ul>
 			</nav>
-
-			<div class="sectionContainer" id="interactiveElements">
-				<h2>Interactive elements</h2>
-				<div class="patternContainer">
-					<h4>In-text Link</h4>
-					<p class="note">Description: Used as an interactive. Created and maintained by Bonnie</p>
-
-					<div class="patternOverview">
-						<p>Visit our <a href="https://www.lumens.com/">desk lamp</a> collection.</p>
-
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>&lt;p&gt;Visit our &lt;a href="#"&gt;desk lamp&lt;/a&gt; collection.&lt;/p&gt;</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									p a{<br>
-										font-weight: bold;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-
-
-					<!--CTA-->
-					<h4>CTA Button</h4>
-					<p class="note">Description: Used as an interactive. Created and maintained by Bonnie</p>
-
-					<div class="patternOverview">
-						<a href="#" class="btnStyle">Default Button</a>
-
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>&lt;a href="#" class="btnStyle"&gt;Default Button&lt;/a&gt;</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									.btnStyle{<br>
-										display: inline-block;<br>
-										background-color: #468CFF;<br>
-										border-radius: 0.75rem;<br>
-										width: 12rem;<br>
-										font-size:1rem;<br>
-										color: white;<br>
-										text-align: center;<br>
-										text-decoration:none;<br>
-										padding: 0.75em;<br>
-									}<br>
-
-									.btnStyle:hover{<br>
-										font-weight: bold;<br>
-										background-color: #2678ff;<br>
-									}<br>
-
-									.btnStyle:focus, .btnStyle:active{<br>
-										color: #212429;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-
-					<!--Form Buttons-->
-					<h4>Form Buttons</h4>
-					<p class="note">Description: Used to submit information or reset a form field (ie: Filters, contact us). Maintained by Bonnie</p>
-
-					<div class="patternOverview">
-						<button class="btnStyle">Submit</button>
-						<button class="btnStyleDisabled">Submit Disabled</button>
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>&lt;button class="btnStyleDisabled"&gt;Submit Disabled&lt;/button&gt;</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									.btnStyleDisabled{<br>
-										display: inline-block;<br>
-										background-color: #468CFF;<br>
-										border-radius: 0.75rem;<br>
-										border-style: none;<br>
-										width: 12rem;<br>
-										font-size: 1rem;<br>
-										color: white;<br>
-										text-align: center;<br>
-										text-decoration: none;<br>
-										padding: 0.75em;<br>
-										opacity: 50%;<br>
-										cursor: not-allowed;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-
-					<h4>Form Fields</h4>
-					<p class="note">Description: Used as a text-input. Maintained by Johnathan</p>
-
-					<div class="patternOverview">
-						<div class="patternStyleContainer">
-							<form action="/action_page.php" method="get">
-								<div class="patternStyle">
-									<label for="fName">First Name:</label>
-									<input type="text" id="fName" name="fName">
-								</div>
-
-								<div class="patternStyle">
-									<label for="email">E-mail:</label>
-									<input type="text" id="email" name="email">
-									<button class ="btnStyle" type="submit" value="Submit">Submit</button>
-									<button class ="btnReset" type="reset" value="Reset">Reset</button>
-								</div>
-							</form>
-						</div>
-
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>
-									&lt;form action="/action_page.php" method="get"&gt;<br>
-										&lt;label for="fName"&gt;First Name:&lt;/label&gt;<br>
-										&lt;input type="text" id="fName" name="fName"&gt;<br>
-										&lt;label for="email"&gt;E-mail:&lt;/label&gt;<br>
-										&lt;input type="text" id="email" name="email"&gt;<br>
-										&lt;button class ="btnStyle" type="submit" value="Submit"&gt;Submit&lt;/button&gt;<br>
-										&lt;button class ="btnReset" type="reset" value="Reset"&gt;Reset&lt;/button&gt;<br>
-									&lt;/form&gt;
-								</code>
-							</div>
-
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									input{<br>
-										margin: 0.2rem;<br>
-										width: 28em;<br>
-										background-color: white;<br>
-										box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.05);<br>
-									}<br>
-
-									label{<br>
-										color: #212429;<br>
-										font-weight: bold;<br>
-									}<br>
-
-									.btnReset{<br>
-										display: inline-block;<br>
-										background-color: white;<br>
-										border-radius: 0.75rem;<br>
-										border: 0.15rem solid #468CFF;<br>
-										width: 12rem;<br>
-										font-size:1rem;<br>
-										color: #468CFF;<br>
-										text-align: center;<br>
-										text-decoration:none;<br>
-										padding: 0.75em;<br>
-										opacity: 50%;<br>
-										margin-top: 2rem;<br>
-										margin-left: 1rem;<br>
-									}<br>
-
-									.btnReset:hover{<br>
-										background-color: #468CFF;<br>
-										font-weight: bold;<br>
-										color:white;<br>
-										opacity: 100%;<br>
-									}<br>
-
-									button.btnStyle, input.btnStyle{<br>
-										border-style: none;<br>
-									}
-								</code>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
 
 			<div class="sectionContainer" id="modularPatterns">
 				<h2>Modular Patterns</h2>
@@ -236,7 +44,6 @@
 								<li><a href="#"> <img src="img/cartIcon.svg" alt="shopping cart icon"></a></li>
 							</ul>
 						</nav>
-
 
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
@@ -561,7 +368,7 @@
 							<h2 class="descriptionTitle">Similar Products</h2>
 
 							<div class="productCard">
-								<a href="#"><img src="img/light1.png" alt="metal floor lamp with a circular bulb"></a>
+								<a href="ProductDetail.html"><img src="img/colbyCeilingLight.png" alt="black circular ceiling light"></a>
 								<div class="productDetails">
 									<p class="productCardPName">Ambient Floor Lamp</p>
 									<p class="productCardPPrice">$139</p>
@@ -569,7 +376,7 @@
 							</div>
 
 							<div class="productCard">
-								<a href="#"><img src="img/light2.png" alt="black metal lamp"></a>
+								<a href="ProductDetail.html"><img src="img/coneCeilingLight.png" alt="blue coned-shape ceiling light"></a>
 								<div class="productDetails">
 									<p class="productCardPName">Hang-over Floor Lamp</p>
 									<p class="productCardPPrice">$129</p>
@@ -577,7 +384,7 @@
 							</div>
 
 							<div class="productCard">
-								<a href="#"><img src="img/light3.png" alt="a black metal wall lamp"></a>
+								<a href="ProductDetail.html"><img src="img/w42CeilingLight.png" alt="a white metallic ceiling light"></a>
 								<div class="productDetails">
 									<p class="productCardPName">Swinging Golf Wall Lamp</p>
 									<p class="productCardPPrice">$99</p>
@@ -586,7 +393,7 @@
 
 							<div class="productCard">
 								<h3 class="productCardText"> Explore our collections and find a light that is suitable for your needs.</h3>
-								<a href="#" class="btnStyle" id="productCTA">View More</a>
+								<a href="shop.html" class="btnStyle" id="productCTA">View More</a>
 							</div>
 						</div>
 
@@ -705,6 +512,92 @@
 					</div>
 				</div>
 
+				<!--Our Values-->
+				<div class="patternContainer">
+					<h4> Our Values Module</h4>
+					<p class="note">Description: Used to show the company values. Created and maintained by Shaanti.</p>
+
+					<div class="patternOverview">
+						<div class="threeBoxContainer">
+							<h2 class="moduleHeader"> Our values</h2>
+
+							<div class="valueAndBlogCard">
+								<p class="companyValues">Build your space</p>
+							</div>
+
+							<div class="valueAndBlogCard">
+								<p class="companyValues">Be creative</p>
+							</div>
+
+							<div class="valueAndBlogCard">
+								<p class="companyValues">Transform your workflow</p>
+							</div>
+						</div>
+
+						<div class="codeSnippetContainer">
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">HTML</p>
+								<code>
+									&lt;div class="threeBoxContainer"&gt;<br>
+										&lt;h2 class="moduleHeader"&gt; Our values&lt;/h2&gt;<br>
+										<br>
+										&lt;div class="valueAndBlogCard"&gt;<br>
+											&lt;p class="companyValues"&gt;Build your space&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+										<br>
+										&lt;div class="valueAndBlogCard"&gt;<br>
+											&lt;p class="companyValues"&gt;Be creative&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+										<br>
+										&lt;div class="valueAndBlogCard"&gt;<br>
+											&lt;p class="companyValues"&gt;Transform your workflow&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;
+								</code>
+							</div>
+
+							<div class="codeSnippetPattern">
+								<p class="codeSnippetTitle">CSS</p>
+								<code>
+									.threeBoxContainer{<br>
+										display:grid;<br>
+										grid-template-columns: repeat(12, 1fr);<br>
+										grid-column-gap: 1.5rem<br>
+									}<br>
+									<br>
+									.moduleHeader{<br>
+										grid-column: 1/span 6;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard{<br>
+										background-image: var(--gradientColour);<br>
+										min-height: 31.5rem;<br>
+										position: relative;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard:first-of-type{<br>
+										grid-column: 1/span 4;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard:nth-of-type(2){<br>
+										grid-column: 5/span 4;<br>
+									}<br>
+									<br>
+									.valueAndBlogCard:last-of-type{<br>
+										grid-column: 9/span 4;<br>
+									}<br>
+									<br>
+									.companyValues{<br>
+										text-align: center;<br>
+										padding-top: 13rem;<br>
+										font-size: 1.25rem;<br>
+									}
+								</code>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<!-- Blog Module: Inspirations and Ideas-->
 				<div class="patternContainer">
 					<h4> Blog Module</h4>
@@ -716,30 +609,30 @@
 
 							<!--Blog Post 1-->
 							<div class="valueAndBlogCard">
-								<a href="#"> <img src="img/blog1.png" class="blogImg" alt="light bulb"> </a>
-								<a href="#"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
+								<a href="blogArticle.html"> <img src="img/blog1.png" class="blogImg" alt="light bulb"> </a>
+								<a href="blogArticle.html"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
 								<div class="blogInfoBackground">
 									<h4 class="blogTitle"> Lamp Set-up Inspirations</h4>
-									<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should...</p>
-									<a href="#" class="inTextCTAStyle">read more</a>
+									<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should look.</p>
+									<a href="blogArticle.html" class="inTextCTAStyle">read more</a>
 								</div>
 							</div>
 
 							<!--Blog Post 2-->
 							<div class="valueAndBlogCard">
-								<a href="#"> <img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"> </a>
-								<a href="#"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
+								<a href="blogArticle.html"> <img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"> </a>
+								<a href="blogArticle.html"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
 								<div class="blogInfoBackground">
 									<h4 class="blogTitle"> Lighting Your Workspace</h4>
 									<p class="blogDescription"> The type of lighting in your room can influence your productivity. Here’s a list of things to consider when setting up your ideal workspace.</p>
-									<a href="#" class="inTextCTAStyle">read more</a>
+									<a href="blogArticle.html" class="inTextCTAStyle">read more</a>
 								</div>
 							</div>
 
 							<!--CTA for Blog Module-->
 							<div class="valueAndBlogCard">
-								<h3 class="productCardText"> Explore our blogs to get more inspiration and ideas</h3>
-								<a href="#" class="btnStyle" id="blogCTA">Discover More</a>
+								<h3 class="blogCardText"> Explore our blogs to get more inspiration and ideas</h3>
+								<a href="inspirations.html" class="btnStyle" id="blogCTA">Discover More</a>
 							</div>
 						</div>
 
@@ -1160,29 +1053,29 @@
 					<div class="patternOverview">
 						<div id="heroSlider">
 							<div class="slideImage">
-								<img src="./img/heroCeilingLight.png" id="heroCeilingLight" alt="Metallic Ceiling Light">
+								<img src="./img/heroImg1.png">
 								<div class="slideText">
-									<h2>W42 Ceiling Light</h2>
-									<h4 class="subheading">A durable, metallic light. Provides a soft, directional light.</h4>
-									<a href="shop.html" class="btnStyle">Shop Now</a>
+									<h1>W42 Ceiling Light</h1>
+									<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+									<a href="#" class="btnStyle">Shop Now</a>
 								</div>
 							</div>
 
 							<div class="slideImage">
-								<img src="./img/ckDeskLamp.png" id="heroDeskLamp" alt="Silver desk lamp">
+								<img src="./img/feature1.png">
 								<div class="slideText">
-									<h2>CK Desk Lamp</h2>
-									<h4 class="subheading">A simple and modern task lamp that is powerful yet compact</h4>
-									<a href="shop.html" class="btnStyle">Shop Now</a>
+									<h1>W43 Floor Light</h1>
+									<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+									<a href="#" class="btnStyle">Shop Now</a>
 								</div>
 							</div>
 
 							<div class="slideImage">
-								<img src="./img/collection.png" id="heroCollection" alt="White ceramic hanging lamps">
+								<img src="./img/feature1.png">
 								<div class="slideText">
-									<h2>Modernoe Cerami</h2>
-									<h4 class="subheading">Modern light that provides a soft ambient light.</h4>
-									<a href="quiz.html" class="btnStyle">Shop Now</a>
+									<h1>W44 Ambient Light</h1>
+									<h5>A durable, metallic light. Provides a soft, directional light.</h5>
+									<a href="#" class="btnStyle">Shop Now</a>
 								</div>
 							</div>
 
@@ -1222,29 +1115,29 @@
 									&lt;div id="heroSlider"&gt;<br>
 
 									&lt;div class="slideImage"&gt;<br>
-										&lt;img src="./img/heroCeilingLight.png" id="heroCeilingLight" alt="Metallic Ceiling Light"&gt;<br>
+										&lt;img src="./img/heroImg1.png"&gt;<br>
 										&lt;div class="slideText"&gt;<br>
-											&lt;h2&gt;W42 Ceiling Light&lt;/h2&gt;<br>
-											&lt;h4 class="subheading"&gt;A durable, metallic light. Provides a soft, directional light.&lt;/h4&gt;<br>
-											&lt;a href="shop.html" class="btnStyle"&gt;Shop Now&lt;/a&gt;<br>
+											&lt;h1&gt;W42 Ceiling Light&lt;/h1&gt;<br>
+											&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.</h5><br>
+											&lt;a href="#" class="btnStyle">Shop Now</a><br>
 										&lt;/div&gt;<br>
 									&lt;/div&gt;<br>
 
 									&lt;div class="slideImage"&gt;<br>
-										&lt;img src="./img/ckDeskLamp.png" id="heroDeskLamp" alt="Silver desk lamp"&gt;<br>
+										&lt;img src="./img/feature1.png"&gt;<br>
 										&lt;div class="slideText"&gt;<br>
-											&lt;h2&gt;CK Desk Lamp&lt;/h2&gt;<br>
-											&lt;h4 class="subheading"&gt;A simple and modern task lamp that is powerful yet compact&lt;/h4&gt;<br>
-											&lt;a href="shop.html" class="btnStyle"&gt;Shop Now&lt;/a&gt;<br>
-										&lt;/div&gt;<br>
-									&lt;/div&gt;<br>
+											&lt;h1&gt;W43 Floor Light	&lt;/h1&gt;<br>
+											&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.	&lt;/h5&gt;<br>
+											&lt;a href="#" class="btnStyle">Shop Now	&lt;/a&gt;<br>
+										&lt;/div&gt;
+									&lt;/div&gt;
 
 									&lt;div class="slideImage"&gt;<br>
-										&lt;img src="./img/collection.png" id="heroCollection" alt="White ceramic hanging lamps"&gt;<br>
+										&lt;img src="./img/feature1.png"&gt;<br>
 										&lt;div class="slideText"&gt;<br>
-											&lt;h2&gt;Modernoe Cerami&lt;/h2&gt;<br>
-											&lt;h4 class="subheading"&gt;Modern light that provides a soft ambient light.&lt;/h4&gt;<br>
-											&lt;a href="shop.html" class="btnStyle"&gt;Shop Now&lt;/a&gt;<br>
+											&lt;h1&gt;W44 Ambient Light&lt;/h1&gt;<br>
+											&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.&lt;/h5&gt;<br>
+											&lt;a href="#" class="btnStyle">Shop Now&lt;/a&gt;<br>
 										&lt;/div&gt;<br>
 									&lt;/div&gt;<br>
 
@@ -1260,77 +1153,72 @@
 								<p class="codeSnippetTitle">CSS</p>
 								<code>
 									#heroSlider {<br>
+										background-color: red;<br>
+										height: 100vh;<br>
 										width: 100%;<br>
 										position: relative;<br>
 										margin: auto;<br>
-										overflow: hidden;<br>
+										overflow-x: hidden;<br>
 									}<br>
 									<br>
 									.slideImage img {<br>
-										width: 100%;<br>
-										height: 45rem;<br>
-										object-fit: cover;<br>
-										object-position: bottom;<br>
-									}<br>
-									<br>
-									.subheading{<br>
-										width:clamp(20ch, 80%, 28ch);<br>
-										font-weight: 400;<br>
-										margin-top: 0rem;<br>
-										margin-bottom: 1.5rem;<br>
+										width: auto;<br>
+										height: 100%;<br>
+										position: absolute;<br>
 									}<br>
 									<br>
 									.slideText {<br>
 										position: absolute;<br>
 										bottom: 100px;<br>
-									  	left: 10%;<br>
+									  left: 10%;<br>
 										width: 80%;<br>
 										text-align: left;<br>
 									}<br>
 									<br>
+
 									.sliderDot {<br>
-									  	height: 15px;<br>
-									  	width: 15px;<br>
-									  	margin: 0 2px;<br>
-									  	background-color: #bbb;<br>
-									  	border-radius: 50%;<br>
-									  	display: inline-block;<br>
-									  	transition: background-color 0.6s ease;<br>
+									  height: 15px;<br>
+									  width: 15px;<br>
+									  margin: 0 2px;<br>
+									  background-color: #bbb;<br>
+									  border-radius: 50%;<br>
+									  display: inline-block;<br>
+									  transition: background-color 0.6s ease;<br>
 									}<br>
 									<br>
 									#dots {<br>
 										position: absolute;<br>
-									  	right: 10%;<br>
+									  right: 10%;<br>
 										bottom: 100px;<br>
 									}<br>
 									<br>
 									.active {<br>
-										background-color: black;<br>
-									}
+									  background-color: black;<br>
+									}<br>
 								</code>
 							</div>
 
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">JS</p>
 								<code>
-									var slideIndex = 0;<br>
-									showSlides();<br>
-									<br>
-									function showSlides() {<br>
-										var i;<br>
-										var slides = <br>document.getElementsByClassName("slideImage");<br>
-										var dots = <br>document.getElementsByClassName("sliderDot");<br>
-										for (i = 0; i < slides.length; i++) {<br>
-											slides[i].style.display = "none";<br>
-										}<br>
-										slideIndex++;<br>
-										if (slideIndex > slides.length) {slideIndex = 1}<br>
-										for (i = 0; i < dots.length; i++) {<br>
-											dots[i].className = dots[<br>i].className.replace(" active", "");<br>
-										}<br>
-										slides[slideIndex-1].style.display = "block";<br>
-										dots[slideIndex-1].className += " active";<br>
-										setTimeout(showSlides, 5000);<br>
+									var slideIndex = 0;
+									showSlides();
+
+									function showSlides() {
+										var i;
+										var slides = document.getElementsByClassName("slideImage");
+										var dots = document.getElementsByClassName("sliderDot");
+										for (i = 0; i < slides.length; i++) {
+											slides[i].style.display = "none";
+										}
+										slideIndex++;
+										if (slideIndex > slides.length) {slideIndex = 1}
+										for (i = 0; i < dots.length; i++) {
+											dots[i].className = dots[i].className.replace(" active", "");
+										}
+										slides[slideIndex-1].style.display = "block";
+										dots[slideIndex-1].className += " active";
+										setTimeout(showSlides, 5000);
 									}
 								</code>
 							</div>
@@ -1815,10 +1703,10 @@
 					<h4>Quiz CTA Module</h4>
 					<p class="note"> The lighitng quiz CTA module will be found on the landing page and product specification pages</p>
 					<div class="patternOverview">
-						<div class="quizCTABanner">
-							<div class="quizDescription">
-								<h2 class="quizBH">Unsure what you're looking for?</h2>
-								<a href="quiz.html" class="btnStyle" id="quizCTA">Take the Quiz!</a>
+						<div class="quizBannerContainer">
+							<h2 class="quizBH">Unsure what you're looking for?</h2>
+							<div class="quizCTA">
+								<a href="#" class="btnStyle">Take the Quiz!</a>
 							</div>
 						</div>
 
@@ -1826,45 +1714,35 @@
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">HTML</p>
 								<code>
-									&lt;div class="quizCTABanner"&gt;<br>
-										&lt;div class="quizDescription"&gt;<br>
-											&lt;h2 class="quizBH"&gt;Unsure what you're looking for?&lt;/h2&gt;<br>
-											&lt;a href="quiz.html" class="btnStyle" id="quizCTA"&gt;Take the Quiz!&lt;/a&gt;<br>
+									&lt;div class="quizBannerContainer"&gt;<br>
+										&lt;h2 class="quizBH">Unsure what you're looking for?</h2&gt;<br>
+										&lt;div class="quizCTA"&gt;<br>
+											&lt;a href="#" class="btnStyle">Take the Quiz!</a&gt;<br>
 										&lt;/div&gt;<br>
-									&lt;/div&gt;
+									&lt;/div&gt;<br>
 								</code>
 							</div>
 						
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">CSS</p>
 								<code>
-									.quizCTABanner{<br>
-										margin-top: 4rem;<br>
-										background: url('../img/quizbanner.png') repeat 0 0;<br>
-										background-position: center;<br>
+									quizBannerContainer{<br>
+										background-image: url('../img/quizbanner.png');<br>
 										background-repeat: no-repeat;<br>
-										height: 35rem;<br>
+										height: 30rem;<br>
 										background-size: cover;<br>
-										margin-bottom: 4rem;<br>
+										box-shadow: var(--dropShadow);<br>
 									}<br>
-									<br>
-									.quizBannerImg{<br>
-										margin-top: 5rem;<br>
-										max-width: 100%;<br>
-										height: 75%;<br>
-										object-fit: cover;<br>
-									}<br>
-									<br>
-									.quizDescription{<br>
-										position: absolute;<br>
-										left: 15%;<br>
-										margin-top: 10rem;<br>
-									}<br>
-									<br>
+
 									.quizBH{<br>
-										text-align: left;<br>
-										width:clamp(7ch, 80%, 15ch);<br>
-									}
+										margin: 0.5rem;<br>
+										margin-top: 7rem;<br>
+									}<br>
+
+									.quizCTA{<br>
+										margin: 0.5rem;<br>
+										min-height: 20rem;<br>
+									}<br>
 								</code>
 							</div>
 						</div>
@@ -2067,36 +1945,32 @@
 							<div class="lightproducts">
 								<div class="light">
 									<img src="img/colbyCeilingLight.png" alt="black Colby Ceiling Light">
-									
-									<div class="light-info">
-										<h4 class="light-name"> Colby Ceiling Lamp</h4>
-										<h5 class="light-price">$84</h5>
-										<h5 class="light-offer"></h5>
-										<p class="light-qauntity"> Qnt: <input value="1" name=""> 
-										</p>
-										<p class="light-remove">
-											<span class="remove">Remove</span>
-										</p>
-									</div>
+										<div class="light-info">
+												<h4 class="light-name"> Colby Ceiling Lamp</h4>
+												<h5 class="light-price">$84</h5>
+												<h5 class="light-offer"></h5>
+												<p class="light-qauntity"> Qnt: <input value="1" name=""> 
+												</p>
+												<p class="light-remove">
+													<span class="remove">Remove</span>
+												</p>
+										</div>
 								</div>
-
 								<div class="light">
 									<img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light">
-									
-									<div class="light-info">
-										<h4 class="light-name">W42 Ceiling Light</h4>
-										<h5 class="light-price">$84</h5>
-										<h5 class="light-offer"></h5>
-										<p class="light-qauntity"> Qnt: <input value="1" name=""> 
-										</p>
-										<p class="light-remove">
-											<span class="remove">Remove</span>
-										</p>
-									</div>
+										<div class="light-info">
+												<h4 class="light-name">W42 Ceiling Light</h4>
+												<h5 class="light-price">$84</h5>
+												<h5 class="light-offer"></h5>
+												<p class="light-qauntity"> Qnt: <input value="1" name=""> 
+												</p>
+												<p class="light-remove">
+													<span class="remove">Remove</span>
+												</p>
+										</div>
 								</div>
 							</div>
 						</div>
-						
 						<div class="cart-total">
 							<p>
 								<span>Number of Items</span>
@@ -2114,67 +1988,63 @@
 								<span>Sales Tax</span>
 								<span>--</span>
 							</p>
-
 							<a href="Checkout.html" class="btnStyle">Proceed to Checkout</a>
 						</div>
-
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								
-								<code>
-									&lt;div class="cart"&gt;<br>
-										&lt;div class="lightproducts"&gt;<br>
-											&lt;div class="light"&gt;<br>
-												&lt;img src="img/colbyCeilingLight.png" alt="black Colby Ceiling Light"&gt;<br>
-													&lt;div class="light-info"&gt;<br>
-														&lt;h4 class="light-name"> Colby Ceiling Lamp&lt;/h4&gt;<br>
-														&lt;h5 class="light-price">$84&lt;/h5&gt;<br>
-														&lt;h5 class="light-offer">&lt;/h5&gt;<br>
-														&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name=""&gt;<br>
-														&lt;/p&gt;<br>
-														&lt;p class="light-remove"&gt;<br>
-															&lt;span class="remove">Remove&lt;/span&gt;<br>
-														&lt;/p&gt;<br>
-													&lt;/div&gt;<br>
-											&lt;/div&gt;<br>
-											
-											&lt;div class="light"&gt;<br>
-												&lt;img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light"&gt;<br>
-													&lt;div class="light-info"&gt;<br>
-														&lt;h4 class="light-name">W42 Ceiling Light&lt;/h4&gt;<br>
-														&lt;h5 class="light-price">$84&lt;/h5&gt;<br>
-														&lt;h5 class="light-offer">&lt;/h5&gt;<br>
-														&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name=""> 
-														&lt;/p&gt;<br>
-														&lt;p class="light-remove"&gt;<br>
-															&lt;span class="remove">Remove&lt;/span&gt;<br>
-														&lt;/p&gt;<br>
-													&lt;/div&gt;<br>
+									<p class="codeSnippetTitle">HTML</p>
+									<code>
+										
+										&lt;div class="cart"&gt;<br>
+											&lt;div class="lightproducts"&gt;<br>
+												&lt;div class="light"&gt;<br>
+													&lt;img src="img/colbyCeilingLight.png" alt="black Colby Ceiling Light"&gt;<br>
+														&lt;div class="light-info"&gt;<br>
+																&lt;h4 class="light-name"> Colby Ceiling Lamp&lt;/h4&gt;<br>
+																&lt;h5 class="light-price">$84&lt;/h5&gt;<br>
+																&lt;h5 class="light-offer">&lt;/h5&gt;<br>
+																&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name=""&gt;<br>
+																&lt;/p&gt;<br>
+																&lt;p class="light-remove"&gt;<br>
+																	&lt;span class="remove">Remove&lt;/span&gt;<br>
+																&lt;/p&gt;<br>
+														&lt;/div&gt;<br>
+												&lt;/div&gt;<br>
+												&lt;div class="light"&gt;<br>
+													&lt;img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light"&gt;<br>
+														&lt;div class="light-info"&gt;<br>
+																&lt;h4 class="light-name">W42 Ceiling Light&lt;/h4&gt;<br>
+																&lt;h5 class="light-price">$84&lt;/h5&gt;<br>
+																&lt;h5 class="light-offer">&lt;/h5&gt;<br>
+																&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name=""> 
+																&lt;/p&gt;<br>
+																&lt;p class="light-remove"&gt;<br>
+																	&lt;span class="remove">Remove&lt;/span&gt;<br>
+																&lt;/p&gt;<br>
+														&lt;/div&gt;<br>
+												&lt;/div&gt;<br>
 											&lt;/div&gt;<br>
 										&lt;/div&gt;<br>
-									&lt;/div&gt;<br>
-
-									&lt;div class="cart-total"&gt;<br>
-										&lt;p&gt;<br>
-											&lt;span>Number of Items&lt;/span&gt;<br>
-											&lt;span>2&lt;/span&gt;<br>
-										&lt;/p&gt;<br>
-										&lt;p&gt;<br>
-											&lt;span>Sub-total&lt;/span&gt;<br>
-											&lt;span>$168&lt;/span&gt;<br>
-										&lt;/p&gt;<br>
-										&lt;p&gt;<br>
-											&lt;span>Shipping&lt;/span&gt;<br>
-											&lt;span>--&lt;/span&gt;<br>
-										&lt;/p&gt;<br>
-										&lt;p&gt;<br>
-											&lt;span>Sales Tax&lt;/span&gt;<br>
-											&lt;span>--&lt;/span&gt;<br>
-										&lt;/p&gt;<br>
-										&lt;a href="Checkout.html" class="btnStyle">Proceed to Checkout&lt;/a&gt;<br>
-									&lt;/div&gt;<br>
-								</code>
+										&lt;div class="cart-total"&gt;<br>
+											&lt;p&gt;<br>
+												&lt;span>Number of Items&lt;/span&gt;<br>
+												&lt;span>2&lt;/span&gt;<br>
+											&lt;/p&gt;<br>
+											&lt;p&gt;<br>
+												&lt;span>Sub-total&lt;/span&gt;<br>
+												&lt;span>$168&lt;/span&gt;<br>
+											&lt;/p&gt;<br>
+											&lt;p&gt;<br>
+												&lt;span>Shipping&lt;/span&gt;<br>
+												&lt;span>--&lt;/span&gt;<br>
+											&lt;/p&gt;<br>
+											&lt;p&gt;<br>
+												&lt;span>Sales Tax&lt;/span&gt;<br>
+												&lt;span>--&lt;/span&gt;<br>
+											&lt;/p>
+											&lt;a href="Checkout.html" class="btnStyle">Proceed to Checkout&lt;/a&gt;<br>
+										&lt;/div&gt;<br>
+									</code>
 							</div>
 							<div class="codeSnippetPattern">
 									<p class="codeSnippetTitle">CSS</p>
@@ -2182,7 +2052,7 @@
 										lightproducts{<br>
 											flex: 0.75;<br>
 										}<br>
-										<br>
+
 										.light{<br>
 											display: flex;<br>
 											width: 100%;<br>
@@ -2192,23 +2062,20 @@
 											background-color: white;<br>
 											box-shadow: var(--dropShadow);<br>
 										}<br>
-										<br>
+
 										.light > img{<br>
 											width: 12.5rem;<br>
 											height: 13.75rem;<br>
 											object-fit: cover;<br>
 										}<br>
-										<br>
 										.light-info{<br>
 											padding: 1.25rem;<br>
 											width: 100%;<br>
 											position: relative;<br>
 										}<br>
-										<br>
 										.light-name, .light-price, .light-offer{<br>
 											margin-bottom: 1.25rem;<br>
 										}<br>
-										<br>
 										.light-remove{<br>
 											position: absolute;<br>
 											bottom: 1.25rem;<br>
@@ -2220,7 +2087,6 @@
 											font-weight: 500;<br>
 											cursor: pointer;<br>
 										}<br>
-										<br>
 										.light-remove:hover{<br>
 											background-color: white;<br>
 											color:  #468CFF;<br>
@@ -2228,25 +2094,22 @@
 											border: 0.05rem solid #468CFF; <br>
 											border-radius: 0.75rem;<br>
 										}<br>
-										<br>
+
 										.light-qauntity > input{<br>
 											width: 2.5rem;<br>
 											padding: 0.313rem;<br>
 											text-align: center;<br>
 										}<br>
-										<br>
 										.cart-total{<br>
 											margin-left: 1.25rem;<br>
 											padding: 1.25rem;<br>
 											height: 15rem;<br>
 										}<br>
-										<br>
 										.cart-total p{<br>
 											display: flex;<br>
 											justify-content: space-between;<br>
 											margin-bottom: 1.875rem;<br>
 										}<br>
-										<br>
 										.cart-total a{<br>
 											display: block;<br>
 										}<br>
@@ -2388,7 +2251,53 @@
 					</div>
 				</div>
 			</div>
-			
+
+				<!--Footer-->
+		
+
+		<!--Quiz-->
+		<div class="quizCTABanner">
+			<div class="quizDescription">
+				<h2 class="quizBH">Unsure what you're looking for?</h2>
+				<!-- <a href="quiz.html" class="btnStyle" id="quizCTA">Take the Quiz!</a> -->
+				<a href="quiz.html" class="btnStyle" id="quizCTA">Take the Quiz!</a>
+			</div>
+		</div>
+
+
+		<!--Inspirations-->
+		<div class="sectionContainer">
+			<h3 class="moduleHeader"> Inspirations and Ideas</h3>
+
+			<!--Blog Post 1-->
+			<div class="valueAndBlogCard">
+				<a href="blogArticle.html"> <img src="img/blog1.png" class="blogImg" alt="light bulb"> </a>
+				<a href="blogArticle.html"> <img src="img/blogDarkImg1.png" class="blogBlurredImgBg" alt="Low contrast photo of the light bulb"> </a>
+				<div class="blogInfoBackground">
+					<h4 class="blogTitle"> Lamp Set-up Inspirations</h4>
+					<p class="blogDescription"> Looking for inspiration to spice up your room? From task lighting to ambient lighting, there are multiple ways to lay out how your room should look.</p>
+					<a href="blogArticle.html" class="inTextCTAStyle">read more</a>
+				</div>
+			</div>
+
+			<!--Blog Post 2-->
+			<div class="valueAndBlogCard">
+				<a href="blogArticle.html"> <img src="img/blog2.png" class="blogImg" alt="Four lamps on a desk"> </a>
+				<a href="blogArticle.html"> <img src="img/blogDarkImg2.png" class="blogBlurredImgBg" alt="Low contrast of four lamps on a desk"> </a>
+				<div class="blogInfoBackground">
+					<h4 class="blogTitle"> Lighting Your Workspace</h4>
+					<p class="blogDescription"> The type of lighting in your room can influence your productivity. Here’s a list of things to consider when setting up your ideal workspace.</p>
+					<a href="blogArticle.html" class="inTextCTAStyle">read more</a>
+				</div>
+			</div>
+
+			<!--CTA for Blog Module-->
+			<div class="valueAndBlogCard">
+				<h3 class="blogCardText"> Explore our blogs to get more inspiration and ideas</h3>
+				<a href="inspirations.html" class="btnStyle" id="blogCTA">Discover More</a>
+			</div>
+		</div>
+
 		<footer class="footBarContainer">
 			<!--Resources-->
 			<ul class="footerResources">

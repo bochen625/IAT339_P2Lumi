@@ -313,27 +313,33 @@ label{
 	opacity: 75%;
 }
 
-
 /*Recommendation Module*/
 .productCard img{
-	width: 25rem;
+	width: 100%;
 }
+
 .productCard:last-of-type{
 	background-image: var(--gradientColour);
 }
 
-.productCardText{
-	margin-top: 2rem;
-	margin-left: 3rem;
+.productCardText, .blogCardText{
+	font-size: 1.5rem;
+	margin-top: 10rem;
+	margin-left: 3.5rem;
 	width:clamp(7ch, 80%, 13ch);
 }
 
-.productCardText a:hover{
+.productCardText a:hover, .blogCardText a:hover{
 	font-weight: bold;
 }
 
-.productCardText a{
+.productCardText a, .blogCardText a{
 	text-decoration: none;
+}
+
+#productCTA{
+	margin-top: 0.5rem;
+	margin-left: 3rem;
 }
 
 .colourSwatch{
@@ -348,13 +354,13 @@ label{
 /*-----------Value Module-----------*/
 .valueAndBlogCard{
 	background-image: var(--gradientColour);
-	min-height: 31.5rem;
+	min-height: 18rem;
 	position: relative;
 }
 
 .companyValues{
 	text-align: center;
-	padding-top: 13rem;
+	padding-top: 6rem;
 	font-size: 1.25rem;
 }
 
@@ -370,9 +376,9 @@ label{
 	width: 100%;
 	height: 15rem;
 	object-fit: cover;
-	object-position: 0% 50%;
+	object-position: left bottom;
 	margin-top: -50rem;
-	filter: blur(0.2em);
+	filter: blur(0.3em);
 }
 
 .blogTitle{
@@ -385,6 +391,7 @@ label{
 	color: white;
 	padding-left: 3.5rem;
 	padding-right: 3.5rem;
+	width: 100%;
 }
 
 .inTextCTAStyle{
