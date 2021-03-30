@@ -1019,3 +1019,14 @@ span.price {
 #blackBackground #summary.cart{
 	grid-column: 1/span end;
 }
+
+
+/* Citation Page */
+
+.citationsContainer{
+	margin: 6.5rem;
+}
+
+
+
+
