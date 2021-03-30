@@ -1,3 +1,4 @@
+
 /*--------hero with only text-----*/
 #textHero {
   display: grid;
@@ -292,9 +293,14 @@ textarea {
 .subNavigation {
   display: none;
   width: 100vw;
-  margin-left: -66vw;
   margin-top: 5em;
   background-color: white;
+  left: 0;
+
+}
+
+.subNavContainer {
+
 }
 
 .subNavigation a {
@@ -351,15 +357,16 @@ textarea {
 }
 
 .miniShoppingCartContainer {
-  width: 30vw;
+  min-width: 30vw;
   z-index: 1000px;
   position: fixed;
   right: 0;
   background-color: white;
   height: 100vh;
+  overflow-y: scroll;
 }
 
-.shoppingcartContainer{
+.miniShoppingCartContainer .shoppingcartContainer{
 	display:grid;
 	grid-template-columns:repeat(12, 1fr);
 	grid-template-rows: 2fr;
@@ -368,8 +375,13 @@ textarea {
 	padding-right: 2rem;
 	margin: 0 auto;
 }
-.shoppingcartContainer > h3{
+
+.miniShoppingCartContainer .shoppingcartContainer > h3{
 	grid-column: 2/span end;
+}
+
+.miniShoppingCartContainer .shoppingcartContainer h3 {
+  margin-top: -50px;
 }
 .cart{
 	grid-column: 1/span 12;
@@ -401,9 +413,37 @@ textarea {
 	grid-column: 1/span end;
 }
 
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+    grid-column: 1/span 12;
+}
+
+.navButtons {
+	list-style-type: none;
+  /* background-color: red; */
+  min-width: 520px;
+}
+
+.navButtons li{
+/* float: right; */
+}
+
 
 
 @media screen and (max-width: 70em){
+
+  .navContainer{
+  	grid-template-rows: 2fr;
+    display: grid;
+}
+
+.navButtons{
+	grid-row: 2;
+  grid-column: 1/span 12;
+  min-width: 100vw;
+}
 
   /* Shop Tile */
   .shopModule {
@@ -461,6 +501,7 @@ textarea {
     grid-row-start: auto;
   }
 
+
   /* Contact Modules */
 	#contactModules {
 		display: grid;
@@ -475,6 +516,17 @@ textarea {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr;
+  }
+
+  /* Sub Navigation */
+  .subNavigation {
+    display: none;
+    margin-left: -66vw;
+    width: 100vw;
+    margin-left: 0vw;
+    float: left;
+    margin-top: 5em;
+    background-color: white;
   }
 
   .subNavCategory {
@@ -502,16 +554,32 @@ textarea {
     left: 0;
     width: 100vw;
     /* margin-top: -20vh; */
-    height: 100vh;
+    height: 130vh;
     position: static;
+    overflow-y: visible;
+  }
+
+  .miniShoppingCartContainer .shoppingcartContainer h3 {
+    margin-top: -10px;
   }
 
   .light {
-    height: 15vh;
+    height: 30vh;
   }
 
+  .light-name, .light-price, .light-offer, .light-qauntity, .light-remove {
+  	display: block;
+    width: 100%;
+  }
+
+  .miniShoppingCartContainer .shoppingcartContainer h3{
+    margin-top: 0;
+  }
+
+
   .light img {
-    height: 15vh;
+    height: 30vh;
+    width: 30vw;
   }
 
   .light-info {
@@ -521,6 +589,15 @@ textarea {
   .light-remove{
     bottom: -.5rem;
     right: 1.25rem;
+    width: 80%;
+  }
+
+  .light-price {
+    margin-bottom: 0;
+  }
+
+  .light-qauntity {
+    margin-top: -5vh;
   }
 
 }
