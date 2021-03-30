@@ -96,6 +96,70 @@
 	z-index: 1000px;
 }
 
+/*-----Mini Shopping Cart Container----*/
+
+.close{
+	margin-top: 2.5rem;
+	grid-column: 12/span 1;
+}
+
+.miniShoppingCartContainer {
+  min-width: 30vw;
+  z-index: 1000px;
+  position: fixed;
+  right: 0;
+  background-color: white;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.miniShoppingCartContainer .shoppingcartContainer{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-template-rows: 2fr;
+	grid-column-gap: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin: 0 auto;
+}
+
+.miniShoppingCartContainer .shoppingcartContainer > h3{
+	grid-column: 2/span end;
+}
+
+.miniShoppingCartContainer .shoppingcartContainer h3 {
+  margin-top: -50px;
+}
+.cart{
+	grid-column: 1/span 12;
+}
+.cart-total{
+	grid-column: 1/span 12;
+}
+
+#blackBackground {
+  margin-top: -5.7em;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .2);
+  position: fixed;
+  z-index: 1000px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Checkout Order Summary */
+
+#summary.cart{
+	grid-column: 1/span end;
+}
+
 /*---------About Company--------*/
 .sectionContainer{
 	display:grid;
