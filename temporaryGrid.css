@@ -706,6 +706,10 @@ section p{
 		display: none;
 	}
 
+	#blackBackground {
+		position: static;
+	}
+	
 	/* shopping module */
 	.miniShoppingCartContainer {
 		left: 0;
