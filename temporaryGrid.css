@@ -598,6 +598,22 @@ section p{
 		margin-left: -0.5rem;
 	}
 
+
+/*Breaking Point: 1120px*/
+@media screen and (max-width: 70em){
+
+  	.navContainer{
+	  	grid-template-rows: 2fr;
+	    display: grid;
+	}
+
+	.navButtons{
+		grid-row: 2;
+	  	grid-column: 1/span 12;
+	  	min-width: 100vw;
+	}
+}
+
 /*Breaking point: 1024px*/
 @media screen and (max-width: 64em){
 	.productCardText{
