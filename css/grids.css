@@ -636,37 +636,36 @@ h1{
 /*Footer*/
 .footBarContainer{
 	display:grid;
-	grid-template-columns:repeat(12, 1fr);
-	grid-template-rows: 1fr;
-	grid-column-gap: 0.5rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: 1/span 12;
+	grid-column-gap: 1.5rem;
+	padding-left: 6.25rem; /*roughly 100px*/
+	padding-right: 6.25rem;
+	margin-top: 10rem;
 }
 
-.footerButtons{
+.footerResources{
 	grid-column: 1/span 2;
 }
 
-.footerLogo{
-	grid-column: 11/span 2;
-
+.footerAbout{
+	grid-column: 3/span 2;
 }
 
 .copyRight{
 	grid-column: 5/span 3;
 }
 
-.iconF{
-	grid-column: 8/span 1;
+.footerLogo{
+	grid-column: 12/span 1;
+	margin: 0.5rem;
+	margin-top: 13rem;
 }
 
-.iconT{
-	grid-column: 9/span 1;
-}
-
-.iconL{
-	grid-column: 10/span 1;
-
+.socialMediaIcons{
+	grid-column: 9/span 3;
+	margin: 0.5rem;
+	margin-top: 15rem;
 }
 
 /*-----------Quiz CTA Module-----------*/

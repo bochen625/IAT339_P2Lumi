@@ -22,6 +22,7 @@
 					<li><a href="patternLibrary.html">Pattern Library</a></li>
 					<li><a href="wireframes.html">Wireframes</a></li>
 					<li><a href="citations.html">Citations</a></li>
+					<li><a href="fileStructure.html">Rules</a></li>
 				</ul>
 			</nav>
 
@@ -1245,29 +1246,29 @@
 					<div class="patternOverview">
 						<div id="heroSlider">
 							<div class="slideImage">
-								<img src="./img/heroImg1.png">
+								<img src="./img/heroCeilingLight.png" id="heroCeilingLight" alt="Metallic Ceiling Light">
 								<div class="slideText">
-									<h1>W42 Ceiling Light</h1>
-									<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-									<a href="#" class="btnStyle">Shop Now</a>
+									<h2>W42 Ceiling Light</h2>
+									<h4 class="subheading">A durable, metallic light. Provides a soft, directional light.</h4>
+									<a href="shop.html" class="btnStyle">Shop Now</a>
 								</div>
 							</div>
 
 							<div class="slideImage">
-								<img src="./img/feature1.png">
+								<img src="./img/ckDeskLamp.png" id="heroDeskLamp" alt="Silver desk lamp">
 								<div class="slideText">
-									<h1>W43 Floor Light</h1>
-									<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-									<a href="#" class="btnStyle">Shop Now</a>
+									<h2>CK Desk Lamp</h2>
+									<h4 class="subheading">A simple and modern task lamp that is powerful yet compact</h4>
+									<a href="shop.html" class="btnStyle">Shop Now</a>
 								</div>
 							</div>
 
 							<div class="slideImage">
-								<img src="./img/feature1.png">
+								<img src="./img/collection.png" id="heroCollection" alt="White ceramic hanging lamps">
 								<div class="slideText">
-									<h1>W44 Ambient Light</h1>
-									<h5>A durable, metallic light. Provides a soft, directional light.</h5>
-									<a href="#" class="btnStyle">Shop Now</a>
+									<h2>Modernoe Cerami</h2>
+									<h4 class="subheading">Modern light that provides a soft ambient light.</h4>
+									<a href="quiz.html" class="btnStyle">Shop Now</a>
 								</div>
 							</div>
 
@@ -1307,29 +1308,29 @@
 									&lt;div id="heroSlider"&gt;<br>
 
 									&lt;div class="slideImage"&gt;<br>
-										&lt;img src="./img/heroImg1.png"&gt;<br>
+										&lt;img src="./img/heroCeilingLight.png" id="heroCeilingLight" alt="Metallic Ceiling Light"&gt;<br>
 										&lt;div class="slideText"&gt;<br>
-											&lt;h1&gt;W42 Ceiling Light&lt;/h1&gt;<br>
-											&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.</h5><br>
-											&lt;a href="#" class="btnStyle">Shop Now</a><br>
+											&lt;h2&gt;W42 Ceiling Light&lt;/h2&gt;<br>
+											&lt;h4 class="subheading"&gt;A durable, metallic light. Provides a soft, directional light.&lt;/h4&gt;<br>
+											&lt;a href="shop.html" class="btnStyle"&gt;Shop Now&lt;/a&gt;<br>
 										&lt;/div&gt;<br>
 									&lt;/div&gt;<br>
 
 									&lt;div class="slideImage"&gt;<br>
-										&lt;img src="./img/feature1.png"&gt;<br>
+										&lt;img src="./img/ckDeskLamp.png" id="heroDeskLamp" alt="Silver desk lamp"&gt;<br>
 										&lt;div class="slideText"&gt;<br>
-											&lt;h1&gt;W43 Floor Light	&lt;/h1&gt;<br>
-											&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.	&lt;/h5&gt;<br>
-											&lt;a href="#" class="btnStyle">Shop Now	&lt;/a&gt;<br>
-										&lt;/div&gt;
-									&lt;/div&gt;
+											&lt;h2&gt;CK Desk Lamp&lt;/h2&gt;<br>
+											&lt;h4 class="subheading"&gt;A simple and modern task lamp that is powerful yet compact&lt;/h4&gt;<br>
+											&lt;a href="shop.html" class="btnStyle"&gt;Shop Now&lt;/a&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;<br>
 
 									&lt;div class="slideImage"&gt;<br>
-										&lt;img src="./img/feature1.png"&gt;<br>
+										&lt;img src="./img/collection.png" id="heroCollection" alt="White ceramic hanging lamps"&gt;<br>
 										&lt;div class="slideText"&gt;<br>
-											&lt;h1&gt;W44 Ambient Light&lt;/h1&gt;<br>
-											&lt;h5&gt;A durable, metallic light. Provides a soft, directional light.&lt;/h5&gt;<br>
-											&lt;a href="#" class="btnStyle">Shop Now&lt;/a&gt;<br>
+											&lt;h2&gt;Modernoe Cerami&lt;/h2&gt;<br>
+											&lt;h4 class="subheading"&gt;Modern light that provides a soft ambient light.&lt;/h4&gt;<br>
+											&lt;a href="shop.html" class="btnStyle"&gt;Shop Now&lt;/a&gt;<br>
 										&lt;/div&gt;<br>
 									&lt;/div&gt;<br>
 
@@ -1345,72 +1346,77 @@
 								<p class="codeSnippetTitle">CSS</p>
 								<code>
 									#heroSlider {<br>
-										background-color: red;<br>
-										height: 100vh;<br>
 										width: 100%;<br>
 										position: relative;<br>
 										margin: auto;<br>
-										overflow-x: hidden;<br>
+										overflow: hidden;<br>
 									}<br>
 									<br>
 									.slideImage img {<br>
-										width: auto;<br>
-										height: 100%;<br>
-										position: absolute;<br>
+										width: 100%;<br>
+										height: 45rem;<br>
+										object-fit: cover;<br>
+										object-position: bottom;<br>
+									}<br>
+									<br>
+									.subheading{<br>
+										width:clamp(20ch, 80%, 28ch);<br>
+										font-weight: 400;<br>
+										margin-top: 0rem;<br>
+										margin-bottom: 1.5rem;<br>
 									}<br>
 									<br>
 									.slideText {<br>
 										position: absolute;<br>
 										bottom: 100px;<br>
-									  left: 10%;<br>
+									  	left: 10%;<br>
 										width: 80%;<br>
 										text-align: left;<br>
 									}<br>
 									<br>
-
 									.sliderDot {<br>
-									  height: 15px;<br>
-									  width: 15px;<br>
-									  margin: 0 2px;<br>
-									  background-color: #bbb;<br>
-									  border-radius: 50%;<br>
-									  display: inline-block;<br>
-									  transition: background-color 0.6s ease;<br>
+									  	height: 15px;<br>
+									  	width: 15px;<br>
+									  	margin: 0 2px;<br>
+									  	background-color: #bbb;<br>
+									  	border-radius: 50%;<br>
+									  	display: inline-block;<br>
+									  	transition: background-color 0.6s ease;<br>
 									}<br>
 									<br>
 									#dots {<br>
 										position: absolute;<br>
-									  right: 10%;<br>
+									  	right: 10%;<br>
 										bottom: 100px;<br>
 									}<br>
 									<br>
 									.active {<br>
-									  background-color: black;<br>
-									}<br>
+										background-color: black;<br>
+									}
 								</code>
 							</div>
 
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">JS</p>
 								<code>
-									var slideIndex = 0;
-									showSlides();
-
-									function showSlides() {
-										var i;
-										var slides = document.getElementsByClassName("slideImage");
-										var dots = document.getElementsByClassName("sliderDot");
-										for (i = 0; i < slides.length; i++) {
-											slides[i].style.display = "none";
-										}
-										slideIndex++;
-										if (slideIndex > slides.length) {slideIndex = 1}
-										for (i = 0; i < dots.length; i++) {
-											dots[i].className = dots[i].className.replace(" active", "");
-										}
-										slides[slideIndex-1].style.display = "block";
-										dots[slideIndex-1].className += " active";
-										setTimeout(showSlides, 5000);
+									var slideIndex = 0;<br>
+									showSlides();<br>
+									<br>
+									function showSlides() {<br>
+										var i;<br>
+										var slides = <br>document.getElementsByClassName("slideImage");<br>
+										var dots = <br>document.getElementsByClassName("sliderDot");<br>
+										for (i = 0; i < slides.length; i++) {<br>
+											slides[i].style.display = "none";<br>
+										}<br>
+										slideIndex++;<br>
+										if (slideIndex > slides.length) {slideIndex = 1}<br>
+										for (i = 0; i < dots.length; i++) {<br>
+											dots[i].className = dots[<br>i].className.replace(" active", "");<br>
+										}<br>
+										slides[slideIndex-1].style.display = "block";<br>
+										dots[slideIndex-1].className += " active";<br>
+										setTimeout(showSlides, 5000);<br>
 									}
 								</code>
 							</div>
@@ -1889,47 +1895,6 @@
 						</div>
 					</div>
 				</div>
-				
-				<!-- FooterModule-->
-				<div class="patternContainer">
-					<h4>Footer</h4>
-					<p class="note"> Footer will include citations, about designers, style guide, and social media links</p>
-					
-					<div class="patternOverview">
-						<footer class="footBarContainer">
-							<ul class="footerButtons">
-								<li><h5>RESCOURCES</h5></li>
-								<li><a href="index.html">Style Guide</a></li>
-								<li><a href="patternLibrary.html">Pattern Library</a></li>
-								<li><a href="wireframes.html">Wireframes</a></li>
-								<li><a href="citations.html">Citations</a></li>
-							</ul>
-							<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
-
-							<a href="#" class="iconF"> <img src="img/facebook.png" alt="facebook icon"> </a>
-							<a href="#" class="iconT"> <img src="img/twitter.png" alt="twitter icon"> </a>
-							<a href="#" class="iconL"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
-							<a href="#" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
-
-						</footer>
-
-						<div class="codeSnippetContainer">
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">HTML</p>
-								<code>
-									Lorem ipsum
-								</code>
-							</div>
-							
-							<div class="codeSnippetPattern">
-								<p class="codeSnippetTitle">CSS</p>
-								<code>
-									Lorem ipsum
-								</code>
-							</div>
-						</div>
-					</div>
-				</div>	
 
 				<!--Quiz CTA Module-->
 				<div class="patternContainer">
@@ -1947,35 +1912,45 @@
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">HTML</p>
 								<code>
-									&lt;div class="quizBannerContainer"&gt;<br>
-										&lt;h2 class="quizBH">Unsure what you're looking for?</h2&gt;<br>
-										&lt;div class="quizCTA"&gt;<br>
-											&lt;a href="#" class="btnStyle">Take the Quiz!</a&gt;<br>
+									&lt;div class="quizCTABanner"&gt;<br>
+										&lt;div class="quizDescription"&gt;<br>
+											&lt;h2 class="quizBH"&gt;Unsure what you're looking for?&lt;/h2&gt;<br>
+											&lt;a href="quiz.html" class="btnStyle" id="quizCTA"&gt;Take the Quiz!&lt;/a&gt;<br>
 										&lt;/div&gt;<br>
-									&lt;/div&gt;<br>
+									&lt;/div&gt;
 								</code>
 							</div>
 						
 							<div class="codeSnippetPattern">
 								<p class="codeSnippetTitle">CSS</p>
 								<code>
-									quizBannerContainer{<br>
-										background-image: url('../img/quizbanner.png');<br>
+									.quizCTABanner{<br>
+										margin-top: 4rem;<br>
+										background: url('../img/quizbanner.png') repeat 0 0;<br>
+										background-position: center;<br>
 										background-repeat: no-repeat;<br>
-										height: 30rem;<br>
+										height: 35rem;<br>
 										background-size: cover;<br>
-										box-shadow: var(--dropShadow);<br>
+										margin-bottom: 4rem;<br>
 									}<br>
-
+									<br>
+									.quizBannerImg{<br>
+										margin-top: 5rem;<br>
+										max-width: 100%;<br>
+										height: 75%;<br>
+										object-fit: cover;<br>
+									}<br>
+									<br>
+									.quizDescription{<br>
+										position: absolute;<br>
+										left: 15%;<br>
+										margin-top: 10rem;<br>
+									}<br>
+									<br>
 									.quizBH{<br>
-										margin: 0.5rem;<br>
-										margin-top: 7rem;<br>
-									}<br>
-
-									.quizCTA{<br>
-										margin: 0.5rem;<br>
-										min-height: 20rem;<br>
-									}<br>
+										text-align: left;<br>
+										width:clamp(7ch, 80%, 15ch);<br>
+									}
 								</code>
 							</div>
 						</div>
@@ -2178,32 +2153,36 @@
 							<div class="lightproducts">
 								<div class="light">
 									<img src="img/colbyCeilingLight.png" alt="black Colby Ceiling Light">
-										<div class="light-info">
-												<h4 class="light-name"> Colby Ceiling Lamp</h4>
-												<h5 class="light-price">$84</h5>
-												<h5 class="light-offer"></h5>
-												<p class="light-qauntity"> Qnt: <input value="1" name=""> 
-												</p>
-												<p class="light-remove">
-													<span class="remove">Remove</span>
-												</p>
-										</div>
+									
+									<div class="light-info">
+										<h4 class="light-name"> Colby Ceiling Lamp</h4>
+										<h5 class="light-price">$84</h5>
+										<h5 class="light-offer"></h5>
+										<p class="light-qauntity"> Qnt: <input value="1" name=""> 
+										</p>
+										<p class="light-remove">
+											<span class="remove">Remove</span>
+										</p>
+									</div>
 								</div>
+
 								<div class="light">
 									<img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light">
-										<div class="light-info">
-												<h4 class="light-name">W42 Ceiling Light</h4>
-												<h5 class="light-price">$84</h5>
-												<h5 class="light-offer"></h5>
-												<p class="light-qauntity"> Qnt: <input value="1" name=""> 
-												</p>
-												<p class="light-remove">
-													<span class="remove">Remove</span>
-												</p>
-										</div>
+									
+									<div class="light-info">
+										<h4 class="light-name">W42 Ceiling Light</h4>
+										<h5 class="light-price">$84</h5>
+										<h5 class="light-offer"></h5>
+										<p class="light-qauntity"> Qnt: <input value="1" name=""> 
+										</p>
+										<p class="light-remove">
+											<span class="remove">Remove</span>
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
+						
 						<div class="cart-total">
 							<p>
 								<span>Number of Items</span>
@@ -2221,63 +2200,67 @@
 								<span>Sales Tax</span>
 								<span>--</span>
 							</p>
+
 							<a href="Checkout.html" class="btnStyle">Proceed to Checkout</a>
 						</div>
+
 						<div class="codeSnippetContainer">
 							<div class="codeSnippetPattern">
-									<p class="codeSnippetTitle">HTML</p>
-									<code>
-										
-										&lt;div class="cart"&gt;<br>
-											&lt;div class="lightproducts"&gt;<br>
-												&lt;div class="light"&gt;<br>
-													&lt;img src="img/colbyCeilingLight.png" alt="black Colby Ceiling Light"&gt;<br>
-														&lt;div class="light-info"&gt;<br>
-																&lt;h4 class="light-name"> Colby Ceiling Lamp&lt;/h4&gt;<br>
-																&lt;h5 class="light-price">$84&lt;/h5&gt;<br>
-																&lt;h5 class="light-offer">&lt;/h5&gt;<br>
-																&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name=""&gt;<br>
-																&lt;/p&gt;<br>
-																&lt;p class="light-remove"&gt;<br>
-																	&lt;span class="remove">Remove&lt;/span&gt;<br>
-																&lt;/p&gt;<br>
-														&lt;/div&gt;<br>
-												&lt;/div&gt;<br>
-												&lt;div class="light"&gt;<br>
-													&lt;img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light"&gt;<br>
-														&lt;div class="light-info"&gt;<br>
-																&lt;h4 class="light-name">W42 Ceiling Light&lt;/h4&gt;<br>
-																&lt;h5 class="light-price">$84&lt;/h5&gt;<br>
-																&lt;h5 class="light-offer">&lt;/h5&gt;<br>
-																&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name=""> 
-																&lt;/p&gt;<br>
-																&lt;p class="light-remove"&gt;<br>
-																	&lt;span class="remove">Remove&lt;/span&gt;<br>
-																&lt;/p&gt;<br>
-														&lt;/div&gt;<br>
-												&lt;/div&gt;<br>
+								<p class="codeSnippetTitle">HTML</p>
+								
+								<code>
+									&lt;div class="cart"&gt;<br>
+										&lt;div class="lightproducts"&gt;<br>
+											&lt;div class="light"&gt;<br>
+												&lt;img src="img/colbyCeilingLight.png" alt="black Colby Ceiling Light"&gt;<br>
+													&lt;div class="light-info"&gt;<br>
+														&lt;h4 class="light-name"> Colby Ceiling Lamp&lt;/h4&gt;<br>
+														&lt;h5 class="light-price">$84&lt;/h5&gt;<br>
+														&lt;h5 class="light-offer">&lt;/h5&gt;<br>
+														&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name=""&gt;<br>
+														&lt;/p&gt;<br>
+														&lt;p class="light-remove"&gt;<br>
+															&lt;span class="remove">Remove&lt;/span&gt;<br>
+														&lt;/p&gt;<br>
+													&lt;/div&gt;<br>
+											&lt;/div&gt;<br>
+											
+											&lt;div class="light"&gt;<br>
+												&lt;img src="img/w42CeilingLight.png" alt="White W42 Ceiling Light"&gt;<br>
+													&lt;div class="light-info"&gt;<br>
+														&lt;h4 class="light-name">W42 Ceiling Light&lt;/h4&gt;<br>
+														&lt;h5 class="light-price">$84&lt;/h5&gt;<br>
+														&lt;h5 class="light-offer">&lt;/h5&gt;<br>
+														&lt;p class="light-qauntity"> Qnt: &lt;input value="1" name=""> 
+														&lt;/p&gt;<br>
+														&lt;p class="light-remove"&gt;<br>
+															&lt;span class="remove">Remove&lt;/span&gt;<br>
+														&lt;/p&gt;<br>
+													&lt;/div&gt;<br>
 											&lt;/div&gt;<br>
 										&lt;/div&gt;<br>
-										&lt;div class="cart-total"&gt;<br>
-											&lt;p&gt;<br>
-												&lt;span>Number of Items&lt;/span&gt;<br>
-												&lt;span>2&lt;/span&gt;<br>
-											&lt;/p&gt;<br>
-											&lt;p&gt;<br>
-												&lt;span>Sub-total&lt;/span&gt;<br>
-												&lt;span>$168&lt;/span&gt;<br>
-											&lt;/p&gt;<br>
-											&lt;p&gt;<br>
-												&lt;span>Shipping&lt;/span&gt;<br>
-												&lt;span>--&lt;/span&gt;<br>
-											&lt;/p&gt;<br>
-											&lt;p&gt;<br>
-												&lt;span>Sales Tax&lt;/span&gt;<br>
-												&lt;span>--&lt;/span&gt;<br>
-											&lt;/p>
-											&lt;a href="Checkout.html" class="btnStyle">Proceed to Checkout&lt;/a&gt;<br>
-										&lt;/div&gt;<br>
-									</code>
+									&lt;/div&gt;<br>
+
+									&lt;div class="cart-total"&gt;<br>
+										&lt;p&gt;<br>
+											&lt;span>Number of Items&lt;/span&gt;<br>
+											&lt;span>2&lt;/span&gt;<br>
+										&lt;/p&gt;<br>
+										&lt;p&gt;<br>
+											&lt;span>Sub-total&lt;/span&gt;<br>
+											&lt;span>$168&lt;/span&gt;<br>
+										&lt;/p&gt;<br>
+										&lt;p&gt;<br>
+											&lt;span>Shipping&lt;/span&gt;<br>
+											&lt;span>--&lt;/span&gt;<br>
+										&lt;/p&gt;<br>
+										&lt;p&gt;<br>
+											&lt;span>Sales Tax&lt;/span&gt;<br>
+											&lt;span>--&lt;/span&gt;<br>
+										&lt;/p&gt;<br>
+										&lt;a href="Checkout.html" class="btnStyle">Proceed to Checkout&lt;/a&gt;<br>
+									&lt;/div&gt;<br>
+								</code>
 							</div>
 							<div class="codeSnippetPattern">
 									<p class="codeSnippetTitle">CSS</p>
@@ -2285,7 +2268,7 @@
 										lightproducts{<br>
 											flex: 0.75;<br>
 										}<br>
-
+										<br>
 										.light{<br>
 											display: flex;<br>
 											width: 100%;<br>
@@ -2295,20 +2278,23 @@
 											background-color: white;<br>
 											box-shadow: var(--dropShadow);<br>
 										}<br>
-
+										<br>
 										.light > img{<br>
 											width: 12.5rem;<br>
 											height: 13.75rem;<br>
 											object-fit: cover;<br>
 										}<br>
+										<br>
 										.light-info{<br>
 											padding: 1.25rem;<br>
 											width: 100%;<br>
 											position: relative;<br>
 										}<br>
+										<br>
 										.light-name, .light-price, .light-offer{<br>
 											margin-bottom: 1.25rem;<br>
 										}<br>
+										<br>
 										.light-remove{<br>
 											position: absolute;<br>
 											bottom: 1.25rem;<br>
@@ -2320,6 +2306,7 @@
 											font-weight: 500;<br>
 											cursor: pointer;<br>
 										}<br>
+										<br>
 										.light-remove:hover{<br>
 											background-color: white;<br>
 											color:  #468CFF;<br>
@@ -2327,22 +2314,25 @@
 											border: 0.05rem solid #468CFF; <br>
 											border-radius: 0.75rem;<br>
 										}<br>
-
+										<br>
 										.light-qauntity > input{<br>
 											width: 2.5rem;<br>
 											padding: 0.313rem;<br>
 											text-align: center;<br>
 										}<br>
+										<br>
 										.cart-total{<br>
 											margin-left: 1.25rem;<br>
 											padding: 1.25rem;<br>
 											height: 15rem;<br>
 										}<br>
+										<br>
 										.cart-total p{<br>
 											display: flex;<br>
 											justify-content: space-between;<br>
 											margin-bottom: 1.875rem;<br>
 										}<br>
+										<br>
 										.cart-total a{<br>
 											display: block;<br>
 										}<br>
@@ -2483,5 +2473,40 @@
 					</div>
 					</div>
 				</div>
+			</div>
+
+		<footer class="footBarContainer">
+			<!--Resources-->
+			<ul class="footerResources">
+				<li><h5>RESOURCES</h5></li>
+				<li><a href="aboutUs.html">About the Designers</a></li>
+				<li><a href="https://github.com/bochen625/IAT339_P2Lumi">GitHub</a></li>
+				<li><a href="index.html">Style Guide</a></li>
+				<li><a href="patternLibrary.html">Pattern Library</a></li>
+				<li><a href="wireframes.html">Wireframes</a></li>
+				<li><a href="citations.html">Citations</a></li>
+			</ul>
+
+			<!--Company-->
+			<ul class="footerAbout">
+				<li><h5>COMPANY</h5></li>
+				<li><a href="aboutCompany.html">About Lumi</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+			</ul>
+
+			<!--Copyright-->
+			<h5 class="copyRight">© 2021 Lumi All rights resevered.</h5>
+
+			<!--Social Media-->
+			<div class="socialMediaIcons">
+				<a href="#" class="iconFb"> <img src="img/facebook.png" alt="facebook icon"> </a>
+				<a href="#" class="iconTwitter"> <img src="img/twitter.png" alt="twitter icon"> </a>
+				<a href="#" class="iconLinkedIn"> <img src="img/linkedin.png" alt="linkedin icon"> </a>
+				<a href="#" class="iconIG"> <img src="img/instagram.png" alt="linkedin icon"> </a>
+			</div>
+			
+			<!--Lumi Logo-->
+			<a href="home.html" class="footerLogo"> <img src="img/lumiLogo.svg" alt="logo of Lumi"> </a>
+		</footer>
 	</body>
 </html>
