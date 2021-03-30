@@ -312,6 +312,10 @@ section p{
 	#productCTA, #blogCTA{
 		margin-left: 2rem;
 	}
+
+	.aboutCompanyText{
+	width:clamp(18ch, 90%, 100ch);
+	}
 }
 
 /*Tablet (size ~1220px and down)*/
@@ -665,6 +669,14 @@ section p{
 	#noPreference{
 		grid-column: 2/span 2;
 		grid-row: 11;
+	}
+
+	/*About Company*/
+	.aboutCompanyImg{
+		width: 100%;
+		height: auto;
+		object-fit: fill;
+		object-position: 0% 25%;
 	}
 
 	/*Blog*/
