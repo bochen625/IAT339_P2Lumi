@@ -175,7 +175,6 @@ label{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  position: absolute;
 /*  z-index: -1;*/
   background-color: white;
 }
@@ -562,7 +561,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 	color: white;
 	padding-left: 3.5rem;
 	padding-right: 3.5rem;
-	width: 100%;
+	width:clamp(20ch, 55%, 80ch);
 }
 
 .inTextCTAStyle{

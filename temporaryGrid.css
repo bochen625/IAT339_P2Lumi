@@ -430,6 +430,13 @@ section p{
 }
 
 
+/*Breaking POint: 1796px*/
+@media screen and (max-width: 112.25em){
+	.blogDescription{
+		width:clamp(20ch, 55%, 55ch);
+	}
+}
+
 /*Breaking point: 1686px (aka 105.375rem)*/
 @media screen and (max-width: 105.375em){
 	.productCardText, .blogCardText{
@@ -451,12 +458,20 @@ section p{
 	.lightType:last-of-type{
 		grid-column: 1/span 6;
 	}
+
+	.blogDescription{
+		width:clamp(20ch, 55%, 50ch);
+	}
 }
 
 /*Breaking point: 1538px (aka 96.125rem)*/
 @media screen and (max-width: 96.125em){
 	.productCardText, .blogCardText{
 		margin-top: 4rem;
+	}
+
+	.blogDescription{
+		width:clamp(20ch, 55%, 45ch);
 	}
 }
 
@@ -473,29 +488,20 @@ section p{
 	}
 
 	.aboutCompanyText{
-	width:clamp(18ch, 90%, 100ch);
+		width:clamp(18ch, 90%, 100ch);
+	}
+
+	.blogInfoBackground{
+		margin-left: -1.5rem;
+	}
+
+	.blogDescription{
+		width:clamp(20ch, 55%, 40ch);
 	}
 }
 
 /*Tablet (size ~1220px and down)*/
 @media screen and (max-width:76em){
-
-	/*Nav Bar*/
-/*	.navContainer{
-		grid-template-columns: repeat(4, 1fr);
-		grid-column-gap: 1.25rem;
-		padding-left: 1.35rem;
-		padding-right: 1.35rem;
-	}
-
-	.logo{
-		grid-column: 1/span 2;
-	}
-
-	.navButtons{
-		grid-column: 1/span 4;
-	}*/
-
 	/*Home page*/
 	.productRecommendation{
 		grid-template-columns: repeat(4, 1fr);
@@ -677,7 +683,12 @@ section p{
 		margin-left: -0.5rem;
 	}
 
-
+/*Breaking point: 1212px*/;
+@media screen and (max-width: 75.75em){
+	.blogDescription{
+		width:clamp(20ch, 100%, 100ch);
+	}
+}
 /*Breaking Point: 1120px*/
 @media screen and (max-width: 70em){
   	.navContainer{
@@ -1029,10 +1040,12 @@ section p{
 
 	.blogTitle{
 		margin-top: -14.5rem;
+		width:clamp(20ch, 55%, 30ch);
 	}
 
 	.blogDescription{
 		padding-right: 1rem;
+		width:clamp(20ch, 100%, 25ch);
 	}
 
 	.blogCardText{
