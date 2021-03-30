@@ -175,7 +175,7 @@ label{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  z-index: -1px;
+  z-index: -1;
   background-color: white;
 }
 
@@ -236,16 +236,16 @@ label{
 
 /* Subnav Animation */
 #hoverable {
-
-  z-index: -1000px;
+  z-index: -1000;
 }
+
 #hoverable:hover .subNavigation {
   display: block;
   position: absolute;
 }
 
 .navContainer{
-	z-index: 1000px;
+	z-index: 1000;
 }
 
 /*-----------Interactive Elements-----------*/
@@ -388,7 +388,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 #heroSlider {
 	width: 100%;
 	position: relative;
-	z-index: -1;
+/*	z-index: -1;*/
 	margin: auto;
 	overflow: hidden;
 }
