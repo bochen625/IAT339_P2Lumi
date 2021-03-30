@@ -705,6 +705,57 @@ section p{
 	.subNavIMG {
 		display: none;
 	}
+
+	/* shopping module */
+	.miniShoppingCartContainer {
+		left: 0;
+		width: 100vw;
+		/* margin-top: -20vh; */
+		height: 130vh;
+		position: static;
+		overflow-y: visible;
+	}
+
+	.miniShoppingCartContainer .shoppingcartContainer h3 {
+		margin-top: -10px;
+	}
+
+	.light {
+		height: 30vh;
+	}
+
+	.light-name, .light-price, .light-offer, .light-qauntity, .light-remove {
+		display: block;
+		width: 100%;
+	}
+
+	.miniShoppingCartContainer .shoppingcartContainer h3{
+		margin-top: 0;
+	}
+
+
+	.light img {
+		height: 30vh;
+		width: 30vw;
+	}
+
+	.light-info {
+		margin-top: -15px;
+	}
+
+	.light-remove{
+		bottom: -.5rem;
+		right: 1.25rem;
+		width: 80%;
+	}
+
+	.light-price {
+		margin-bottom: 0;
+	}
+
+	.light-qauntity {
+		margin-top: -5vh;
+	}
 }
 
 /*Breaking point: 1024px*/
