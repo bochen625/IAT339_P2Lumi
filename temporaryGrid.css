@@ -103,13 +103,13 @@
 }
 
 .miniShoppingCartContainer {
-  min-width: 30vw;
-  z-index: 1000;
-  position: fixed;
-  right: 0;
-  background-color: white;
-  height: 100vh;
-  overflow-y: scroll;
+	min-width: 30vw;
+	z-index: 1000;
+	position: fixed;
+	right: 0;
+	background-color: white;
+	height: 100vh;
+	overflow-y: scroll;
 }
 
 .miniShoppingCartContainer .shoppingcartContainer{
@@ -127,7 +127,7 @@
 }
 
 .miniShoppingCartContainer .shoppingcartContainer h3 {
-  margin-top: -50px;
+	margin-top: -50px;
 }
 .cart{
 	grid-column: 1/span 12;
@@ -154,7 +154,6 @@
 }
 
 /* Checkout Order Summary */
-
 #summary.cart{
 	grid-column: 1/span end;
 }
@@ -465,10 +464,10 @@ section p{
 @media screen and (max-width:76em){
 
 	/*Nav Bar*/
-	.navContainer{
+/*	.navContainer{
 		grid-template-columns: repeat(4, 1fr);
-		grid-column-gap: 1.25rem; /*roughly 20px*/
-		padding-left: 1.35rem; /*roughly 22px*/
+		grid-column-gap: 1.25rem;
+		padding-left: 1.35rem;
 		padding-right: 1.35rem;
 	}
 
@@ -478,7 +477,7 @@ section p{
 
 	.navButtons{
 		grid-column: 1/span 4;
-	}
+	}*/
 
 	/*Home page*/
 	.productRecommendation{
@@ -664,7 +663,6 @@ section p{
 
 /*Breaking Point: 1120px*/
 @media screen and (max-width: 70em){
-
   	.navContainer{
 	  	grid-template-rows: 2fr;
 	    display: grid;
@@ -679,7 +677,6 @@ section p{
 	/* Sub Navigation */
 	.subNavContainer {
 		width: 80%;
-		/* margin-left: 0; */
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: 1fr;
