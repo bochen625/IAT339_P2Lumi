@@ -199,7 +199,43 @@
 	grid-row: 8/span 1;
 }
 
-/*-----------Footer-----------*/
+/*-----------Blog Article-----------*/
+/*Blog*/
+.article{
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 1.5rem;
+	padding-left: 6.25rem; /*roughly 100px*/
+	padding-right: 6.25rem;
+	margin-top: 2rem;
+}
+
+section h1{
+	grid-column: 1/span 5;
+}
+
+section p{
+	grid-column: 1/span 4;
+	margin-bottom: 7rem;
+}
+
+.articleText{
+	margin-bottom: 3rem;
+}
+
+.lightType:first-of-type{
+	grid-column: 1/span 4;
+}
+
+.lightType:nth-of-type(2){
+	grid-column: 5/span 4;
+}
+
+.lightType:last-of-type{
+	grid-column: 9/span 4;
+}
+/*-----------Footer Modular Patterns-----------*/
+/*Footer*/
 .footBarContainer{
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -240,6 +276,22 @@
 	.productCardText, .blogCardText{
 		margin-top: 7rem;
 	}
+
+	section p{
+		grid-column: 1/span 6;
+		margin-bottom: 6rem;
+	}
+	.lightType:first-of-type{
+		grid-column: 1/span 6;
+	}
+
+	.lightType:nth-of-type(2){
+		grid-column: 7/span 6;
+	}
+
+	.lightType:last-of-type{
+		grid-column: 1/span 6;
+	}
 }
 
 /*Breaking point: 1538px (aka 96.125rem)*/
@@ -259,6 +311,10 @@
 
 	#productCTA, #blogCTA{
 		margin-left: 2rem;
+	}
+
+	.aboutCompanyText{
+	width:clamp(18ch, 90%, 100ch);
 	}
 }
 
@@ -379,6 +435,35 @@
 	.valueAndBlogCard:last-of-type{
 		grid-column: 1/span 2;
 	/*	height: 22.729rem;*/
+	}
+
+	/*Blog Article*/
+	.article{
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 1.5rem;
+		padding-left: 1.35rem;
+		padding-right: 1.35rem;
+		margin-top: 2rem;
+	}
+
+	section h1{
+		grid-column: 1/span 4;
+	}
+	section p{
+		grid-column: 1/span 4;
+		margin-bottom: 6rem;
+	}
+
+	.lightType:first-of-type{
+		grid-column: 1/span 4;
+	}
+
+	.lightType:nth-of-type(2){
+		grid-column: 1/span 4;
+	}
+
+	.lightType:last-of-type{
+		grid-column: 1/span 4;
 	}
 
 	/*Footer*/
@@ -586,6 +671,14 @@
 		grid-row: 11;
 	}
 
+	/*About Company*/
+	.aboutCompanyImg{
+		width: 100%;
+		height: auto;
+		object-fit: fill;
+		object-position: 0% 25%;
+	}
+
 	/*Blog*/
 	.valueAndBlogCard:first-of-type{
 		grid-column: 1/span 4;
@@ -602,6 +695,19 @@
 		margin-bottom: 4rem;
 	}
 
+	/*Blog Article*/
+	section p{
+		margin-bottom: 4rem;
+	}
+
+	/*Blog Article*/
+	.articleImg{
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	
 	/*footer*/
 	.footerLogo{
 		grid-column: 4/span 1;
@@ -686,4 +792,13 @@
 	.progressBarContainer{
 		width: 85%;
 	}
+
+	/*Blog Article*/
+	.articleImg{
+		width: 100%;
+		height: 15rem;
+		object-fit: cover;
+		object-position: center;
+	}
+
 }
