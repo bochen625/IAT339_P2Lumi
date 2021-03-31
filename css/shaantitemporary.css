@@ -61,7 +61,7 @@
 #photoGallery{
 	grid-column: 1/end;
 }
-#similiarProd{
+#similiarProd, #similiarProduct{
 	grid-column: 2/end;
 }
 #quizCTA{
@@ -313,7 +313,7 @@ figure.galleryImg-4{
 	}
 	/*responsiveness for the recommondation of similar product*/
 	.recModContainer{
-	grid-template-rows: (5,0.2fr);
+	grid-template-rows: repeat(5,0.2fr);
 	grid-row-gap: 2em;
 	margin-bottom: 5rem;
 }

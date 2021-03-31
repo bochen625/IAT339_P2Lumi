@@ -503,7 +503,7 @@ ul, ol{
 	width: 100%;
 	height: 45rem;
 	object-fit: cover;
-	object-position: bottom;
+	object-position: right bottom;
 }
 
 .subheading{
@@ -687,15 +687,16 @@ ul, ol{
 }
 
 /*-----------Quiz CTA Module-----------*/
-.quizCTABanner{
+.quizBannerContainer{
 	margin-top: 4rem;
 	background: url('../img/quizbanner.png') repeat 0 0;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 35rem;
+	height: 30rem;
 	background-size: cover;
 	margin-bottom: 4rem;
 }
+
 .quizBannerImg{
 	margin-top: 5rem;
 	max-width: 100%;
@@ -706,7 +707,7 @@ ul, ol{
 .quizDescription{
 	position: absolute;
 	left: 15%;
-	margin-top: 10rem;
+	margin-top: 10%;
 }
 
 .quizBH{
@@ -971,4 +972,9 @@ ul, ol{
 
 .subNavIMG img {
 	width: 100%;
+}
+
+/*--------File Structure-------*/
+.showNoDot{
+	list-style: none;
 }
